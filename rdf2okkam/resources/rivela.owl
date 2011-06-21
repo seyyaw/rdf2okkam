@@ -1,0 +1,1355 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY rivela "http://www.okkam.it/rivela.owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY TaxOntology "http://www.okkam.it/TaxOntology.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ENS-core-vocabulary "http://models.okkam.org/ENS-core-vocabulary#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.okkam.it/rivela.owl#"
+     xml:base="http://www.okkam.it/rivela.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ENS-core-vocabulary="http://models.okkam.org/ENS-core-vocabulary#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:TaxOntology="http://www.okkam.it/TaxOntology.owl#"
+     xmlns:rivela="http://www.okkam.it/rivela.owl#">
+    <owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="http://models.okkam.org/ENS-core-vocabulary.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#country_of_residence -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary;country_of_residence">
+        <owl:equivalentProperty rdf:resource="#haStatoResidenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#created_by -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary;created_by">
+        <owl:equivalentProperty rdf:resource="#haCreatore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#EffettuatoDa -->
+
+    <owl:ObjectProperty rdf:about="#EffettuatoDa">
+        <rdfs:range rdf:resource="#Agent"/>
+        <rdfs:domain rdf:resource="#Versamento_ICI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#IsCreator -->
+
+    <owl:ObjectProperty rdf:about="#IsCreator"/>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#dichiara -->
+
+    <owl:ObjectProperty rdf:about="#dichiara">
+        <rdfs:domain rdf:resource="#Dichiarazione_ICI"/>
+        <owl:inverseOf rdf:resource="#&#232;DichiaratoIn"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Immobile"/>
+                    <rdf:Description rdf:about="#Particella_Catastale"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haAffiliation -->
+
+    <owl:ObjectProperty rdf:about="#haAffiliation">
+        <rdfs:range rdf:resource="#PersonaGiuridicaPrivata"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCitt&#224; -->
+
+    <owl:ObjectProperty rdf:about="#haCitt&#224;">
+        <rdfs:range rdf:resource="#Citt&#224;"/>
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCitt&#224;Domicilio -->
+
+    <owl:ObjectProperty rdf:about="#haCitt&#224;Domicilio">
+        <rdfs:range rdf:resource="#Citt&#224;"/>
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCitt&#224;Residenza -->
+
+    <owl:ObjectProperty rdf:about="#haCitt&#224;Residenza">
+        <rdfs:range rdf:resource="#Citt&#224;"/>
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCityResidence -->
+
+    <owl:ObjectProperty rdf:about="#haCityResidence">
+        <owl:equivalentProperty rdf:resource="#haComuneResidenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haComune -->
+
+    <owl:ObjectProperty rdf:about="#haComune">
+        <rdfs:range rdf:resource="#Comune"/>
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:domain rdf:resource="#Provincia"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+        <rdfs:domain rdf:resource="#Utenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haComuneDomicilio -->
+
+    <owl:ObjectProperty rdf:about="#haComuneDomicilio">
+        <rdfs:range rdf:resource="#Comune"/>
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#PersonaGiuridica"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haComuneNascita -->
+
+    <owl:ObjectProperty rdf:about="#haComuneNascita">
+        <rdfs:range rdf:resource="#Comune"/>
+        <rdfs:domain rdf:resource="#LuogoNascita"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haComuneResidenza -->
+
+    <owl:ObjectProperty rdf:about="#haComuneResidenza">
+        <rdfs:range rdf:resource="#Comune"/>
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCreatore -->
+
+    <owl:ObjectProperty rdf:about="#haCreatore">
+        <rdfs:range rdf:resource="#Agent"/>
+        <rdfs:domain rdf:resource="#Documento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haDichiarante -->
+
+    <owl:ObjectProperty rdf:about="#haDichiarante">
+        <rdfs:range rdf:resource="#Agent"/>
+        <rdfs:domain rdf:resource="#Dichiarazione_ICI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haFrazioneResidenza -->
+
+    <owl:ObjectProperty rdf:about="#haFrazioneResidenza">
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haLuogoDomicilio -->
+
+    <owl:ObjectProperty rdf:about="#haLuogoDomicilio">
+        <rdfs:range rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haLuogoNascita -->
+
+    <owl:ObjectProperty rdf:about="#haLuogoNascita">
+        <rdfs:range rdf:resource="#LuogoNascita"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haLuogoResidenza -->
+
+    <owl:ObjectProperty rdf:about="#haLuogoResidenza">
+        <rdfs:range rdf:resource="#LuogoResidenza"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haProprietario -->
+
+    <owl:ObjectProperty rdf:about="#haProprietario">
+        <rdfs:range rdf:resource="#Agent"/>
+        <owl:inverseOf rdf:resource="#&#232;PossessoreDi"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Immobile"/>
+                    <rdf:Description rdf:about="#Particella_Catastale"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haProvincia -->
+
+    <owl:ObjectProperty rdf:about="#haProvincia">
+        <rdfs:range rdf:resource="#Provincia"/>
+        <rdfs:domain rdf:resource="#Regione"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+        <rdfs:domain rdf:resource="#Utenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haProvinciaDomicilio -->
+
+    <owl:ObjectProperty rdf:about="#haProvinciaDomicilio">
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:range rdf:resource="#Provincia"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haProvinciaNascita -->
+
+    <owl:ObjectProperty rdf:about="#haProvinciaNascita">
+        <rdfs:domain rdf:resource="#LuogoNascita"/>
+        <rdfs:range rdf:resource="#Provincia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haProvinciaResidenza -->
+
+    <owl:ObjectProperty rdf:about="#haProvinciaResidenza">
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+        <rdfs:range rdf:resource="#Provincia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haSede -->
+
+    <owl:ObjectProperty rdf:about="#haSede">
+        <rdfs:domain rdf:resource="#PersonaGiuridicaPrivata"/>
+        <rdfs:domain rdf:resource="#PersonaGiuridicaPubblica"/>
+        <rdfs:range rdf:resource="#Sede"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haStato -->
+
+    <owl:ObjectProperty rdf:about="#haStato">
+        <rdfs:domain rdf:resource="#Provincia"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+        <rdfs:range rdf:resource="#Stato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haStatoDomicilio -->
+
+    <owl:ObjectProperty rdf:about="#haStatoDomicilio">
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:range rdf:resource="#Stato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haStatoNascita -->
+
+    <owl:ObjectProperty rdf:about="#haStatoNascita">
+        <rdfs:domain rdf:resource="#LuogoNascita"/>
+        <rdfs:range rdf:resource="#Stato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haStatoResidenza -->
+
+    <owl:ObjectProperty rdf:about="#haStatoResidenza">
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+        <rdfs:range rdf:resource="#Stato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haTitolare -->
+
+    <owl:ObjectProperty rdf:about="#haTitolare">
+        <rdfs:domain rdf:resource="#Impresa"/>
+        <rdfs:range rdf:resource="#Persona_Fisica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#ha_indirizzo -->
+
+    <owl:ObjectProperty rdf:about="#ha_indirizzo">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#richiestaDa -->
+
+    <owl:ObjectProperty rdf:about="#richiestaDa">
+        <rdfs:range rdf:resource="#Agent"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Attivazione_Utenza"/>
+                    <rdf:Description rdf:about="#Cessazione_Utenza"/>
+                    <rdf:Description rdf:about="#Variazione"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#&#232;DichiaratoIn -->
+
+    <owl:ObjectProperty rdf:about="#&#232;DichiaratoIn">
+        <rdfs:range rdf:resource="#Dichiarazione_ICI"/>
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#&#232;PossessoreDi -->
+
+    <owl:ObjectProperty rdf:about="#&#232;PossessoreDi">
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Immobile"/>
+                    <rdf:Description rdf:about="#Particella_Catastale"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#&#232;RelativoADichiarazioneICI -->
+
+    <owl:ObjectProperty rdf:about="#&#232;RelativoADichiarazioneICI">
+        <rdfs:range rdf:resource="#Dichiarazione_ICI"/>
+        <rdfs:domain rdf:resource="#Versamento_ICI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#&#232;TitolareDi -->
+
+    <owl:ObjectProperty rdf:about="#&#232;TitolareDi">
+        <rdfs:range rdf:resource="#Impresa"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <owl:inverseOf rdf:resource="#haTitolare"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#&#232;UtenteDi -->
+
+    <owl:ObjectProperty rdf:about="#&#232;UtenteDi">
+        <rdfs:domain rdf:resource="#Agent"/>
+        <rdfs:range rdf:resource="#Utenza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#birthdate -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary;birthdate">
+        <rdfs:label>ENS</rdfs:label>
+        <owl:equivalentProperty rdf:resource="#haDataNascita"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#creation_date -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary;creation_date">
+        <rdfs:domain rdf:resource="#Artifact"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#first_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary;first_name">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <owl:equivalentProperty rdf:resource="#haNome"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#foundation_date -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary;foundation_date">
+        <rdfs:domain rdf:resource="#PersonaGiuridicaPrivata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#last_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary;last_name">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <owl:equivalentProperty rdf:resource="#haCognome"/>
+        <owl:equivalentProperty rdf:resource="#haNome"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#middle_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary;middle_name">
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <owl:equivalentProperty rdf:resource="#haSecondoNome"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#DenominatoreImmobile -->
+
+    <owl:DatatypeProperty rdf:about="#DenominatoreImmobile">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#codiceUtenza -->
+
+    <owl:DatatypeProperty rdf:about="#codiceUtenza">
+        <rdfs:domain rdf:resource="#Utenza"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#eventName -->
+
+    <owl:DatatypeProperty rdf:about="#eventName">
+        <rdfs:domain rdf:resource="#Event"/>
+        <owl:equivalentProperty rdf:resource="#haNome"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haAnnnoRiferimento -->
+
+    <owl:DatatypeProperty rdf:about="#haAnnnoRiferimento">
+        <rdfs:domain rdf:resource="#Versamento_ICI"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haBarrato -->
+
+    <owl:DatatypeProperty rdf:about="#haBarrato">
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCap -->
+
+    <owl:DatatypeProperty rdf:about="#haCap">
+        <rdfs:domain rdf:resource="#LuogoNascita"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCapitaleSociale -->
+
+    <owl:DatatypeProperty rdf:about="#haCapitaleSociale">
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCategoria -->
+
+    <owl:DatatypeProperty rdf:about="#haCategoria">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haClasse -->
+
+    <owl:DatatypeProperty rdf:about="#haClasse">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCodice -->
+
+    <owl:DatatypeProperty rdf:about="#haCodice">
+        <rdfs:domain rdf:resource="#Dichiarazione_ICI"/>
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:domain rdf:resource="#Utenza"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCodiceFiscale -->
+
+    <owl:DatatypeProperty rdf:about="#haCodiceFiscale">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#PersonaGiuridicaPrivata"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <owl:equivalentProperty rdf:resource="#haIdentificativoFiscaleSoggetto"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haCognome -->
+
+    <owl:DatatypeProperty rdf:about="#haCognome">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <owl:equivalentProperty rdf:resource="#haNome"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haConsistenza -->
+
+    <owl:DatatypeProperty rdf:about="#haConsistenza">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haData -->
+
+    <owl:DatatypeProperty rdf:about="#haData">
+        <rdfs:domain rdf:resource="#Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haDataMorte -->
+
+    <owl:DatatypeProperty rdf:about="#haDataMorte">
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haDataNascita -->
+
+    <owl:DatatypeProperty rdf:about="#haDataNascita">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haDestinazioneUrbanistica -->
+
+    <owl:DatatypeProperty rdf:about="#haDestinazioneUrbanistica">
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haEdificabilit&#224; -->
+
+    <owl:DatatypeProperty rdf:about="#haEdificabilit&#224;">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haEstensioneParticella -->
+
+    <owl:DatatypeProperty rdf:about="#haEstensioneParticella">
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haFoglio -->
+
+    <owl:DatatypeProperty rdf:about="#haFoglio">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haFonteVersamentoICI -->
+
+    <owl:DatatypeProperty rdf:about="#haFonteVersamentoICI">
+        <rdfs:domain rdf:resource="#Versamento_ICI"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haIdentificativoFiscaleSoggetto -->
+
+    <owl:DatatypeProperty rdf:about="#haIdentificativoFiscaleSoggetto">
+        <rdfs:label rdf:datatype="&xsd;string">ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Agent"/>
+        <owl:equivalentProperty rdf:resource="#haPartitaIva"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haIdentificativoImmobile -->
+
+    <owl:DatatypeProperty rdf:about="#haIdentificativoImmobile">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haIdentificativoParticella -->
+
+    <owl:DatatypeProperty rdf:about="#haIdentificativoParticella">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haIndirizzoCompleto -->
+
+    <owl:DatatypeProperty rdf:about="#haIndirizzoCompleto">
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+        <rdfs:domain rdf:resource="#Utenza"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haInterno -->
+
+    <owl:DatatypeProperty rdf:about="#haInterno">
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haMatricola -->
+
+    <owl:DatatypeProperty rdf:about="#haMatricola">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haNome -->
+
+    <owl:DatatypeProperty rdf:about="#haNome">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Agent"/>
+        <rdfs:domain rdf:resource="#Artifact"/>
+        <rdfs:domain rdf:resource="#Comune"/>
+        <rdfs:domain rdf:resource="#Event"/>
+        <rdfs:domain rdf:resource="#Location"/>
+        <rdfs:domain rdf:resource="#PersonaGiuridica"/>
+        <rdfs:domain rdf:resource="#PersonaGiuridicaPrivata"/>
+        <rdfs:domain rdf:resource="#PersonaGiuridicaPubblica"/>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:domain rdf:resource="#Provincia"/>
+        <rdfs:domain rdf:resource="#Regione"/>
+        <rdfs:domain rdf:resource="#Stato"/>
+        <owl:equivalentProperty rdf:resource="#name"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haNumSoci -->
+
+    <owl:DatatypeProperty rdf:about="#haNumSoci">
+        <rdfs:domain rdf:resource="#Societ&#224;"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haNumeroCivico -->
+
+    <owl:DatatypeProperty rdf:about="#haNumeroCivico">
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haNumeroParticella -->
+
+    <owl:DatatypeProperty rdf:about="#haNumeroParticella">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haPartitaIva -->
+
+    <owl:DatatypeProperty rdf:about="#haPartitaIva">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#PersonaGiuridicaPrivata"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haRendita -->
+
+    <owl:DatatypeProperty rdf:about="#haRendita">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haSecondoNome -->
+
+    <owl:DatatypeProperty rdf:about="#haSecondoNome">
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haSesso -->
+
+    <owl:DatatypeProperty rdf:about="#haSesso">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:domain rdf:resource="#Persona_Fisica"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haSezione -->
+
+    <owl:DatatypeProperty rdf:about="#haSezione">
+        <rdfs:domain rdf:resource="#Immobile"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haSubalterno -->
+
+    <owl:DatatypeProperty rdf:about="#haSubalterno">
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haSuperficie -->
+
+    <owl:DatatypeProperty rdf:about="#haSuperficie">
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haTipoImmobile -->
+
+    <owl:DatatypeProperty rdf:about="#haTipoImmobile">
+        <rdfs:domain rdf:resource="#Immobile"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haTipoParticella -->
+
+    <owl:DatatypeProperty rdf:about="#haTipoParticella">
+        <rdfs:domain rdf:resource="#Particella_Catastale"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#haVia -->
+
+    <owl:DatatypeProperty rdf:about="#haVia">
+        <rdfs:domain rdf:resource="#LuogoDomicilio"/>
+        <rdfs:domain rdf:resource="#LuogoResidenza"/>
+        <rdfs:domain rdf:resource="#Sede"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#artifact_type -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary;artifact_type">
+        <owl:equivalentClass rdf:resource="#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#event -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary;event">
+        <owl:equivalentClass rdf:resource="#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#location -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary;location">
+        <owl:equivalentClass rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#organization -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary;organization">
+        <owl:equivalentClass rdf:resource="#PersonaGiuridica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#person -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary;person">
+        <owl:equivalentClass rdf:resource="#Persona_Fisica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Agent -->
+
+    <owl:Class rdf:about="#Agent"/>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Artifact -->
+
+    <owl:Class rdf:about="#Artifact"/>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Associazione -->
+
+    <owl:Class rdf:about="#Associazione">
+        <rdfs:subClassOf rdf:resource="#PersonaGiuridicaPrivata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Attivazione_Utenza -->
+
+    <owl:Class rdf:about="#Attivazione_Utenza">
+        <rdfs:subClassOf rdf:resource="#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Cessazione_Utenza -->
+
+    <owl:Class rdf:about="#Cessazione_Utenza">
+        <rdfs:subClassOf rdf:resource="#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Citt&#224; -->
+
+    <owl:Class rdf:about="#Citt&#224;">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Comune -->
+
+    <owl:Class rdf:about="#Comune">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Contratto -->
+
+    <owl:Class rdf:about="#Contratto">
+        <rdfs:subClassOf rdf:resource="#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Dichiarazione_ICI -->
+
+    <owl:Class rdf:about="#Dichiarazione_ICI">
+        <rdfs:subClassOf rdf:resource="#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Documento -->
+
+    <owl:Class rdf:about="#Documento">
+        <rdfs:subClassOf rdf:resource="#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Event -->
+
+    <owl:Class rdf:about="#Event"/>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Fabbricato -->
+
+    <owl:Class rdf:about="#Fabbricato">
+        <rdfs:subClassOf rdf:resource="#Immobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Fondazione -->
+
+    <owl:Class rdf:about="#Fondazione">
+        <rdfs:subClassOf rdf:resource="#PersonaGiuridicaPrivata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#ICI_Acconto -->
+
+    <owl:Class rdf:about="#ICI_Acconto">
+        <rdfs:subClassOf rdf:resource="#Versamento_ICI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#ICI_Saldo -->
+
+    <owl:Class rdf:about="#ICI_Saldo">
+        <rdfs:subClassOf rdf:resource="#Versamento_ICI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#ICI_Unico -->
+
+    <owl:Class rdf:about="#ICI_Unico">
+        <rdfs:subClassOf rdf:resource="#Versamento_ICI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Immobile -->
+
+    <owl:Class rdf:about="#Immobile">
+        <rdfs:subClassOf rdf:resource="#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Impresa -->
+
+    <owl:Class rdf:about="#Impresa">
+        <rdfs:subClassOf rdf:resource="#PersonaGiuridicaPrivata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Impresa_Familiare -->
+
+    <owl:Class rdf:about="#Impresa_Familiare">
+        <rdfs:subClassOf rdf:resource="#Impresa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Impresa_Individuale -->
+
+    <owl:Class rdf:about="#Impresa_Individuale">
+        <rdfs:subClassOf rdf:resource="#Impresa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Location -->
+
+    <owl:Class rdf:about="#Location"/>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#LuogoDomicilio -->
+
+    <owl:Class rdf:about="#LuogoDomicilio">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#LuogoNascita -->
+
+    <owl:Class rdf:about="#LuogoNascita">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#LuogoResidenza -->
+
+    <owl:Class rdf:about="#LuogoResidenza">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Particella_Catastale -->
+
+    <owl:Class rdf:about="#Particella_Catastale">
+        <rdfs:subClassOf rdf:resource="#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#PersonaGiuridica -->
+
+    <owl:Class rdf:about="#PersonaGiuridica">
+        <rdfs:subClassOf rdf:resource="#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#PersonaGiuridicaPrivata -->
+
+    <owl:Class rdf:about="#PersonaGiuridicaPrivata">
+        <rdfs:subClassOf rdf:resource="#PersonaGiuridica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#PersonaGiuridicaPubblica -->
+
+    <owl:Class rdf:about="#PersonaGiuridicaPubblica">
+        <rdfs:subClassOf rdf:resource="#PersonaGiuridica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Persona_Fisica -->
+
+    <owl:Class rdf:about="#Persona_Fisica">
+        <rdfs:label>ENS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Provincia -->
+
+    <owl:Class rdf:about="#Provincia">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Regione -->
+
+    <owl:Class rdf:about="#Regione">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Sede -->
+
+    <owl:Class rdf:about="#Sede">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Societ&#224; -->
+
+    <owl:Class rdf:about="#Societ&#224;">
+        <rdfs:subClassOf rdf:resource="#PersonaGiuridicaPrivata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Societ&#224;Capitali -->
+
+    <owl:Class rdf:about="#Societ&#224;Capitali">
+        <rdfs:subClassOf rdf:resource="#Societ&#224;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Societ&#224;Cooperativa -->
+
+    <owl:Class rdf:about="#Societ&#224;Cooperativa">
+        <rdfs:subClassOf rdf:resource="#Societ&#224;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Societ&#224;Persone -->
+
+    <owl:Class rdf:about="#Societ&#224;Persone">
+        <rdfs:subClassOf rdf:resource="#Societ&#224;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Stato -->
+
+    <owl:Class rdf:about="#Stato">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Terreno -->
+
+    <owl:Class rdf:about="#Terreno">
+        <rdfs:subClassOf rdf:resource="#Immobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Terreno_Agricolo -->
+
+    <owl:Class rdf:about="#Terreno_Agricolo">
+        <rdfs:subClassOf rdf:resource="#Terreno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Terreno_Edificabile -->
+
+    <owl:Class rdf:about="#Terreno_Edificabile">
+        <rdfs:subClassOf rdf:resource="#Terreno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Utenza -->
+
+    <owl:Class rdf:about="#Utenza">
+        <rdfs:subClassOf rdf:resource="#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Variazione -->
+
+    <owl:Class rdf:about="#Variazione">
+        <rdfs:subClassOf rdf:resource="#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Variazione_APR -->
+
+    <owl:Class rdf:about="#Variazione_APR">
+        <rdfs:subClassOf rdf:resource="#Variazione"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Variazione_Piano_Regolatore -->
+
+    <owl:Class rdf:about="#Variazione_Piano_Regolatore">
+        <rdfs:subClassOf rdf:resource="#Variazione"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Variazione_Residenza -->
+
+    <owl:Class rdf:about="#Variazione_Residenza">
+        <rdfs:subClassOf rdf:resource="#Variazione"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Variazione_Utenza -->
+
+    <owl:Class rdf:about="#Variazione_Utenza">
+        <rdfs:subClassOf rdf:resource="#Variazione"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Versamento_ICI -->
+
+    <owl:Class rdf:about="#Versamento_ICI">
+        <rdfs:subClassOf rdf:resource="#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing">
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.okkam.it/rivela.owl#Folgaria -->
+
+    <owl:Thing rdf:about="#Folgaria">
+        <rdf:type rdf:resource="#Comune"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

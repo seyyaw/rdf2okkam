@@ -1,0 +1,883 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ENS-core-vocabulary2 "http://models.okkam.org/ENS-core-vocabulary#" >
+    <!ENTITY ENS-core-vocabulary "http://models.okkam.org/ENS-core-vocabulary.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://models.okkam.org/ENS-core-vocabulary.owl#"
+     xml:base="http://models.okkam.org/ENS-core-vocabulary.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ENS-core-vocabulary="http://models.okkam.org/ENS-core-vocabulary.owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:ENS-core-vocabulary2="http://models.okkam.org/ENS-core-vocabulary#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#city -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary2;city">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+        <rdfs:label xml:lang="fr">Cit&#233;</rdfs:label>
+        <rdfs:label xml:lang="it">Citta</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The city where an organization is based, in which some other location is included, where an event takes place, or the city which is considered the point of contact of an artifact instance or an artifact type or of an entity in the class OTHER</rdfs:comment>
+        <rdfs:range rdf:resource="&ENS-core-vocabulary2;location"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;location"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#city_of_residence -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary2;city_of_residence">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en"
+            >city of residence</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >citta di residenza</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The city where a person is resident</rdfs:comment>
+        <rdfs:range rdf:resource="&ENS-core-vocabulary2;location"/>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#country -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary2;country">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">country</rdfs:label>
+        <rdfs:label xml:lang="it">paese</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The country where an organization is located or where an event takes place, in which another location is included or the city which is considered the point of contact of an artifact instance or an artifact type or of an entity in the class OTHER.</rdfs:comment>
+        <rdfs:range rdf:resource="&ENS-core-vocabulary2;location"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;location"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#country_of_residence -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary2;country_of_residence">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en"
+            >country of residence</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >paese di residenza</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The country in which a person is resident</rdfs:comment>
+        <rdfs:range rdf:resource="&ENS-core-vocabulary2;location"/>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#created_by -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary2;created_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">created by</rdfs:label>
+        <rdfs:label xml:lang="it">creato da</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The person or organization which produces/produced, creates/created the type or an instance of an artifact.</rdfs:comment>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#employer -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary2;employer">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">employer</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >datore di lavoro</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The employer of a person</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#invented_by -->
+
+    <owl:ObjectProperty rdf:about="&ENS-core-vocabulary2;invented_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">invented by</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >ideato da, inventato da</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The person or organization who invented the artifact type</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;artifact_type"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#founded_by -->
+
+    <owl:ObjectProperty rdf:about="#founded_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">founded by</rdfs:label>
+        <rdfs:label xml:lang="it">fondato da</rdfs:label>
+        <rdfs:comment
+            >The person or organization who founded the organization</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;organization"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#instance_of -->
+
+    <owl:ObjectProperty rdf:about="#instance_of">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en"
+            >instance, copy, token</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >copia, esemplare</rdfs:label>
+        <rdfs:comment
+            >The property which hold between an artifact instance and an artifact type; for example John&#39;s car is instance_of Zafira 2.0 DTI version 1</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;artifact_instance"/>
+        <rdfs:range rdf:resource="&ENS-core-vocabulary2;artifact_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#organized_by -->
+
+    <owl:ObjectProperty rdf:about="#organized_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;event"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;abbreviation">
+        <rdfs:label xml:lang="en">abbreviation</rdfs:label>
+        <rdfs:label xml:lang="it">nome abbreviato</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The short name (e.g. acronym) of an OKKAM entity</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;location"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#activity_sector -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;activity_sector">
+        <rdfs:label xml:lang="en">activity sector</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >settore di attivita</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The sector or industry where an organization is active</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#artifact_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;artifact_name">
+        <rdfs:label xml:lang="en">artifact name</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >nome dell&#39;artefatto</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The name of an artifact type or artifact instance</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#birthdate -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;birthdate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">birthdate</rdfs:label>
+        <rdfs:label xml:lang="it">data di nascita</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A person&#39;s birthdate or the year of a person&#39;s birthdate</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#category -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;category">
+        <rdfs:label xml:lang="en">category, type</rdfs:label>
+        <rdfs:label xml:lang="it">categoria, tipo</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The category of an artifact type or instance (e.g. car, book, building, treatise, etc.) or the category of any entity which is a member of the class OTHER</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#creation_date -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;creation_date">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">creation date</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >data di creazione</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The creation date of an artifact instance (e.g. the year of production of my Opel Zafira)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;artifact_instance"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#event_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;event_name">
+        <rdfs:label xml:lang="en">event name</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >nome dell&#39;evento</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The name of an event (e.g. First World War, the 6th European Semantic Web conference, G8 summit)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;event"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#event_type -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;event_type">
+        <rdfs:label xml:lang="en">event type</rdfs:label>
+        <rdfs:label xml:lang="it">tipo di evento</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The type of an event (e.g. conference, acquisition, meeting, party, etc.)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;event"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#first_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;first_name">
+        <rdfs:label xml:lang="it">first name</rdfs:label>
+        <rdfs:label xml:lang="it">nome proprio</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The first (or given) name of a person</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#foundation_date -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;foundation_date">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">foundation date</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >data di fondazione</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The date when an organization was founded</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;organization"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#gender -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;gender">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">gender</rdfs:label>
+        <rdfs:label xml:lang="it">sesso</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A person&#39;s gender</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range>
+            <rdf:Description>
+                <rdf:type rdf:resource="&owl;DataRange"/>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">female</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">male</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdf:Description>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#last_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;last_name">
+        <rdfs:label xml:lang="en">family name</rdfs:label>
+        <rdfs:label xml:lang="en">surname</rdfs:label>
+        <rdfs:label xml:lang="it">cognome</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A person&#39;s last name (or surname)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#latitude -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;latitude">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">latitude</rdfs:label>
+        <rdfs:label xml:lang="it">latitudine</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The latitude of a location</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;location"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#location_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;location_name">
+        <rdfs:label xml:lang="en">location name</rdfs:label>
+        <rdfs:label xml:lang="it">nome del luogo</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A location name</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;location"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#longitude -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;longitude">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+        <rdfs:label xml:lang="it">longitudine</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The longitude of a location</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;location"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#middle_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;middle_name">
+        <rdfs:label xml:lang="en">middle name</rdfs:label>
+        <rdfs:label xml:lang="it">secondo nome</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The middle name of a perosn (if available)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#occupation -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;occupation">
+        <rdfs:label xml:lang="en">occupation</rdfs:label>
+        <rdfs:label xml:lang="it">occupazione</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The job occupation of a person (e.g. teacher, pilot, actor, politician, etc.)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#organization_legal_name -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;organization_legal_name">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en"
+            >organization legal name</rdfs:label>
+        <rdfs:label xml:lang="it">ragione sociale</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The legal name of an organization (e.g. &quot;International Business Machines&quot; for IBM)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;organization"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#picture_URL -->
+
+    <owl:DatatypeProperty rdf:about="&ENS-core-vocabulary2;picture_URL">
+        <rdfs:label xml:lang="en">picture URL</rdfs:label>
+        <rdfs:label xml:lang="it">URL della foto</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The web address (URL) of an entity&#39;s picture</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;location"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#authoritative_resolver -->
+
+    <owl:DatatypeProperty rdf:about="#authoritative_resolver">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;location"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#date_of_death -->
+
+    <owl:DatatypeProperty rdf:about="#date_of_death">
+        <rdfs:label xml:lang="en">date of death</rdfs:label>
+        <rdfs:label xml:lang="it">data di morte</rdfs:label>
+        <rdfs:comment xml:lang="en"
+            >The date of death of a person</rdfs:comment>
+        <rdfs:domain rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#end_date -->
+
+    <owl:DatatypeProperty rdf:about="#end_date">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">ending date</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >data di chiusura</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >data di fine produzione</rdfs:label>
+        <rdfs:comment xml:lang="en"
+            >The ending date of an event or the date when an artifact type disappeared or the production of its instances ceased</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="#name">
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <rdfs:label xml:lang="it">nome</rdfs:label>
+        <rdfs:comment xml:lang="it"
+            >The name of the entity</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#start_date -->
+
+    <owl:DatatypeProperty rdf:about="#start_date">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">starting date</rdfs:label>
+        <rdfs:label xml:lang="it">data di inizio</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >data di produzione</rdfs:label>
+        <rdfs:comment xml:lang="en"
+            >The starting date of an event or the date when an artifact type was invented, written or the production of its instances started</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#street_address -->
+
+    <owl:DatatypeProperty rdf:about="#street_address">
+        <rdfs:label xml:lang="en">address</rdfs:label>
+        <rdfs:label xml:lang="it">indirizzo</rdfs:label>
+        <rdfs:comment xml:lang="en"
+            >The address of the point of contact of an OKKAM entity</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_instance"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;location"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;organization"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;person"/>
+                    <rdf:Description rdf:about="#social_being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#artifact_instance -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary2;artifact_instance">
+        <rdfs:label xml:lang="en">artifact</rdfs:label>
+        <rdfs:label xml:lang="it">artefatto</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;artifact_type"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;other"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The class of concrete artifacts, like the London Bridge, my own Opel Zafira , my copy of the Othello, my installation of MS Word, etc.. Not to be confused with the class of artifacts-type, like Opel Zafira, Shakespeare&#39;s Othello, MS Word.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#artifact_type -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary2;artifact_type">
+        <rdfs:label xml:lang="en">artifact type</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >tipo di artefatto</rdfs:label>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;event"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;location"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;organization"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;other"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The types (or models) of an artifact which are used to produce an arbitrary number of copies (artifact instances). Examples are: Opel Zafira 2.0 DTI version 1, MS Word 2007, the Othello by Shakespeare. Notice that the class of bridges is not the artifact_type of the London Bridge, as the concept of bridge is not the model from which copies are produced. Works of arts that can be reproduced in copies are membes of this class</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#event -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary2;event">
+        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="it">evento</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;location"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;organization"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;other"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The class of event, including natural events (hurricane, earthquake, etc.), social events (conference, meeting, wedding, etc.), economical events (closing deals, signing agreements, merging and acquisitions, etc.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#location -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary2;location">
+        <rdfs:label xml:lang="en">location</rdfs:label>
+        <rdfs:label xml:lang="it">luogo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;other"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The class of geographical and physical locations. Examples: London, Canada, Africa, S. Peter square</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#organization -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary2;organization">
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <rdfs:label xml:lang="it">organizzazione</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#social_being"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;other"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The class of organizations, including companies, institutes, governamental bodies, committees, and so on.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#other -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary2;other">
+        <rdfs:label xml:lang="en">other</rdfs:label>
+        <rdfs:label xml:lang="it">altro</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&ENS-core-vocabulary2;person"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The class of things which do not fall under any other predefined class of OKKAM entities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary#person -->
+
+    <owl:Class rdf:about="&ENS-core-vocabulary2;person">
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="it">persona</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#social_being"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The class of persons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://models.okkam.org/ENS-core-vocabulary.owl#social_being -->
+
+    <owl:Class rdf:about="#social_being">
+        <rdfs:label xml:lang="en"
+            >agent, social being</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >agente, ente sociale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;artifact_type"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;event"/>
+                    <rdf:Description rdf:about="&ENS-core-vocabulary2;other"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <rdfs:comment xml:lang="en"
+            >Each instance of SocialBeing is an intelligent agent whose status as an agent is acknowledged within some social system, and who is capable of playing certain social roles within that system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

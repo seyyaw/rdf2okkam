@@ -1,0 +1,9 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ens: <http://models.okkam.org/ENS-core-vocabulary.owl#> .
+
+<http://models.okkam.org/anagrafe.owl#9995> a ens:person ;
+	<http://models.okkam.org/anagrafe.owl#codice_fiscale> "SLMLGU64R09H501Z" ;
+	ens:last_name "UBALDO" ;
+	ens:name "GIORGIANNA" ;
+	ens:birthdate "12/08/2064" ;
+	<http://models.okkam.org/anagrafe.owl#comune_nascita> "TRENTO" .

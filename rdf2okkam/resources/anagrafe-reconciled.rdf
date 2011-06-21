@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ens="http://models.okkam.org/ENS-meta-core-vocabulary.owl#">
+
+<rdf:Description rdf:about="http://spreadsheet.number001#0">
+	<rdf:type rdf:resource="http://models.okkam.org/ENS-meta-core-vocabulary.owl#person"/>
+	<ens:last_name>SELMI</ens:last_name>
+	<ens:first_name>LUIGI</ens:first_name>
+	<ens:birthdate>19/08/1936</ens:birthdate>
+	<ens:gender>M</ens:gender>
+
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.okkam.org/ens/idf9f7964b-3859-4d5b-b361-a2b80a32b904">
+	<rdf:type rdf:resource="http://models.okkam.org/ENS-meta-core-vocabulary.owl#location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spreadsheet.number001#0">
+	<ens:city_of_residence rdf:resource="http://www.okkam.org/ens/idf9f7964b-3859-4d5b-b361-a2b80a32b904"/>
+	<ens:date_of_death>NULL</ens:date_of_death>
+	<codice_fiscale xmlns="http://spreadsheet.number001#">SLMLGU64R09H501Z</codice_fiscale>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spreadsheet.number001#10">
+	<rdf:type rdf:resource="http://models.okkam.org/ENS-meta-core-vocabulary.owl#person"/>
+	<ens:last_name>ALBERTI</ens:last_name>
+	<ens:first_name>ALBERTO</ens:first_name>
+	<ens:birthdate>29/05/1923</ens:birthdate>
+	<ens:gender>M</ens:gender>
+	<ens:city_of_residence rdf:resource="http://www.okkam.org/ens/idf9f7964b-3859-4d5b-b361-a2b80a32b904"/>
+
+	<ens:date_of_death>NULL</ens:date_of_death>
+	<codice_fiscale xmlns="http://spreadsheet.number001#">LBRLRT23E29L378F</codice_fiscale>
+</rdf:Description>
+
+</rdf:RDF>
