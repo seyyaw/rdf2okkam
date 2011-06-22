@@ -24,9 +24,9 @@ import org.okkam.client.data.ProvenanceMetadataType;
 import org.okkam.client.data.ReferencesType;
 import org.okkam.core.data.api.SemanticType;
 import org.okkam.core.ws.data.EntityValidationReport;
-import org.okkam.refine.data.CandidateEntity;
-import org.okkam.serialization.QueryResponse;
-import org.okkam.serialization.ResponseType;
+import org.okkam.service.client.CandidateEntity;
+import org.okkam.service.client.QueryResponse;
+import org.okkam.service.client.ResponseType;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
