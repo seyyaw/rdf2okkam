@@ -3,8 +3,10 @@ package org.okkam.service.client;
 import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import javax.xml.namespace.QName;
@@ -22,6 +24,9 @@ import org.okkam.client.data.ProvenanceMetadataType;
 import org.okkam.client.data.ReferencesType;
 import org.okkam.core.data.api.SemanticType;
 import org.okkam.core.ws.data.EntityValidationReport;
+import org.okkam.refine.data.CandidateEntity;
+import org.okkam.serialization.QueryResponse;
+import org.okkam.serialization.ResponseType;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -194,6 +199,83 @@ public class ServiceClient {
 		}
 		
 		return okkamId;
+	}
+	
+	/*
+	 * Search for an entity by its query string
+	 */
+	public List findEntity(String queryId, String query) {
+		
+		ArrayList<QueryResponse> candidates = new ArrayList<QueryResponse>();
+		
+		ArrayList<CandidateEntity> entityList = _okkamClient.inquireOkkam(query);
+		Iterator<CandidateEntity> entityIterator = entityList.iterator();
+		
+		
+		while(entityIterator.hasNext()){
+			QueryResponse result = new QueryResponse();
+			CandidateEntity candidateEntity = entityIterator.next();
+			Entity entity = candidateEntity.getEntity();
+			boolean match = candidateEntity.isMatch();
+			String okkamId = entity.getOid();
+			result.setId(okkamId);			
+			ProfileType profile = entity.getProfile();			
+			String semanticType = profile.getSemanticType();
+			if(semanticType != null & !semanticType.equals("")){
+				ArrayList types = new ArrayList();
+				ResponseType type = new ResponseType();
+				type.setId(semanticType);
+				type.setName(semanticType);
+				types.add(type);
+				result.setType(types);
+			}
+			AttributesType attributesType = profile.getAttributes();
+			List<AttributeType> attributeTypeList = attributesType.getAttributes();
+			Iterator<AttributeType> attributeTypeIterator = attributeTypeList.iterator();
+			while(attributeTypeIterator.hasNext()){
+				AttributeType attributeType = attributeTypeIterator.next();
+				String nameSpaceUri = attributeType.getName().getNamespaceURI();
+				String term = attributeType.getName().getLocalPart();
+				String value = attributeType.getValue();
+				//System.out.println("Nome attributo: " + nameSpaceUri + "#" + term + ", valore: " + value);
+				AttributeMetadataType metadata = attributeType.getMetadata();
+				String dataSource = metadata.getProvenance().getSource();				
+				//System.out.println("Fonte dati: " + dataSource);												
+				if(query.trim().toLowerCase().contains( value.trim().toLowerCase() )){
+					result.setName(value);					
+					result.setScore(99.99);
+					result.setMatch(match);
+				}								
+			}
+			
+			candidates.add(result);
+		}
+		
+		return candidates;
+	}
+	
+	public Map findEntityByOkkamId(String okkamid){
+		String semanticType = "";
+		Entity entity = _okkamClient.getEntity(okkamid);
+		ProfileType profile = entity.getProfile();
+		semanticType = profile.getSemanticType();
+		
+		AttributesType attributes = profile.getAttributes();
+		List<AttributeType> attributeList = attributes.getAttributes();
+		HashMap<String, String> attributeMap = new HashMap<String, String>();
+		attributeMap.put("semanticType", semanticType);
+		Iterator<AttributeType> i = attributeList.iterator();
+		while(i.hasNext()){
+			AttributeType attribute = i.next();
+			QName q = attribute.getName();
+			String attrName = q.getLocalPart();
+			String attrValue = attribute.getValue();
+			attributeMap.put(attrName, attrValue);
+		}
+		
+		return attributeMap;
+		
+		
 	}
 	
 	
