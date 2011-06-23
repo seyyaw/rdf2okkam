@@ -13,8 +13,6 @@ import java.util.Set;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 
-import org.okkam.multimap.*;
-
 /**
  * This program returns all unique statements for those subjects which have literal or URI value for each
  * RDF statement.
