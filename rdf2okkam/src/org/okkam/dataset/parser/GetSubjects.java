@@ -10,9 +10,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import com.google.common.collect.BiMap;
-import com.google.common.collect.HashBiMap;
-
 /**
  * This program returns all unique statements for those subjects which have literal or URI value for each
  * RDF statement.
