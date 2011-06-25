@@ -13,6 +13,8 @@ import java.util.List;
 import javax.xml.bind.JAXBException;
 import javax.xml.namespace.QName;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.Entity;
 import org.okkam.client.exception.OkkamClientException;
@@ -43,9 +45,11 @@ public class OkkamClient {
 	String password = "changeit";
 	String okkamPointer = "http://okkam4.disi.unitn.it:8080/okkam-core/WebServices"; // "http://193.1.101.88/okkam-core/WebServices";
 
+	private static Log log = LogFactory.getLog(OkkamClient.class);
+	
 	public OkkamClient(String path) {
 		
-		
+		log.debug("Starting OkkamClient") ;
 		
 		String userCertificateDataFolderPath = path;
 		credentials = new EnsCredentials();

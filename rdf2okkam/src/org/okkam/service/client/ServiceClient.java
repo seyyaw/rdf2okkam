@@ -54,6 +54,7 @@ public class ServiceClient {
 
 		_okkamClient = okkamclient;
 		
+		
 		entityTypes = new ArrayList<String>();
 		entityTypes.add(SemanticType.ARTIFACT_INSTANCE);
 		entityTypes.add(SemanticType.ARTIFACT_TYPE);
@@ -81,7 +82,7 @@ public class ServiceClient {
 	 */
 	public String createNewEntity(String entityType, AttributesType attributeList, boolean ignoreDuplicates) {
 		
-		log.debug("Creating a new entity");
+		log.info("Creating a new entity");
 		
 		//THE ENTITY OBJECT IS THE WRAPPER OF ALL THE ENTITY'S INFORMATION
 		Entity entity = new Entity();
