@@ -19,22 +19,23 @@ public class GetSubjects extends Object {
 
 	static Model model = null;
 	static String inputFileName = "resources/anagrafe1.ttl";
+	static int size=0;
 
 	public static void main(String args[]) throws IOException {
 		loadModel(inputFileName);
 		Iterator it = getSubjects(inputFileName).iterator();
-		Set statments = getProperties(it);
-		Iterator itstmt = statments.iterator();
-		int i = 0;
+		String[][] statments = getProperties(it);
 		// System.out.println(statments);
-		while (itstmt.hasNext()) {
-			System.out.println(++i + ": " + itstmt.next().toString());
+		for(int i=0;i<size;i++) {
+			System.out.println(i + "Subject: " + statments[i][0]+"Property: "+statments[i][1]+"Object: "+statments[i][2]);
 		}
 	}
 
-	private static Set getProperties(Iterator it) {
+	public static String[][] getProperties(Iterator it) {
 		Set statments = new HashSet();
+		String[][] results=new String[size][3];
 		Set tmpstatments = new HashSet();
+		int i=0;
 		while (it.hasNext()) {
 			StmtIterator iter = model.listStatements();
 			Resource subject2 = (Resource) it.next();
@@ -45,16 +46,20 @@ public class GetSubjects extends Object {
 				if (subject.equals(subject2) && !object.isAnon()) {
 					String stmts = " Property: " + stmt.getPredicate()+ " Object: " + stmt.getObject();
 					// check if different subjects do have the same properties and objects
-					if (!tmpstatments.contains(stmts))
-						statments.add("Subject: " + subject + stmts);
+					if (!tmpstatments.contains(stmts)){
+						results[i][0]=subject.toString();
+						results[i][1]=stmt.getPredicate().toString();
+						results[i][2]=stmt.getObject().toString();
+						i++;
+					}
 					tmpstatments.add(stmts);
 				}
 			}
 		}
-		return statments;
+		return results;
 	}
 
-	private static void loadModel(String filePath) {
+	public static void loadModel(String filePath) {
 		// create an empty model
 		model = ModelFactory.createDefaultModel();
 
@@ -91,6 +96,10 @@ public class GetSubjects extends Object {
 			if (subjects.contains(object))
 				subjects.remove(object);
 		}
+		size=subjects.size();
 		return subjects;
+	}
+	public static int getsize(){
+		return size;
 	}
 }
