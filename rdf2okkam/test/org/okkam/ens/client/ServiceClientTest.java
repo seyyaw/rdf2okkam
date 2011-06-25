@@ -4,24 +4,28 @@ import static org.junit.Assert.*;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributesType;
 import org.okkam.dataset.parser.RdfParser;
 
+import org.okkam.model.ModelLoader;
 import org.okkam.service.client.OkkamClient;
 import org.okkam.service.client.ServiceClient;
 
+import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.rdf.model.Resource;
 
 
 
 public class ServiceClientTest {
-	
+	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	private static final String filename = "resources/anagrafe1.ttl";
 	private static final String confpath = "conf";
+	ModelLoader loader = null ;
 	RdfParser parser = null;
 	OkkamClient okkam = null;
 	ServiceClient client = null;
@@ -30,38 +34,42 @@ public class ServiceClientTest {
 
 	@Before
 	public void setUp() throws Exception {
-		parser = new RdfParser(filename);
-		okkam = new OkkamClient(confpath) ;
-		client = new ServiceClient(okkam) ;
-		// Get the logger for the test class
-	    
 		
+		loader = new ModelLoader() ;		
+		loader.loadInputModel(filename) ; 
+		parser = new RdfParser(loader.getInputModel());
+		okkam = new OkkamClient(confpath) ;
+		client = new ServiceClient(okkam) ;		
+	    		
 	}
 
-	@Test
-	public void testCreateNewEntity() {
-		String subjectUri = "http://spreadsheet.number001#4";	
-		String semanticType = parser.getType(subjectUri).getLocalPart();
-		attributesType = parser.listProperties(subjectUri);
-		boolean ignoreDuplicates = false ;
-		String okkamid = client.createNewEntity(semanticType, attributesType, ignoreDuplicates);
-		System.out.println("Identifier for " + subjectUri + ": " + okkamid);
-		
-	}
+//	@Test
+//	public void testCreateNewEntity() {
+//		String subjectUri = "" ; 	
+//		String semanticType = parser.getType(subjectUri).getLocalPart();
+//		attributesType = parser.listProperties(subjectUri);
+//		boolean ignoreDuplicates = true ;
+//		String okkamid = client.createNewEntity(semanticType, attributesType, ignoreDuplicates);
+//		System.out.println("Identifier for " + subjectUri + ": " + okkamid);
+//		
+//	}
 	
 	@Test
-	public void testCreateNewEntities(){
-		List<RDFNode> subjects = parser.listSubjects() ;
+	public void testCreateNewEntity(){
+		System.out.println("----------------Test createNewEntities()-----------------") ;
+		Set<RDFNode> subjects = parser.getSubjectsWithoutBNodes() ;
 		Iterator<RDFNode> i = subjects.iterator();
-		boolean ignoreDuplicates = false ;
+		boolean ignoreDuplicates = true ;
 		while(i.hasNext()){
 			RDFNode subject = i.next();
-			if(parser.allPropertiesWithoutBNodes(subject)) {				
-				String semanticType = parser.getType(subject.asResource()).getLocalPart();
-				attributesType = parser.listProperties(subject.asResource().getURI());
-				String okkamid = client.createNewEntity(semanticType, attributesType, ignoreDuplicates);
-				System.out.println("Identifier for " + subject.asResource().getURI() + ": " + okkamid);
-			}
+			System.out.println("subject " + subject.toString()) ;
+			Property typep = loader.getInputModel().getProperty(rdfNS + "type") ;
+			String semanticType = "location" ;
+			System.out.println("subject: " + subject.toString() + ", sem. type: " + semanticType) ;
+			attributesType = parser.listSubjectProperties(subject);
+			String okkamid = client.createNewEntity(semanticType, attributesType, ignoreDuplicates);
+			System.out.println("Identifier for " + subject.asResource().getURI() + ": " + okkamid);
+			
 		}
 	}
 
