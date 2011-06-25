@@ -3,6 +3,8 @@ package org.okkam.dataset.parser;
 import org.okkam.service.client.OkkamClient;
 import org.okkam.service.client.ServiceClient;
 
+import com.hp.hpl.jena.rdf.model.Model;
+
 public class RdfImportController {
 
 	private static final String filename = "resources/anagrafe-unreconciled.ttl";
@@ -16,7 +18,9 @@ public class RdfImportController {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		RdfParser parser = new RdfParser(filename);
+		Model model = null ;
+		
+		RdfParser parser = new RdfParser(model);
 		
 		ServiceClient client = new ServiceClient(new OkkamClient(confpath));
 		

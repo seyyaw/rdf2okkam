@@ -2,8 +2,11 @@ package org.okkam.dataset.parser;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
+
 import javax.xml.namespace.QName;
 
 import org.apache.commons.logging.Log;
@@ -14,6 +17,7 @@ import org.okkam.client.data.AttributeMetadataProvenanceType;
 import org.okkam.client.data.AttributeMetadataType;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
+import org.okkam.model.ModelLoader;
 import org.okkam.service.client.ServiceClient;
 
 import com.hp.hpl.jena.graph.Node;
@@ -41,11 +45,15 @@ public class RdfParser {
 	
 	private final String ensOntology = "resources/ENS-core-vocabulary.owl";
 	
-	private final String ensNamespace = "http://models.okkam.org/ENS-core-vocabulary.owl#";
+	private final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#";
+	
+	private final String taxNS = "http://localhost/TaxOntology.owl#" ;
+	
+	private final String TAX_PREFIX = "tax" ;
 	
 	private final String ENS_PREFIX = "ens";
 	
-	private final String rdfNamespace = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	
 	private String baseUri = null;
 	
@@ -58,21 +66,13 @@ public class RdfParser {
 	private Model _model = null ;
 	
 	private static Log log = LogFactory.getLog(RdfParser.class);
-	
-	
-	public RdfParser(String filename){	
 		
-		rdfDatasetFileName = filename;
-		
-		loadEnsOntology();				
-		
-		loadRdfDataset();
-
-	}
 	
 	public RdfParser(Model model){	
 		
 		_model = model ;
+		
+		loadEnsOntology() ;
 
 	}
 
@@ -90,7 +90,7 @@ public class RdfParser {
 			AttributeType attribute = new AttributeType();
 			Property predicate = stmt.getPredicate();
 			//System.out.println("Predicate namespace: " + predicate.getNameSpace());
-			if( ensNamespace.equals( predicate.getNameSpace() )){
+			if( ensNS.equals( predicate.getNameSpace() )){
 				prefix = ENS_PREFIX;
 			}
 			QName name = new QName(predicate.getURI(),predicate.getLocalName(), prefix);
@@ -108,6 +108,47 @@ public class RdfParser {
 		
 		return attributes;		
 	}
+	
+	/*
+	 * Returns subject's list of properties
+	 */
+	public AttributesType listSubjectProperties(RDFNode subjectNode){
+		AttributesType attributes =  new AttributesType();
+		Resource subject = subjectNode.asResource() ;
+		
+		//System.out.println("subject as resource: " + subject) ;
+		Selector selector = new SimpleSelector(subject, null, (RDFNode)null) ;
+		StmtIterator i = _model.listStatements(selector) ;	
+		
+		while(i.hasNext()){	
+			String prefix = "";
+			Statement stmt = i.next();			
+			AttributeType attribute = new AttributeType();
+			Property predicate = stmt.getPredicate();
+			//System.out.println("predicate: " + predicate.getURI());
+			if( ensNS.equals( predicate.getNameSpace() )){
+				prefix = ENS_PREFIX ;
+			}
+			if( taxNS.equals( predicate.getNameSpace() )){
+				prefix = TAX_PREFIX ;
+			}
+			QName name = new QName(predicate.getURI(), predicate.getLocalName() , prefix);
+			attribute.setName(name);			
+			String value = stmt.getObject().toString();
+			//System.out.println("value: " + value) ;
+			attribute.setValue(value);
+			
+			// Set access control metadata to send or not attributes values to the public node
+			// Set to "private" to not send the attributes values.
+			// attribute.getMetadata().getAccessControl().setDisplayable("private");			
+			
+			attributes.getAttributes().add(attribute);	
+			
+		}
+		
+		return attributes;		
+	}
+	
 	
 	/*
 	 * Returns true if all statements about the subject are not blank nodes 
@@ -150,8 +191,8 @@ public class RdfParser {
 	 */
 	public List<Resource> listSubjectsByType(String type){
 		ArrayList<Resource> subjects = new ArrayList<Resource>();
-		Property rdfType = _model.getProperty(rdfNamespace + "type");				
-		Resource typeResource = ensModel.getResource(ensNamespace + type); 
+		Property rdfType = _model.getProperty(rdfNS + "type");				
+		Resource typeResource = ensModel.getResource(ensNS + type); 
 		StmtIterator i = _model.listStatements(new SimpleSelector(null, rdfType, typeResource));
 		while(i.hasNext()){						
 			subjects.add(i.next().getSubject());			
@@ -162,11 +203,11 @@ public class RdfParser {
 	public List<RDFNode> listSubjects() {
 		ArrayList<RDFNode> subjects = new ArrayList<RDFNode>() ;
 		List<QName> ensTypes = listEnsClasses() ;
-		Property rdfType = _model.getProperty(rdfNamespace + "type");
+		Property rdfType = _model.getProperty(rdfNS + "type");
 		Iterator<QName> i = ensTypes.iterator() ;
 		while(i.hasNext()) {
 			QName q = i.next() ;
-			Resource typeResource = ensModel.getResource(ensNamespace + q.getLocalPart());
+			Resource typeResource = ensModel.getResource(ensNS + q.getLocalPart());
 			Selector selector = new SimpleSelector(null, rdfType, typeResource) ;
 			StmtIterator stmtIterator = _model.listStatements(selector) ;
 			while(stmtIterator.hasNext()) {
@@ -182,7 +223,7 @@ public class RdfParser {
 	
 	public QName getType(String uri){
 		Resource resource = _model.getResource( uri );
-		Property rdfType = _model.getProperty(rdfNamespace + "type");
+		Property rdfType = _model.getProperty(rdfNS + "type");
 		Statement stmt = resource.getProperty(rdfType);
 		Resource type = stmt.getObject().asResource();
 		QName qtype = new QName(type.getURI(), type.getLocalName(), "rdf");
@@ -191,7 +232,7 @@ public class RdfParser {
 	}
 	
 	public QName getType(Resource resource){		
-		Property rdfType = _model.getProperty(rdfNamespace + "type");
+		Property rdfType = _model.getProperty(rdfNS + "type");
 		Statement stmt = resource.getProperty(rdfType);
 		Resource type = stmt.getObject().asResource();
 		QName qtype = new QName(type.getURI(), type.getLocalName(), "rdf");
@@ -203,7 +244,7 @@ public class RdfParser {
 	public List<QName> listEnsClasses(){
 		
 		ArrayList<QName> ensClassesList = new ArrayList<QName>();
-		OntClass thing = ensModel.getOntClass(ensNamespace + "Thing"); 
+		OntClass thing = ensModel.getOntClass(ensNS + "Thing"); 
 		ExtendedIterator<OntClass> iclass = ensModel.listNamedClasses();
 		
 		while(iclass.hasNext()){
@@ -216,6 +257,51 @@ public class RdfParser {
 		
 		return ensClassesList;
 		
+	}
+	
+	/*
+	 * Returns all the subjects that don't have blank nodes as properties values.
+	 */
+	public Set<RDFNode> getSubjectsWithoutBNodes() {
+		log.info("getSubjectsWithoutBlankNodes()") ;
+		Set<RDFNode> subjects = new HashSet<RDFNode>() ;
+		if(getDistinctSubjects().size() > 0) {
+			Iterator<RDFNode> subjectIter = getDistinctSubjects().iterator() ;			
+			while(subjectIter.hasNext()) {
+				RDFNode subject = subjectIter.next() ;
+				Selector selector = new SimpleSelector(subject.asResource(), null, (RDFNode) null) ;
+				StmtIterator objIter = _model.listStatements(selector) ;
+				boolean isBNode = false ;
+				while(objIter.hasNext()) {
+					RDFNode object = objIter.nextStatement().getObject() ;
+					if(object.isAnon()) {
+						isBNode = true ;
+					}
+				}
+				if(!isBNode) 
+					subjects.add(subject) ;			
+			}
+		}
+		else {
+			log.error("No distinct subjects") ;
+		}
+		
+		return subjects ;
+	}
+	
+	/*
+	 * Returns the distinct subjects of all the statements in the rdf dataset (model).
+	 * The subject resources are put in a set that cannot accept duplicates.
+	 */
+	public Set<RDFNode> getDistinctSubjects() {
+		Set<RDFNode> subjects = new HashSet<RDFNode>() ;
+		StmtIterator stmtIter = _model.listStatements();		
+		while(stmtIter.hasNext()) {
+			RDFNode subject = stmtIter.next().getSubject() ;
+			if( ! rdfNS.equals(subject.asResource().getNameSpace()) )  
+					subjects.add(subject) ;
+		}		
+		return subjects ;
 	}
 	
 	private void loadRdfDataset(){
@@ -241,8 +327,8 @@ public class RdfParser {
 		ensModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RDFS_INF);
 		
 		OntDocumentManager dm = ensModel.getDocumentManager();
-		dm.addAltEntry( ensNamespace, "file:" + ensOntology );
-		ensModel.read( ensNamespace );	
+		dm.addAltEntry( ensNS, "file:" + ensOntology );
+		ensModel.read( ensNS );	
 		
 		ExtendedIterator<Ontology> iOntologies = ensModel.listOntologies();
 		while(iOntologies.hasNext()){
