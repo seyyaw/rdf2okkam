@@ -1,11 +1,12 @@
 package org.okkam.mockups;
-
 import org.okkam.dataset.parser.GetSubjects;
 import java.util.Iterator;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -79,6 +80,8 @@ public class GetOkkamIDAndModifyRDFDataSet {
 	 * @throws FileNotFoundException
 	 */
 	public static void modifyRDF() throws FileNotFoundException {
+		File outrdf = new File("resources/test.ttl");
+	    OutputStream out = new FileOutputStream(outrdf); 
 		Iterator it = GetSubjects.getSubjects(inputFileName).iterator();
 		String[][] statment = GetSubjects.getProperties(it);
 		String[][] stmt = getOkkamId(statment);
@@ -97,6 +100,8 @@ public class GetOkkamIDAndModifyRDFDataSet {
 			UpdateAction.execute(request2, model);
 		}
 		model.write(System.out, "TTL");
+		//Write the RDF/TTL file to filesystem
+		model.write(out,"TTL");
 	}
 
 	public static void loadModel(String filePath) {
