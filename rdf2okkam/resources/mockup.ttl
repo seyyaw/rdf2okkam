@@ -1,8 +1,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ens: <http://models.okkam.org/ENS-core-vocabulary.owl#> .
 
-<http://okkam.com.org/1234> ens:location_name "FOLGARIA" .
-<http://okkam.com.org/1235> a  ens:location .
-<http://okkam.com.org/1236> ens:location_name "TRENTO" .
-<http://okkam.com.org/1237> ens:location_name "FINALE EMILIA" .
-<http://okkam.com.org/1238> ens:location_name "CIVITELLA DEL TRONTO" .
+<http://okkam.com.org/1234> a  ens:location ;
+	ens:location_name "FOLGARIA" .
+<http://okkam.com.org/1235> a  ens:location ;
+	ens:location_name "TRENTO" .
+<http://okkam.com.org/1237> a  ens:location ;
+	ens:location_name "FINALE EMILIA" .
+<http://okkam.com.org/1238> a  ens:location ;
+	ens:location_name "CIVITELLA DEL TRONTO" .
