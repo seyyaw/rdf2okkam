@@ -291,7 +291,9 @@ public class RdfParser {
 	
 	/*
 	 * Returns the distinct subjects of all the statements in the rdf dataset (model).
-	 * The subject resources are put in a set that cannot accept duplicates.
+	 * The subject resources are put in a set that cannot accept duplicates. Distinct means
+	 * that there are not more than one node with the same identifier (URI or BNode). It does
+	 * not mean that they refers to different entities.
 	 */
 	public Set<RDFNode> getDistinctSubjects() {
 		Set<RDFNode> subjects = new HashSet<RDFNode>() ;
@@ -301,9 +303,127 @@ public class RdfParser {
 			if( ! rdfNS.equals(subject.asResource().getNameSpace()) )  
 					subjects.add(subject) ;
 		}		
+		
 		return subjects ;
 	}
 	
+	/*
+	 * Select a subset of distinct subject nodes that are not objects in any statements
+	 */
+	public Set<RDFNode> getStrictSubjects() {
+		log.info("getStrictSubject()") ;
+		Set<RDFNode> strictSubjects = new HashSet<RDFNode>() ;
+		
+		if(getDistinctSubjects().size() > 0) {
+			Iterator<RDFNode> subjectIter = getDistinctSubjects().iterator() ;			
+			while(subjectIter.hasNext()) {
+				RDFNode subject = subjectIter.next() ;
+				Selector selector = new SimpleSelector(null, null, subject.asResource()) ;
+				StmtIterator objIter = _model.listStatements(selector) ;
+				if( ! objIter.hasNext() )
+							strictSubjects.add(subject) ;
+			}
+		}
+		else {
+			log.error("No distinct subjects") ;
+		}
+		
+		return strictSubjects ;
+	}
+	
+	/*
+	 * Select a subset of distinct subject nodes that are objects in some statements. This
+	 * method is the complement of getStrictSubjects().
+	 */
+	public Set<RDFNode> getNotStrictSubjects() {
+		log.info("getNotStrictSubject()") ;
+		
+		Set<RDFNode> notStrictSubjects = new HashSet<RDFNode>() ;
+		
+		if(getDistinctSubjects().size() > 0) {
+			Iterator<RDFNode> subjectIter = getDistinctSubjects().iterator() ;			
+			while(subjectIter.hasNext()) {
+				RDFNode subject = subjectIter.next() ;
+				Selector selector = new SimpleSelector(null, null, subject.asResource()) ;
+				StmtIterator objIter = _model.listStatements(selector) ;
+				if( objIter.hasNext() )
+							notStrictSubjects.add(subject) ;
+			}
+		}
+		else {
+			log.error("No distinct subjects") ;
+		}
+		
+		return notStrictSubjects ;	
+		
+		
+	}
+	
+	public Set<RDFNode> getFullDistinctSubjects() {
+		Set<RDFNode> result = new HashSet<RDFNode>() ;
+		result = getDistinctSubjects() ;
+		Iterator<RDFNode> i = result.iterator() ;
+		while(i.hasNext()) {
+			RDFNode subject = i.next() ;
+			AttributesType attributesType = listSubjectProperties(subject) ;
+			
+		}
+		return result ;
+	}
+	
+	public Set<RDFNode> getDuplicateSubjects(RDFNode subject) {
+		Set<RDFNode> duplicates = null ;
+		
+		Iterator<RDFNode> i  = getDistinctSubjects().iterator() ;
+		while(i.hasNext()) {
+			RDFNode distSubject = i.next() ;
+			
+		}
+		
+		
+		
+		return duplicates ;
+	}
+	
+	public boolean compareSubjects(RDFNode subj1, RDFNode subj2) {
+		boolean isSame = false ;
+		Property typep = _model.getProperty(rdfNS + "type") ;
+		
+		//Check the subjects' type
+		RDFNode type1 = subj1.asResource().getProperty(typep).getObject() ;
+		String type1Uri = type1.asResource().getURI() ;
+		RDFNode type2 = subj2.asResource().getProperty(typep).getObject() ;
+		String type2Uri = type2.asResource().getURI() ;
+		if( ! type1Uri.equals(type2Uri) ) 
+			return isSame ;
+		
+		//If the subjects are of same type compare their properties
+		StmtIterator isubj1props = subj1.asResource().listProperties() ;		
+		while(isubj1props.hasNext()) {
+			Statement subj1stmt = isubj1props.next() ;
+			Property property1 = subj1stmt.getPredicate() ;	
+			RDFNode object1 = subj1stmt.getObject() ;
+			StmtIterator isubj2props = subj2.asResource().listProperties() ;
+			while(isubj2props.hasNext()) {								
+				Statement subj2stmt = isubj2props.next() ;
+				Property property2 = subj2stmt.getPredicate() ;
+				if( (property2.getURI()).equals(property1.getURI()) ) {					
+					RDFNode object2 = subj2stmt.getObject() ;
+					if( (!object1.isAnon()) && (!object2.isAnon()) ) {
+						if( ( object1.toString() ).equals( object2.toString() ) ) 
+								isSame = true ;
+						
+						else
+							isSame = false ;
+					}
+				}
+				
+				
+			}
+		}
+		return isSame ;
+	}
+	/*
 	private void loadRdfDataset(){
 		
 		 // use the FileManager to find the input file
@@ -320,6 +440,7 @@ public class RdfParser {
 		dataModel.read(in, baseUri, "TURTLE");
 		
 	}
+	*/
 	
 	private void loadEnsOntology(){
 		
