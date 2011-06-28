@@ -17,6 +17,7 @@ import org.okkam.client.data.AttributeMetadataProvenanceType;
 import org.okkam.client.data.AttributeMetadataType;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
+import org.okkam.exception.SameNodeException;
 import org.okkam.model.ModelLoader;
 import org.okkam.service.client.ServiceClient;
 
@@ -371,22 +372,64 @@ public class RdfParser {
 		return result ;
 	}
 	
+	/*
+	 * Get all the subjects that have the same properties values of
+	 * the subject argument.
+	 */
 	public Set<RDFNode> getDuplicateSubjects(RDFNode subject) {
-		Set<RDFNode> duplicates = null ;
+		Set<RDFNode> duplicates = new HashSet<RDFNode>() ;
 		
 		Iterator<RDFNode> i  = getDistinctSubjects().iterator() ;
 		while(i.hasNext()) {
 			RDFNode distSubject = i.next() ;
 			
+			if( ! distSubject.equals(subject) ) {
+					if( compareSubjects(subject, distSubject) )
+						duplicates.add(distSubject) ;
+			}
 		}
-		
-		
-		
+						
 		return duplicates ;
 	}
 	
+	
+	/*
+	 * Remove duplicates of the node passed as argument from the model. 
+	 */
+	public Model removeDuplicates(RDFNode subjectNode) {
+		Model outModel = null ;
+		
+		Set<RDFNode> duplicates = getDuplicateSubjects(subjectNode) ;
+		
+		Iterator<RDFNode> iduplicates = duplicates.iterator() ;
+		
+		log.info("Number of " + subjectNode + " duplicates: " + duplicates.size()) ;
+		
+		while(iduplicates.hasNext()) {
+			RDFNode subject = iduplicates.next() ;		
+			Resource subjResource = subject.asResource() ;
+			StmtIterator istmt = _model.listStatements(subjResource, null, (RDFNode) null) ;
+//			List stmtList = istmt.toList() ;
+//			Iterator<Statement> i = stmtList.iterator() ;
+//			while(i.hasNext()) {
+//				Statement statement = i.next() ;
+//				System.out.println(statement) ;
+//			}
+			outModel = _model.remove(istmt.toList()) ;
+						 			
+		}		
+		
+		return outModel ;
+	}
+	/*
+	 * Compare two RDF subject nodes by their properties. If the subjects are of 
+	 * same type compare their properties. Two entities are the same if they have 
+	 * the same value for all their properties. Objects as blank nodes are not 
+	 * taken into account in the comparison.
+	 */
 	public boolean compareSubjects(RDFNode subj1, RDFNode subj2) {
-		boolean isSame = false ;
+		boolean isSamePropertyValue = false ;
+		boolean isSameEntity = true ;
 		Property typep = _model.getProperty(rdfNS + "type") ;
 		
 		//Check the subjects' type
@@ -394,16 +437,24 @@ public class RdfParser {
 		String type1Uri = type1.asResource().getURI() ;
 		RDFNode type2 = subj2.asResource().getProperty(typep).getObject() ;
 		String type2Uri = type2.asResource().getURI() ;
+		// If the nodes are the same return true
+		if( subj1.toString().equals(subj2.toString()) )
+			return true ;
+			//throw new SameNodeException(subj1.toString() + " is the same node as " + subj2.toString()) ;
+		// If the nodes are of different types return false
 		if( ! type1Uri.equals(type2Uri) ) 
-			return isSame ;
+			return false ;
 		
-		//If the subjects are of same type compare their properties
+		// The nodes are different but of the same type so let's see their
+		// properties. Only properties that have URI or literal values are
+		// taken into account
 		StmtIterator isubj1props = subj1.asResource().listProperties() ;		
 		while(isubj1props.hasNext()) {
 			Statement subj1stmt = isubj1props.next() ;
 			Property property1 = subj1stmt.getPredicate() ;	
 			RDFNode object1 = subj1stmt.getObject() ;
-			StmtIterator isubj2props = subj2.asResource().listProperties() ;
+			Selector selector = new SimpleSelector(subj2.asResource(), property1, (RDFNode) null) ;
+			StmtIterator isubj2props =  _model.listStatements(selector);
 			while(isubj2props.hasNext()) {								
 				Statement subj2stmt = isubj2props.next() ;
 				Property property2 = subj2stmt.getPredicate() ;
@@ -411,17 +462,17 @@ public class RdfParser {
 					RDFNode object2 = subj2stmt.getObject() ;
 					if( (!object1.isAnon()) && (!object2.isAnon()) ) {
 						if( ( object1.toString() ).equals( object2.toString() ) ) 
-								isSame = true ;
-						
+							isSamePropertyValue = true ;						
 						else
-							isSame = false ;
+							isSamePropertyValue = false ;
+						
+						isSameEntity = isSameEntity && isSamePropertyValue ;
 					}
-				}
-				
+				}								
 				
 			}
 		}
-		return isSame ;
+		return isSameEntity ;
 	}
 	/*
 	private void loadRdfDataset(){
