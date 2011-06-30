@@ -136,7 +136,6 @@ public class Mockup {
 							String tmpsubject=tmpstmt.getSubject().toString();
 							Resource tmpsubj=model.createResource(tmpsubject);
 							if(tempsubject.equals(tmpsubject)&&!object.isAnon()){
-								System.out.println(object);
 								Property tmpproperty=model.createProperty(tmproperty);
 								Statement newstmt=ResourceFactory.createStatement(subj, tmpproperty, object);
 								newstatments.add(newstmt);
@@ -156,8 +155,6 @@ public class Mockup {
 				}
 		
 			}
-			System.out.println(newstatments.size());
-			System.out.println(newstatments);
 			return newstatments;
 			
 	}
