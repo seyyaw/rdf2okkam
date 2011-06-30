@@ -11,7 +11,11 @@
 	<classpathentry kind="lib" path="lib/okkam-client-2.2.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/okkam-proxy.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.4.jar"/>
-	<classpathentry kind="lib" path="lib/jena-2.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/jena-2.6.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/yusra/Desktop/eclipse/ARQ-2.8.8/jena-2.6.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.5.8.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.5.8.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.13.jar"/>
@@ -26,6 +30,10 @@
 	<classpathentry kind="lib" path="lib/wsdl4j-1.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/arq-2.8.8-sources.jar"/>
 	<classpathentry kind="lib" path="lib/arq-2.8.8.jar"/>
-	<classpathentry kind="lib" path="lib/arq-2.8.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/arq-2.8.8-javadoc.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/yusra/Desktop/eclipse/ARQ-2.8.8/arq-2.8.8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
