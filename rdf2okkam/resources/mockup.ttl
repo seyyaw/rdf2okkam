@@ -9,3 +9,10 @@
 	ens:location_name "FINALE EMILIA" .
 <http://okkam.com.org/1238> a  ens:location ;
 	ens:location_name "CIVITELLA DEL TRONTO" .
+
+	<http://okkam.com.org/16273n1dhx1> a ens:person ;
+	<http://models.okkam.org/anagrafe.owl#codice_fiscale> "BLLGZN36M19D599A" ;
+	ens:last_name "ABELLI" ;
+	ens:name "GRAZIANO" ;
+	ens:birthdate "19/08/1936" .
+	<http://okkam.com.org/16273n1dhx1> <http://models.okkam.org/anagrafe.owl#comune_nascita> <http://okkam.com.org/1237> .
