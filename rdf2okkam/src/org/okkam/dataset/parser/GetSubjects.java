@@ -31,17 +31,20 @@ public class GetSubjects extends Object {
 		loadModel(inputFileName);
 		Iterator it = getSubjects(inputFileName).iterator();
 		String[][] statments = getProperties(it);
+		System.out.println(getsize());
 		// System.out.println(statments);
 		for(int i=0;i<size;i++) {
 		//	System.out.println(i + "Subject: " + statments[i][0]+"Property: "+statments[i][1]+"Object: "+statments[i][2]);
 		}
 	}
-
+	//for all subjects, get predicate and object which is Literal.
 	public static String[][] getProperties(Iterator it) {
 		Set statments = new HashSet();
 		String[][] results=new String[size][3];
 		Set tmpstatments = new HashSet();
+		Set tempsubjects = new HashSet();
 		int i=0;
+		int length=0;
 		while (it.hasNext()) {
 			StmtIterator iter = model.listStatements();
 			Resource subject2 = (Resource) it.next();
@@ -53,18 +56,28 @@ public class GetSubjects extends Object {
 					
 					String stmts = " Property: " + stmt.getPredicate()+ " Object: " + stmt.getObject();
 					// check if different subjects do have the same properties and objects
-					if (!tmpstatments.contains(stmts)){
+					if (!tmpstatments.contains(stmts)&&!tempsubjects.contains(subject)){length++;
 						log.info(stmt);
 						results[i][0]=subject.toString();
 						results[i][1]=stmt.getPredicate().toString();
 						results[i][2]=stmt.getObject().toString();
 						i++;
+						//just one subject for all statments.
+						tempsubjects.add(subject);
 					}
 					tmpstatments.add(stmts);
 				}
 			}
 		}
-		return results;
+		size=length;
+		String[][] tempresults=new String[size][3];
+		//Because some statements might be repetition (Size rectification)
+		for(int j=0;j<size;j++){
+			tempresults[j][0]=results[j][0];
+			tempresults[j][1]=results[j][1];
+			tempresults[j][2]=results[j][2];
+		}
+		return tempresults;
 	}
 
 	public static void loadModel(String filePath) {
@@ -79,7 +92,7 @@ public class GetSubjects extends Object {
 		// read the RDF/TTL file
 		model.read(in, null, "TURTLE");
 	}
-
+//get all blank nodes from the RDF dataset
 	public static Set getSubjects(String filePath) {
 		// select all the subjects with literal or uri value
 		StmtIterator iter = model.listStatements();
@@ -88,14 +101,15 @@ public class GetSubjects extends Object {
 		if (iter.hasNext()) {
 			while (iter.hasNext()) {
 				Statement stmt = iter.nextStatement(); // get next statement
+			
 				Resource subject = stmt.getSubject(); // get the subject
 				RDFNode object = stmt.getObject(); // get the object
 				// if the object is not anonymous/Blank node, return the subject
-				if (object.isAnon())
-					tempSubjects.add(subject);
-				else {
+				//if (object.isAnon())
+					//tempSubjects.add(subject);
+				//else {
 					subjects.add(subject);
-				}
+				//}
 			}
 		}
 		Iterator subit = tempSubjects.iterator();
