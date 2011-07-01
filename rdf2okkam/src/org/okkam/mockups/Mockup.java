@@ -39,7 +39,7 @@ public class Mockup {
 	static String inputFileName5="resources/test3.ttl";
 	
 	public static void main(String[] args) throws Exception {
-		File outrdf = new File(inputFileName4);
+		File outrdf = new File(inputFileName3);
 		GetSubjects.loadModel(inputFileName);
 		loadModel(inputFileName);		
 		Iterator it = GetSubjects.getSubjects(inputFileName).iterator();
