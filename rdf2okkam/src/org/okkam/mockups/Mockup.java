@@ -59,7 +59,7 @@ public class Mockup {
 		ArrayList sub=new ArrayList();ArrayList prop=new ArrayList();ArrayList obj=new ArrayList();
 		for (int i = 0; i < GetSubjects.getsize(); i++) {
 			String subject = statment[i][0], property = statment[i][1], object = statment[i][2];
-				object = "'" + object + "'";
+				object = "\"" + object + "\"";
 			Query SPARQL_QUERY = QueryFactory
 					.create("prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
 							+ "prefix ens: <http://models.okkam.org/ENS-core-vocabulary.owl#>  "
