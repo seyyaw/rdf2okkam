@@ -57,7 +57,7 @@ public class GetSubjects extends Object {
 					String stmts = " Property: " + stmt.getPredicate()+ " Object: " + stmt.getObject();
 					// check if different subjects do have the same properties and objects
 					if (!tmpstatments.contains(stmts)&&!tempsubjects.contains(subject)){length++;
-						log.info(stmt);
+						//log.info(stmt);
 						results[i][0]=subject.toString();
 						results[i][1]=stmt.getPredicate().toString();
 						results[i][2]=stmt.getObject().toString();
@@ -66,6 +66,7 @@ public class GetSubjects extends Object {
 						tempsubjects.add(subject);
 					}
 					tmpstatments.add(stmts);
+					break;
 				}
 			}
 		}
