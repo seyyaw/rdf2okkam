@@ -43,12 +43,13 @@ public class Tax2EnsMapper {
 	 * @throws FileNotFoundException 
 	 */
 	public static void main(String[] args) throws FileNotFoundException {
-		String onto1 = "resources/anagrafe.ttl";		
+		String onto1 = "resources/anagrafe1.ttl";		
 		String baseUri = null ;
 		String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
 		String taxNS = "http://localhost/TaxOntology.owl#";
 		String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#" ;
 		Model model1 = ModelFactory.createDefaultModel() ;
+		Model model2 = ModelFactory.createDefaultModel() ;
 		
 		
 		InputStream in1 = FileManager.get().open( onto1 );
@@ -68,34 +69,27 @@ public class Tax2EnsMapper {
 		Reasoner reasoner = new GenericRuleReasoner(rules);	    
 		InfModel inf = ModelFactory.createInfModel(reasoner, model1);
 	    
-	    //Look for inferred statements about people's residence	    		
-		Property type = model1.getProperty(rdfNS + "type") ;
-		Selector selector = new SimpleSelector(null,type,(RDFNode)null) ;
-		StmtIterator i = inf.listStatements(selector) ;
-		Statement stmt = null ;
+		StmtIterator i = inf.listStatements() ;
 		ArrayList<Statement> infStmts = new ArrayList<Statement>() ;
 	    while(i.hasNext()){
-	    	stmt = i.nextStatement(); 
+	    	Statement stmt = i.nextStatement(); 
 	    	//Save the inferred statement 
 	    	infStmts.add(stmt) ;
 	        
 	    }
 	    
+	    //Save the mapped model 
+	    inf.write(new PrintWriter("resources/dataset_out.ttl"),"TURTLE");
+
+	    
 	    if(infStmts.size() > 0) {
 	    	Iterator<Statement> iter = infStmts.iterator() ; 
 	    	while(iter.hasNext()) {
 	    		Statement infStatement = iter.next() ;
-	    		// Add the inferred statements to the model.
-	    		model1.add(infStatement) ;
 	    		System.out.println("Inf. statement: " + infStatement.toString());
 	    	}
 	    	
 	    }
-	    
-	    
-	    //Save the mapped model 
-	    model1.write(new PrintWriter("resources/dataset_out.ttl"),"TURTLE");
-
 
 	}
 
