@@ -78,7 +78,7 @@ public class ServiceClient {
 	 * - a list of attributes
 	 * 
 	 * Creates a new entity in the ENS and returns the identifier. The boolean argument enable the client 
-	 * to create a new entity also in presence of entities that are considered the same by the ENS.  
+	 * to create a new entity also in presence of entities that are considered the same by the ENS (duplicates).  
 	 */
 	public String createNewEntity(String entityType, AttributesType attributeList, boolean ignoreDuplicates) {
 		
@@ -105,16 +105,16 @@ public class ServiceClient {
 		
 		if (attributeList.getAttributes().size() > 0) {
 
-		    System.out.println("Adding attributes");
+		    log.info("Adding attributes");
 
 		    profile.setAttributes(attributeList);
 
 		}
 		 
 
-		if (entityType != null && !"".equals(semantic_type)) {
+		if ( entityType != null && ! "".equals(semantic_type) ) {
 
-		    System.out.println("Adding semantic type");
+		    log.info("Adding semantic type");
 
 		    profile.setSemanticType(semantic_type);
 
@@ -122,7 +122,7 @@ public class ServiceClient {
 		
 		if (refs.getReferences().size() > 0) {
 
-		    System.out.println("Adding references");
+		    log.info("Adding references");
 
 		    profile.setReferences(refs);
 
@@ -132,7 +132,7 @@ public class ServiceClient {
 
 		if (alts.getAlternativeIds().size() > 0) {
 
-		    System.out.println("Adding alternatives");
+		    log.info("Adding alternatives");
 
 		    entity.setAlternativeIds(alts);
 
@@ -142,7 +142,7 @@ public class ServiceClient {
 
 		if (eq != null && eq.getEquivalentOids().size() > 0) {
 
-		    System.out.println("Adding equivalents");
+		    log.info("Adding equivalents");
 
 		    entity.setEquivalentOids(eq);
 
@@ -152,14 +152,8 @@ public class ServiceClient {
 
 		entity.setProfile(profile);
 		
-		
-		
-		
 		// ENTITY VALIDATION
 		EntityValidationReport report = null;
-		// Force check for double entities ie ignore duplicates
-		//(true: do not check for double entities, ignore duplicates)
-		//boolean ignoreDuplicates = false;
 		
 		try {
 			
