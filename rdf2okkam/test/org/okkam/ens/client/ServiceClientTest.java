@@ -37,7 +37,7 @@ public class ServiceClientTest {
 		
 		loader = new ModelLoader() ;		
 		loader.loadInputModel(filename) ; 
-		parser = new RdfParser(loader.getInputModel());
+		parser = new RdfParser(loader.getInputModel(), loader.getOutputModel());
 		okkam = new OkkamClient(confpath) ;
 		client = new ServiceClient(okkam) ;		
 	    		
