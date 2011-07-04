@@ -3,7 +3,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tax: <http://localhost/TaxOntology.owl#> .
 @prefix ens:  <http://models.okkam.org/ENS-core-vocabulary.owl#> .
-[rule1: (?x rdf:type tax:Persona_Fisica) -> (?x rdf:type ens:person)]
-[rule2: (?x ens:location_name ?y) <- ( ?x rdf:type tax:LuogoResidenza ) (?x tax:haNome ?y)]
+[rule1: (?a rdf:type tax:LuogoResidenza) (?a tax:haNome ?b) -> (?a ens:name ?b)]
+[rule2: (?a rdf:type tax:LuogoNascita) (?a tax:haNome ?b) -> (?a ens:name ?b)]
+[rule3: (?x rdf:type tax:LuogoNascita) -> (?x rdf:type ens:location)]
+[rule4: (?x rdf:type tax:LuogoResidenza) -> (?x rdf:type ens:location)]
+[rule3: (?x rdf:type tax:Persona_Fisica) -> (?x rdf:type ens:person)]
+
 
 
