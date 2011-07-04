@@ -35,6 +35,7 @@ import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.rdf.model.ResIterator;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.rdf.model.ResourceFactory;
 import com.hp.hpl.jena.rdf.model.Selector;
 import com.hp.hpl.jena.rdf.model.SimpleSelector;
 import com.hp.hpl.jena.rdf.model.Statement;
@@ -60,7 +61,7 @@ public class RdfParser {
 	
 	private String rdfDatasetFileName = null;
 	
-	private Model dataModel = null;
+	private Model outputModel = null;
 	
 	private OntModel ensModel = null;
 	
@@ -69,9 +70,13 @@ public class RdfParser {
 	private static Log log = LogFactory.getLog(RdfParser.class);
 		
 	
-	public RdfParser(Model model){	
+	public RdfParser(Model inmodel, Model outmodel){	
 		
-		_model = model ;
+		_model = inmodel ;
+		
+		outputModel = outmodel ;
+		
+		
 		
 		loadEnsOntology() ;
 
@@ -363,12 +368,7 @@ public class RdfParser {
 	public Set<RDFNode> getFullDistinctSubjects() {
 		Set<RDFNode> result = new HashSet<RDFNode>() ;
 		result = getDistinctSubjects() ;
-		Iterator<RDFNode> i = result.iterator() ;
-		while(i.hasNext()) {
-			RDFNode subject = i.next() ;
-			AttributesType attributesType = listSubjectProperties(subject) ;
-			
-		}
+		
 		return result ;
 	}
 	
@@ -392,39 +392,82 @@ public class RdfParser {
 		return duplicates ;
 	}
 	
+	/*
+	 * Changes the blank node identifier (local) with a URI (global). It removes
+	 * the blank node as subject or object in statements with the URI. The updated
+	 * statements are written into the output model while the input one is preserved.
+	 * No blank nodes are used in the output model for they would be changed each time
+	 * the model is updated. 
+	 */
+	public void globalizeIdentifier(RDFNode bnode, String uriReference) {
+		Model resultModel = null ;
+		
+		Selector selector = null ;
+		StmtIterator istmt = null ;
+				
+		List<Statement> updatedStmt = new ArrayList<Statement>() ;
+		
+		Resource resource = ResourceFactory.createResource(uriReference) ;
+		// remove the blank node as subject in statements
+		selector = new SimpleSelector(bnode.asResource(), null, (RDFNode) null) ;
+		istmt = _model.listStatements(selector) ;
+		while(istmt.hasNext()) {
+			Statement bnodeStmt = istmt.next() ;					
+			Statement stmt = ResourceFactory.createStatement(resource, bnodeStmt.getPredicate(), bnodeStmt.getObject() ) ;
+			updatedStmt.add(stmt) ;			
+		}
+		
+		// remove the blank node as object in statements if the subject is not 
+		// itself a blank node
+		selector = new SimpleSelector(null , null, bnode) ;
+		istmt = _model.listStatements(selector) ;
+		while(istmt.hasNext()) {
+			Statement bnodeStmt = istmt.next() ;	
+			if( ! bnodeStmt.getSubject().isAnon() ) {
+				Statement stmt = ResourceFactory.createStatement(bnode.asResource(), bnodeStmt.getPredicate(), resource ) ;
+				updatedStmt.add(stmt) ;
+			}
+		}
+		
+		
+		
+		outputModel.add( updatedStmt ) ;
+		
+	}
+	
 	
 	/*
 	 * Remove duplicates of the node passed as argument from the model. 
 	 */
-	public Model removeDuplicates(RDFNode subjectNode) {
-		Model outModel = null ;
-		
-		Set<RDFNode> duplicates = getDuplicateSubjects(subjectNode) ;
-		
-		Iterator<RDFNode> iduplicates = duplicates.iterator() ;
-		
-		log.info("Number of " + subjectNode + " duplicates: " + duplicates.size()) ;
-		
-		while(iduplicates.hasNext()) {
-			RDFNode subject = iduplicates.next() ;		
-			Resource subjResource = subject.asResource() ;
-			StmtIterator istmt = _model.listStatements(subjResource, null, (RDFNode) null) ;
-//			List stmtList = istmt.toList() ;
-//			Iterator<Statement> i = stmtList.iterator() ;
-//			while(i.hasNext()) {
-//				Statement statement = i.next() ;
-//				System.out.println(statement) ;
-//			}
-			outModel = _model.remove(istmt.toList()) ;
-						 			
-		}		
-		
-		return outModel ;
-	}
+//	public Model removeDuplicates(RDFNode subjectNode) {
+//		
+//		List<Statement> removedStmt = new ArrayList<Statement>() ;
+//		Set<RDFNode> duplicates = getDuplicateSubjects(subjectNode) ;
+//		
+//		Iterator<RDFNode> iduplicates = duplicates.iterator() ;
+//		
+//		log.info("Number of " + subjectNode + " duplicates: " + duplicates.size()) ;
+//		
+//		while(iduplicates.hasNext()) {
+//			RDFNode subject = iduplicates.next() ;		
+//			Resource subjResource = subject.asResource() ;
+//			Selector selector = new SimpleSelector(subjResource, null, (RDFNode) null) ;
+//			StmtIterator istmt = _model.listStatements(selector) ;
+//			while(istmt.hasNext()) {
+//				Statement stmt = istmt.next() ;
+//				removedStmt.add(stmt) ;
+//			}						
+//						 			
+//		}	
+//		
+//		
+//		return _model.remove(removedStmt) ;
+//	}
+	
 	/*
 	 * Compare two RDF subject nodes by their properties. If the subjects are of 
 	 * same type compare their properties. Two entities are the same if they have 
-	 * the same value for all their properties. Objects as blank nodes are not 
+	 * the same value for all their properties. Objects that are blank nodes are not 
 	 * taken into account in the comparison.
 	 */
 	public boolean compareSubjects(RDFNode subj1, RDFNode subj2) {
@@ -474,6 +517,73 @@ public class RdfParser {
 		}
 		return isSameEntity ;
 	}
+	
+	/*
+	 * Check if the subject node from the input model has the same properties values
+	 * of some of the entities stored in the output model. If so the RDF node is a duplicate
+	 * of another node.
+	 */
+	public boolean isEntity(RDFNode node) {
+		boolean isSamePropertyValue = false ;
+		boolean isEntity = true ;
+		Property typep = _model.getProperty(rdfNS + "type") ;
+		String typepUri = typep.getURI() ;
+		
+		//Check the subjects' type
+		RDFNode nodeType = node.asResource().getProperty(typep).getObject() ;
+		System.out.println("Node type: " + nodeType) ;
+		//Look for entities of the same type in the output model
+		Selector typeSelector = new SimpleSelector(null, typep, (RDFNode) null) ;
+		StmtIterator ires = outputModel.listStatements() ;
+		Set<Statement> resources = new HashSet<Statement>() ;
+		while(ires.hasNext()) {
+			Statement res = ires.next() ;
+			RDFNode entityType = res.getProperty(typep).getObject() ;
+			System.out.println(res.toString()) ;
+			if( nodeType.equals(entityType) ) {
+				resources.add(res) ;
+			}
+		}								
+			
+		// If there are not entities of the same type return false
+		if( resources.size() == 0 ) 
+			return false ;
+		
+		// There are entities of the same type as the node so let's see their
+		// properties. Only properties that have URI or literal values are
+		// taken into account
+		
+		Iterator<Statement> ientities = resources.iterator() ;
+		while(ientities.hasNext()) {
+			StmtIterator inodeProps = node.asResource().listProperties() ;		
+			while(inodeProps.hasNext()) {
+				Statement nodeStmt = inodeProps.next() ;
+				Property nodeProperty = nodeStmt.getPredicate() ;	
+				RDFNode nodeObject = nodeStmt.getObject() ;
+				Selector selector = new SimpleSelector(node.asResource(), nodeProperty, (RDFNode) null) ;
+				StmtIterator ientityProps = outputModel.listStatements(selector);
+				while(ientityProps.hasNext()) {								
+					Statement entityStmt = ientityProps.next() ;
+					Property entityProperty = entityStmt.getPredicate() ;
+					if( (nodeProperty.getURI()).equals(entityProperty.getURI()) ) {					
+						RDFNode entityObject = entityStmt.getObject() ;
+						if( (!nodeObject.isAnon()) && (!entityObject.isAnon()) ) {
+							if( ( nodeObject ).equals( entityObject.toString() ) ) 
+								isSamePropertyValue = true ;						
+							else
+								isSamePropertyValue = false ;
+							
+							isEntity = isEntity && isSamePropertyValue ;
+						}
+					}								
+					
+				}
+			}
+		}
+		
+		return isEntity ;
+	}
+	
 	/*
 	private void loadRdfDataset(){
 		

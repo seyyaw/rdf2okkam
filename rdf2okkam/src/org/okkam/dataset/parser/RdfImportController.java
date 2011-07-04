@@ -18,9 +18,11 @@ public class RdfImportController {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Model model = null ;
+		Model modelIn = null ;
 		
-		RdfParser parser = new RdfParser(model);
+		Model modelOut = null ;
+		
+		RdfParser parser = new RdfParser(modelIn, modelOut);
 		
 		ServiceClient client = new ServiceClient(new OkkamClient(confpath));
 		
