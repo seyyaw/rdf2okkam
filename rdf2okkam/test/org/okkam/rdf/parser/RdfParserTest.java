@@ -21,6 +21,7 @@ import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.RDFNode;
+import com.hp.hpl.jena.rdf.model.ResIterator;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Selector;
 import com.hp.hpl.jena.rdf.model.SimpleSelector;
@@ -30,6 +31,7 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 public class RdfParserTest {
 	
 	String fileName = "resources/anagrafe1.ttl";
+	String fileOutName = "resources/outputmodel.ttl";
 	RdfParser parser = null;
 	ModelLoader loader = null ;
 
@@ -37,7 +39,8 @@ public class RdfParserTest {
 	public void setUp() throws Exception {
 		loader = new ModelLoader() ;
 		loader.loadInputModel(fileName) ;
-		parser = new RdfParser(loader.getInputModel());
+		loader.loadOutputModel(fileOutName) ;
+		parser = new RdfParser(loader.getInputModel(), loader.getOutputModel() );
 	}
 	
 	@Test
@@ -140,6 +143,12 @@ public class RdfParserTest {
 	@Test
 	public void testListSubjects() {
 		System.out.println("---------------Test listSubjects()----------------") ;
+		ResIterator ires = loader.getInputModel().listSubjects() ;
+		while(ires.hasNext()) {
+			Resource res = ires.next() ;
+			System.out.println("Subject resourec: " + res.getURI()) ;
+		}
+		System.out.println() ;
 		List<RDFNode> resources = parser.listSubjects() ;
 		Iterator<RDFNode> i = resources.iterator() ;
 		int counter = 0 ;
@@ -170,6 +179,7 @@ public class RdfParserTest {
 	@Test
 	public void testGetDistinctSubjects() {
 		System.out.println("---------------Test getDistincSubjects()----------------") ;
+		
 		Set<RDFNode> subjects = parser.getDistinctSubjects() ;
 		System.out.println("Number of subjects: " + subjects.size()) ;		
 		
@@ -180,6 +190,15 @@ public class RdfParserTest {
 			System.out.println("subject: " + subject.toString()) ;
 		}
 		
+	}
+	
+	@Test
+	public void testGetFullDistinctSubjects() {
+		System.out.println("---------------Test getFullDistincSubjects()----------------") ;
+		Set<RDFNode> subjects = parser.getFullDistinctSubjects() ;
+		for(RDFNode subject : subjects) {
+			System.out.println(subject.toString()) ;
+		}
 	}
 	
 	@Test 
@@ -291,19 +310,54 @@ public class RdfParserTest {
 		
 	}
 	
+//	@Test
+//	public void testRemoveDuplicates() {
+//		System.out.println("---------------Test removeDuplicateS()----------------") ;		
+//		RDFNode subj1 = getSubject() ;
+//		Model resultModel = parser.removeDuplicates(subj1) ;
+//		resultModel.write(System.out, "TURTLE") ;
+//		
+//	}
+	
 	@Test
-	public void testRemoveDuplicates() {
-		System.out.println("---------------Test removeDuplicateS()----------------") ;
+	public void testGlobalizeIdentifier() {
+		System.out.println("---------------Test globalizeIdentifier()----------------") ;
+		Set<RDFNode> bnodes = parser.getNotStrictSubjects() ;
+		Iterator<RDFNode> inode = bnodes.iterator() ;
+		while (inode.hasNext()) {
+			RDFNode bnode = inode.next() ;			
+			int idlength = bnode.toString().length() ;
+			String uri = "http://okkam.org/ens/" + bnode.toString().substring(idlength - 4) ;
+			System.out.println("Bnode: " + bnode.toString() + " URI: " + uri ) ;
+			parser.globalizeIdentifier(bnode, uri) ;
+		}
+		
+		System.out.println("---updated model---") ;		
+		loader.getOutputModel().write(System.out, "TURTLE") ;			
+		
+	}
+	
+	@Test 
+	public void testIsEntity() {
+		RDFNode node = getSubject() ;				
+		
+//		if(parser.isEntity(node)) 
+//			System.out.println(node + " is already a recognized entity.") ;
+//		else 
+//			System.out.println(node + " is not a recognized entity.") ;
+		
+		loader.writeOutputModel() ;
+	}
+	
+	private RDFNode getSubject() {
+		RDFNode subject = null ;		
 		final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#" ; 
 		Property subj1Predicate = loader.getInputModel().getProperty(ensNS + "location_name") ;		
 		Selector selector1 = new SimpleSelector(null, subj1Predicate, "FOLGARIA" ) ;
 		StmtIterator isubj1 = loader.getInputModel().listStatements(selector1) ;
 		Statement stmt = isubj1.next() ;
-		System.out.println("Statement: " + stmt ) ;
-		RDFNode subj1 = stmt.getSubject() ;
-		Model resultModel = parser.removeDuplicates(subj1) ;
-		resultModel.write(System.out, "TURTLE") ;
-		
+		subject = stmt.getSubject() ;
+		return subject ;
 	}
 
 }
