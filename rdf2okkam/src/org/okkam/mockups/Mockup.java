@@ -31,7 +31,7 @@ import com.hp.hpl.jena.query.*;
 public class Mockup {
 	static Model model = null;
 	static Model model2 = null;
-	static String inputFileName = "resources/anagrafe1.ttl";
+	static String inputFileName = "resources/anagrafe.ttl";
 	static String inputFileName2="resources/mockup.ttl";
 	static String inputFileName3="resources/test.ttl";
 	static String inputFileName4="resources/test2.ttl";
