@@ -22,7 +22,7 @@ import org.okkam.model.ModelLoader;
 public class GetSubjects extends Object {
 
 	static Model model = null;
-	static String inputFileName = "resources/anagrafe1.ttl";
+	static String inputFileName = "resources/anagrafe.ttl";
 	static int size=0;
 	
 	private static Log log = LogFactory.getLog(GetSubjects.class);
