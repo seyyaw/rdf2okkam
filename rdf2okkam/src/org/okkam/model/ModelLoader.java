@@ -1,6 +1,10 @@
 package org.okkam.model;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -12,6 +16,7 @@ import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.ontology.Ontology;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
@@ -32,13 +37,20 @@ public class ModelLoader {
 	
 	private OntModel ensModel = null;
 	
+	private String _inputModelFileName = null ;
+	
+	private String _outputModelFileName = null ;
+	
 	private String baseUri = null;
 	
 	private static Log log = LogFactory.getLog(ModelLoader.class);
 	
 	public void loadInputModel(String fileName){
 		
-		 // use the FileManager to find the input file
+		
+		_inputModelFileName = fileName ;
+		
+		// use the FileManager to find the input file
 		InputStream in = FileManager.get().open( fileName );
 		if (in == null) {		    
 			log.error("File: " + fileName + " not found");
@@ -46,14 +58,43 @@ public class ModelLoader {
 		}
 		
 		// Create the input model. Models different from the default one import also the 
-		// rdf and rdf-schema axioms. 
+		// rdf and rdf-schema axioms. The input model usually comes with blank nodes. 
 		inputModel = ModelFactory.createDefaultModel();
 		
 		// read the RDF/TURTLE file
 		inputModel.read(in, baseUri, "TURTLE");
 		
-		// create the output model
-		outputModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RDFS_INF);				
+		
+		
+	}
+	
+	public void loadOutputModel(String fileName){
+		
+		_outputModelFileName = fileName ;
+		 // use the FileManager to find the input file
+		InputStream out = FileManager.get().open( fileName );
+		if (out == null) {		    
+			log.error("File: " + fileName + " not found");
+			System.exit(0);
+		}
+		
+		// Create the input model. Models different from the default one import also the 
+		// rdf and rdf-schema axioms. The input model usually comes with blank nodes. 
+		outputModel = ModelFactory.createDefaultModel();
+		
+		// read the RDF/TURTLE file
+		outputModel.read(out, baseUri, "TURTLE");
+		
+		// Create the output model. No blank nodes allowed here.
+		outputModel = ModelFactory.createDefaultModel() ;	
+		
+		PrefixMapping prefix = PrefixMapping.Factory.create() ;
+		String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#" ;
+		String ensPrefix = "ens" ;
+		
+		prefix.setNsPrefix(ensPrefix, ensNS) ;
+		
+		outputModel.setNsPrefixes(prefix) ;
 		
 	}
 	
@@ -63,6 +104,22 @@ public class ModelLoader {
 	
 	public Model getOutputModel() {
 		return outputModel ;
+	}
+	
+	public void writeOutputModel() {
+		
+		OutputStream out = null;
+		try {
+			out = new FileOutputStream(new File(_outputModelFileName));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			log.error("File: " + _outputModelFileName + " not found");
+			System.exit(0);
+			e.printStackTrace();
+		}
+		
+		outputModel.write(out) ;
+		
 	}
 	
 	private void loadEnsOntology(){
