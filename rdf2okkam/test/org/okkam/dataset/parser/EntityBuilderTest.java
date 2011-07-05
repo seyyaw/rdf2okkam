@@ -69,8 +69,7 @@ public class EntityBuilderTest {
 	@Test
 	public void testBuildEntity() {
 		log.info("----------testGetProperties--------------") ;
-		Resource locationType = ResourceFactory.createResource( ENS_LOCATION ) ;
-		Property rdfType = ResourceFactory.createProperty(RDF_TYPE) ;
+		
 		Set<RDFNode> distSubjs = global.getDistinctSubjects() ;
 		
 		Iterator<RDFNode> idistSubj = distSubjs.iterator() ;

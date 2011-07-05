@@ -15,6 +15,8 @@ import org.okkam.client.data.AttributesType;
 import org.okkam.dataset.parser.RdfParser;
 import org.okkam.exception.SameNodeException;
 import org.okkam.model.ModelLoader;
+import org.okkam.service.client.EnsQuery;
+import org.openjena.atlas.logging.Log;
 
 import com.hp.hpl.jena.ontology.DatatypeProperty;
 import com.hp.hpl.jena.ontology.OntClass;
@@ -34,6 +36,7 @@ public class RdfParserTest {
 	String fileOutName = "resources/outputmodel.ttl";
 	RdfParser parser = null;
 	ModelLoader loader = null ;
+	EnsQuery query = null ;
 
 	@Before
 	public void setUp() throws Exception {
@@ -41,6 +44,7 @@ public class RdfParserTest {
 		loader.loadInputModel(fileName) ;
 		loader.loadOutputModel(fileOutName) ;
 		parser = new RdfParser(loader.getInputModel(), loader.getOutputModel() );
+		query = new EnsQuery() ;
 	}
 	
 	@Test
@@ -106,6 +110,7 @@ public class RdfParserTest {
 			RDFNode subjectNode = isub.next() ;			
 			System.out.println("Attributes for : " + subjectNode.toString());
 			AttributesType attributesType = parser.listSubjectProperties(subjectNode);
+			System.out.println( query.getQuery(attributesType, "semantic type") );
 			List<AttributeType> attributes = attributesType.getAttributes();
 			Iterator<AttributeType> i = attributes.iterator();
 			while(i.hasNext()){
