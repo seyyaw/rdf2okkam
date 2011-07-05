@@ -199,7 +199,7 @@ public class ServiceClient {
 	/*
 	 * Search for an entity by its query string
 	 */
-	public List findEntity(String queryId, String query) {
+	public List<QueryResponse> findEntity(String query) {
 		
 		ArrayList<QueryResponse> candidates = new ArrayList<QueryResponse>();
 		
@@ -224,6 +224,7 @@ public class ServiceClient {
 				types.add(type);
 				result.setType(types);
 			}
+			
 			AttributesType attributesType = profile.getAttributes();
 			List<AttributeType> attributeTypeList = attributesType.getAttributes();
 			Iterator<AttributeType> attributeTypeIterator = attributeTypeList.iterator();
@@ -249,7 +250,8 @@ public class ServiceClient {
 		return candidates;
 	}
 	
-	public Map findEntityByOkkamId(String okkamid){
+	public Map<String, String> findEntityByOkkamId(String okkamid){
+		HashMap<String, String> result = new HashMap<String, String>();
 		String semanticType = "";
 		Entity entity = _okkamClient.getEntity(okkamid);
 		ProfileType profile = entity.getProfile();
@@ -257,18 +259,18 @@ public class ServiceClient {
 		
 		AttributesType attributes = profile.getAttributes();
 		List<AttributeType> attributeList = attributes.getAttributes();
-		HashMap<String, String> attributeMap = new HashMap<String, String>();
-		attributeMap.put("semanticType", semanticType);
+		
+		result.put("semanticType", semanticType);
 		Iterator<AttributeType> i = attributeList.iterator();
 		while(i.hasNext()){
 			AttributeType attribute = i.next();
 			QName q = attribute.getName();
 			String attrName = q.getLocalPart();
 			String attrValue = attribute.getValue();
-			attributeMap.put(attrName, attrValue);
+			result.put(attrName, attrValue);
 		}
 		
-		return attributeMap;
+		return result;
 		
 		
 	}
