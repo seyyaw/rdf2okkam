@@ -43,7 +43,7 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
-public class RdfParser {
+public class RdfUtil {
 	
 	private final String ensOntology = "resources/ENS-core-vocabulary.owl";
 	
@@ -69,10 +69,10 @@ public class RdfParser {
 	
 	private Model _model = null ;
 	
-	private static Log log = LogFactory.getLog(RdfParser.class);
+	private static Log log = LogFactory.getLog(RdfUtil.class);
 		
 	
-	public RdfParser(Model inmodel, Model outmodel){	
+	public RdfUtil(Model inmodel, Model outmodel){	
 		
 		_model = inmodel ;
 		
