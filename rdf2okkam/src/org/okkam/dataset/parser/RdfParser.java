@@ -57,6 +57,8 @@ public class RdfParser {
 	
 	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	
+	private final String RDF_PREFIX = "rdf" ;
+	
 	private String baseUri = null;
 	
 	private String rdfDatasetFileName = null;
@@ -138,9 +140,17 @@ public class RdfParser {
 			if( taxNS.equals( predicate.getNameSpace() )){
 				prefix = TAX_PREFIX ;
 			}
+			if( rdfNS.equals( predicate.getNameSpace() )){
+				prefix = RDF_PREFIX ;
+			}
 			QName name = new QName(predicate.getURI(), predicate.getLocalName() , prefix);
 			attribute.setName(name);			
-			String value = stmt.getObject().toString();
+			RDFNode object = stmt.getObject() ;
+			String value = "" ;
+			if(object.isLiteral())
+				value = object.asLiteral().getString() ;
+			if(object.isResource())
+				value = object.asResource().getLocalName() ;
 			//System.out.println("value: " + value) ;
 			attribute.setValue(value);
 			

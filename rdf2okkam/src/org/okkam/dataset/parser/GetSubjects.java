@@ -19,7 +19,7 @@ import org.okkam.model.ModelLoader;
  * RDF statement.
  * 
  */
-public class GetSubjects extends Object {
+public class GetSubjects {
 
 	static Model model = null;
 	static String inputFileName = "resources/anagrafe.ttl";
@@ -94,7 +94,7 @@ public class GetSubjects extends Object {
 		model.read(in, null, "TURTLE");
 	}
 //get all blank nodes from the RDF dataset
-	public static Set getSubjects(String filePath) {
+	public static Set<Resource> getSubjects(String filePath) {
 		// select all the subjects with literal or uri value
 		StmtIterator iter = model.listStatements();
 		Set subjects = new HashSet();

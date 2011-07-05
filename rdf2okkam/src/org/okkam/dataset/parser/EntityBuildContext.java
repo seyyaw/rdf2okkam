@@ -36,7 +36,7 @@ public class EntityBuildContext {
 			attrsType = strategy.getProperties( subjectNode );
 		}
 		else {
-			log.error("Set the entity building mode.");
+			log.error("Set the entity type: person, location, event, artifact_type, artifact_instance, other.");
 		}
 		
 		return attrsType ;
