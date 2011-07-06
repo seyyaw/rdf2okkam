@@ -5,6 +5,7 @@ import org.okkam.dataset.parser.GetSubjects;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Map;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -117,8 +118,8 @@ public class Mockup {
 				String tempobject=tempstatment.getObject().toString();
 				String tempsubject=tempstatment.getSubject().toString();
 				if(temproperty.equals(property.toString())&&tempobject.equals(object)){
-				blanknodesubjects[i][0]=tempsubject;
-				blanknodesubjects[i][1]=subject;
+				blanknodesubjects[i][0]=tempsubject;//bla
+				blanknodesubjects[i][1]=subject;//okk
 				}
 			}
 		}
@@ -157,6 +158,19 @@ public class Mockup {
 			}
 			return newstatments;
 			
+	}
+	
+	/**
+	 * A function that will modify the RDF dataset based on the retrieved Okkam
+	 * ID from the ENS Repository
+	 * 
+	 * @throws FileNotFoundException
+	 * @throws InterruptedException 
+	 */
+	public static Model modifyRDF(Map bnodeOkkamId) {
+		Model result = null ;
+		
+		return result ;		
 	}
 	public static void loadmodify(ArrayList newstatments,String inputfile, File outrdf) throws FileNotFoundException{	
 		loadModel(inputfile);
