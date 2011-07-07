@@ -2,7 +2,7 @@ package org.okkam.dataset.parser;
 
 import static org.junit.Assert.*;
 
-import it.okkam.rdf2okkam.parser.EntityBuilder;
+import it.okkam.rdf2okkam.ens.EntityBuilder;
 import it.okkam.rdf2okkam.parser.Globalizer;
 
 import java.io.InputStream;

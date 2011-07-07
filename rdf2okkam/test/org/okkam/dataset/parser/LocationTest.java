@@ -2,8 +2,8 @@ package org.okkam.dataset.parser;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.ens.Location;
 import it.okkam.rdf2okkam.parser.Globalizer;
-import it.okkam.rdf2okkam.parser.Location;
 
 import java.io.InputStream;
 import java.util.Iterator;
