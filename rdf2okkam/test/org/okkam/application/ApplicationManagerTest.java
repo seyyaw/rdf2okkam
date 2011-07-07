@@ -3,6 +3,7 @@ package org.okkam.application;
 import static org.junit.Assert.*;
 
 import it.okkam.rdf2okkam.controller.ApplicationController;
+import it.okkam.rdf2okkam.model.ModelUtil;
 import it.okkam.rdf2okkam.parser.Globalizer;
 
 import java.io.InputStream;
@@ -21,7 +22,6 @@ import org.junit.Test;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
 import org.okkam.dataset.parser.EntityBuilderTest;
-import org.okkam.mockups.Mockup;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -86,7 +86,7 @@ public class ApplicationManagerTest {
 			log.info("New entity's okkam id: " + okkamid) ;		
 		}
 			
-		Mockup mockup = new Mockup() ;
+		ModelUtil mockup = new ModelUtil() ;
 		
 		Model output = mockup.modifyRDF(bnodeOkkamId) ;
 		

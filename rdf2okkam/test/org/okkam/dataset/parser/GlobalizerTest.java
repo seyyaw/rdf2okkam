@@ -2,6 +2,7 @@ package org.okkam.dataset.parser;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.model.ModelLoader;
 import it.okkam.rdf2okkam.parser.Globalizer;
 
 import java.io.FileNotFoundException;
@@ -14,7 +15,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
 import org.junit.Test;
-import org.okkam.model.ModelLoader;
 
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.Model;

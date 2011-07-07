@@ -2,6 +2,7 @@ package org.okkam.mockups;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.model.ModelUtil;
 import it.okkam.rdf2okkam.parser.GetSubjects;
 
 import java.io.FileNotFoundException;
@@ -15,14 +16,14 @@ import com.hp.hpl.jena.rdf.model.Model;
 public class MockupTest {
 	
 	Model model = null ;
-	Mockup parser = null ;
+	ModelUtil parser = null ;
 	GetSubjects subjects = null ;
 	String inputFileName = "resources/anagrafe1.ttl";
 	String[][] statment = null ;
 	
 	@Before
 	public void setUp() throws Exception {
-		parser = new Mockup() ;
+		parser = new ModelUtil() ;
 		parser.loadModel(inputFileName) ;
 		subjects = new GetSubjects() ;
 		subjects.loadModel(inputFileName) ;

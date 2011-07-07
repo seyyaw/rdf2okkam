@@ -3,6 +3,7 @@ package org.okkam.rdf.parser;
 import static org.junit.Assert.*;
 
 import it.okkam.rdf2okkam.exception.SameNodeException;
+import it.okkam.rdf2okkam.model.ModelLoader;
 import it.okkam.rdf2okkam.parser.RdfUtil;
 
 import java.util.Iterator;
@@ -15,7 +16,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
-import org.okkam.model.ModelLoader;
 import org.okkam.service.client.EnsQuery;
 import org.openjena.atlas.logging.Log;
 
