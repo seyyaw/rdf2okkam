@@ -2,6 +2,10 @@ package org.okkam.ens.client;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.ens.client.EnsQuery;
+import it.okkam.rdf2okkam.ens.client.OkkamClient;
+import it.okkam.rdf2okkam.ens.client.QueryResponse;
+import it.okkam.rdf2okkam.ens.client.ServiceClient;
 import it.okkam.rdf2okkam.model.ModelLoader;
 import it.okkam.rdf2okkam.parser.RdfUtil;
 
@@ -14,10 +18,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributesType;
 
-import org.okkam.service.client.EnsQuery;
-import org.okkam.service.client.OkkamClient;
-import org.okkam.service.client.QueryResponse;
-import org.okkam.service.client.ServiceClient;
 
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.RDFNode;
