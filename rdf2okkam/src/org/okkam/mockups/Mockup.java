@@ -3,8 +3,10 @@ package org.okkam.mockups;
 
 
 import it.okkam.rdf2okkam.parser.GetSubjects;
+import org.okkam.model.ModelLoader;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.io.File;
@@ -38,6 +40,8 @@ public class Mockup {
 	static String inputFileName3="resources/test.ttl";
 	static String inputFileName4="resources/test2.ttl";
 	
+	static ModelLoader modelLoader=new ModelLoader();
+	
 	static String inputFileName5="resources/test3.ttl";
 	
 	public static void main(String[] args) throws Exception {
@@ -45,8 +49,10 @@ public class Mockup {
 		GetSubjects.loadModel(inputFileName);
 		loadModel(inputFileName);		
 		Iterator it = GetSubjects.getSubjects(inputFileName).iterator();
-		ArrayList modstatments=modifyRDF(it);
-		loadmodify(modstatments,inputFileName3,outrdf);
+		String[][] statment = GetSubjects.getProperties(it);
+		//ArrayList modstatments=modifyRDF(it);
+		//loadmodify(modstatments,inputFileName3,outrdf);
+		
 	}
 	/**
 	 * This Function is Used to get Okkam ID from the ENS repository and return
@@ -168,9 +174,58 @@ public class Mockup {
 	 * @throws FileNotFoundException
 	 * @throws InterruptedException 
 	 */
-	public static Model modifyRDF(Map bnodeOkkamId) {
+	public static Model modifyRDF(Map<String,String> bnodeOkkamId) {
 		Model result = null ;
-		
+		Model model=null;
+		modelLoader.loadOutputModel(inputFileName3);
+		modelLoader.loadInputModel(inputFileName);
+		result=modelLoader.getOutputModel();
+		model=modelLoader.getInputModel();
+		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator();
+		ArrayList newstatments=new ArrayList();
+		while(okkamiIdIterator.hasNext()){
+			String tempsubject=okkamiIdIterator.next().toString();
+			String subject=bnodeOkkamId.get(tempsubject);
+			Resource subj=model.createResource(subject);
+			StmtIterator iter = model.listStatements();
+					while(iter.hasNext()){
+						Statement tmpstmt=iter.next();
+						String tmproperty=tmpstmt.getPredicate().toString();
+						RDFNode object=tmpstmt.getObject();
+						String tmpsubject=tmpstmt.getSubject().toString();
+						Resource tmpsubj=model.createResource(tmpsubject);
+						if(tempsubject.equals(tmpsubject)&&!object.isAnon()){
+							Property tmpproperty=model.createProperty(tmproperty);
+							Statement newstmt=ResourceFactory.createStatement(subj, tmpproperty, object);
+							newstatments.add(newstmt);
+							}
+						
+					}
+		}
+		//if a blank node is already a subject of the other statement, get it out.
+		okkamiIdIterator=bnodeOkkamId.keySet().iterator();
+		while(okkamiIdIterator.hasNext()){
+			String tempsubject=okkamiIdIterator.next().toString();
+			String subject=bnodeOkkamId.get(tempsubject);
+			Resource subj=model.createResource(subject);
+			StmtIterator iter = model.listStatements();
+					while(iter.hasNext()){
+						Statement tmpstmt=iter.next();
+						String tmproperty=tmpstmt.getPredicate().toString();
+						RDFNode object=tmpstmt.getObject();
+						String tmpsubject=tmpstmt.getSubject().toString();
+						Resource tmpsubj=model.createResource(tmpsubject);
+						 if(tempsubject.equals(object.toString())){
+								if(tempsubject==tmpsubject){
+									tmpsubj=model.createResource(subject);//getting the correct subject of a blank node 
+									Property tmpproperty=model.createProperty(tmproperty);
+									Statement newstmt=ResourceFactory.createStatement(tmpsubj, tmpproperty, subj);
+									newstatments.add(newstmt);
+								}							
+						}
+					}
+			}
+		result.add(newstatments);
 		return result ;		
 	}
 	public static void loadmodify(ArrayList newstatments,String inputfile, File outrdf) throws FileNotFoundException{	
