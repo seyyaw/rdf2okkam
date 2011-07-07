@@ -43,7 +43,7 @@ public class Tax2EnsMapper {
 	 * @throws FileNotFoundException 
 	 */
 	public static void main(String[] args) throws FileNotFoundException {
-		String onto1 = "resources/anagrafe1.ttl";		
+		String onto1 = "resources/anagrafe.ttl";		
 		String baseUri = null ;
 		String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
 		String taxNS = "http://localhost/TaxOntology.owl#";
