@@ -7,7 +7,7 @@
 [rule2: (?a rdf:type tax:LuogoNascita) (?a tax:haNome ?b) -> (?a ens:name ?b)]
 [rule3: (?x rdf:type tax:LuogoNascita) -> (?x rdf:type ens:location)]
 [rule4: (?x rdf:type tax:LuogoResidenza) -> (?x rdf:type ens:location)]
-[rule3: (?x rdf:type tax:Persona_Fisica) -> (?x rdf:type ens:person)]
+[rule5: (?x rdf:type tax:Persona_Fisica) -> (?x rdf:type ens:person)]
 
 
 
