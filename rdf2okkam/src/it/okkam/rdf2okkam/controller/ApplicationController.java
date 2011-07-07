@@ -1,8 +1,9 @@
 package it.okkam.rdf2okkam.controller;
 
+import it.okkam.rdf2okkam.parser.EntityBuilder;
+
 import org.okkam.client.data.AttributesType;
 import org.okkam.client.data.ProfileType;
-import org.okkam.dataset.parser.EntityBuilder;
 import org.okkam.service.client.OkkamClient;
 import org.okkam.service.client.ServiceClient;
 
