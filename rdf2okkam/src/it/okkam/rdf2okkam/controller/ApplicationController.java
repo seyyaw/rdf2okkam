@@ -3,6 +3,7 @@ package it.okkam.rdf2okkam.controller;
 import it.okkam.rdf2okkam.ens.EntityBuilder;
 import it.okkam.rdf2okkam.ens.client.OkkamClient;
 import it.okkam.rdf2okkam.ens.client.ServiceClient;
+import it.okkam.rdf2okkam.model.ModelLoader;
 
 import org.okkam.client.data.AttributesType;
 import org.okkam.client.data.ProfileType;
@@ -11,6 +12,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
 public class ApplicationController {
+
 	
 	private final String confpath = "conf";
 	
@@ -22,9 +24,12 @@ public class ApplicationController {
 	
 	ServiceClient service = null ;
 	
-	public ApplicationController(Model model) {
-		_model = model ;
-		builder = new EntityBuilder( _model ) ;
+	ModelLoader loader = null ;
+	
+	public ApplicationController() {
+		
+		loader = ModelLoader.getInstance() ;
+		builder = new EntityBuilder( loader.getInputModel() ) ;
 		okkam = new OkkamClient( confpath ) ;
 		service = new ServiceClient( okkam ) ;
 	}
