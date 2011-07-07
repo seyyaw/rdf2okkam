@@ -2,6 +2,9 @@ package it.okkam.rdf2okkam.parser;
 
 import com.hp.hpl.jena.rdf.model.*;
 import com.hp.hpl.jena.util.FileManager;
+
+import it.okkam.rdf2okkam.model.ModelLoader;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +15,6 @@ import java.util.Set;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.okkam.model.ModelLoader;
 
 /**
  * This program returns all unique statements for those subjects which have literal or URI value for each
