@@ -39,16 +39,21 @@ public class ModelUtil {
 	static String inputFileName3="resources/test.ttl";
 	static String inputFileName4="resources/test2.ttl";
 	
-	static ModelLoader modelLoader = ModelLoader.getInstance() ;
-	
 	static String inputFileName5="resources/test3.ttl";
 	
+	static ModelLoader loader = null ;
+	static GetSubjects getsubjects;
 	public static void main(String[] args) throws Exception {
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
 		//File outrdf = new File(inputFileName3);
 		//GetSubjects.loadModel(inputFileName);
-		//loadModel(inputFileName);		
-		//Iterator it = GetSubjects.getSubjects(inputFileName).iterator();
-		//String[][] statment = GetSubjects.getProperties(it);
+		//loadModel(inputFileName);	
+		 getsubjects=new GetSubjects();
+		Iterator it = getsubjects.getSubjects(inputFileName).iterator();
+	//	String[][] statment = GetSubjects.getProperties(it);
+		Map<String,String> bnodeokkamid=bnodeOkkamId(it);
+		modifyRDF(bnodeokkamid);
 		//ArrayList modstatments=modifyRDF(it);
 		//loadmodify(modstatments,inputFileName3,outrdf);
 		
@@ -74,7 +79,7 @@ public class ModelUtil {
 							+ "WHERE {?okkamid <"
 							+ property + "> " + object + " . }");
 			InputStream in = new FileInputStream(new File(
-					"resources/mockup.ttl"));
+					"resources/test/mockup.ttl"));
 			Model model = ModelFactory.createDefaultModel();
 			model.read(in, null, "TURTLE");
 			QueryExecution qe = QueryExecutionFactory.create(SPARQL_QUERY,
@@ -106,6 +111,29 @@ public class ModelUtil {
 	 * @throws FileNotFoundException
 	 * @throws InterruptedException 
 	 */
+	public static Map<String,String> bnodeOkkamId(Iterator it) throws FileNotFoundException{
+		String[][] statment = getsubjects.getProperties(it);
+		String[][] stmt = getOkkamId(statment);
+		int size=getOkkamId(statment).length;
+		Map<String, String> bnodeokamid=new HashMap<String, String>();
+		for (int i = 0; i < size; i++) {
+			String subject = stmt[i][0];
+			String predicate = stmt[i][1];
+			String object = stmt[i][2];
+			Property property=model.createProperty(predicate);
+			StmtIterator iter = model.listStatements();
+			while(iter.hasNext()){
+				Statement tempstatment=iter.next();
+				String temproperty=tempstatment.getPredicate().toString();
+				String tempobject=tempstatment.getObject().toString();
+				String tempsubject=tempstatment.getSubject().toString();
+				if(temproperty.equals(property.toString())&&tempobject.equals(object)){
+				bnodeokamid.put(tempsubject, subject);//okk
+				}
+			}
+		}
+		return bnodeokamid;
+	}
 	public static ArrayList modifyRDF(Iterator it) throws FileNotFoundException, InterruptedException { 
 		//get subjects to be modified, okkam ID and thier corresponding BLANK NODEs
 		String[][] statment = GetSubjects.getProperties(it);
@@ -175,9 +203,7 @@ public class ModelUtil {
 	 */
 	public static Model modifyRDF(Map<String,String> bnodeOkkamId) {
 		Model result = null ;
-		Model model=null;
-		result=modelLoader.getOutputModel();
-		model=modelLoader.getInputModel();
+		result=loader.getOutputModel();
 		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator();
 		ArrayList newstatments=new ArrayList();
 		while(okkamiIdIterator.hasNext()){
@@ -191,7 +217,10 @@ public class ModelUtil {
 						RDFNode object=tmpstmt.getObject();
 						String tmpsubject=tmpstmt.getSubject().toString();
 						Resource tmpsubj=model.createResource(tmpsubject);
-						if(tempsubject.equals(tmpsubject)&&!object.isAnon()){
+						/*
+						 * replace all blank node subjects with okkam id.
+						 */
+						if(tempsubject.equals(tmpsubject)){
 							Property tmpproperty=model.createProperty(tmproperty);
 							Statement newstmt=ResourceFactory.createStatement(subj, tmpproperty, object);
 							newstatments.add(newstmt);
@@ -199,30 +228,36 @@ public class ModelUtil {
 						
 					}
 		}
-		//if a blank node is already a subject of the other statement, get it out.
+		/*
+		 * Create a temporary model that is used to navigate all blank node objects and
+		 * replace with thier corresponding okkam id
+		 */
+		Model tempmodel = ModelFactory.createDefaultModel();
+		tempmodel.add(newstatments);
 		okkamiIdIterator=bnodeOkkamId.keySet().iterator();
 		while(okkamiIdIterator.hasNext()){
 			String tempsubject=okkamiIdIterator.next().toString();
 			String subject=bnodeOkkamId.get(tempsubject);
-			Resource subj=model.createResource(subject);
-			StmtIterator iter = model.listStatements();
+			Resource subj=tempmodel.createResource(subject);
+			StmtIterator iter = tempmodel.listStatements();
 					while(iter.hasNext()){
 						Statement tmpstmt=iter.next();
 						String tmproperty=tmpstmt.getPredicate().toString();
 						RDFNode object=tmpstmt.getObject();
 						String tmpsubject=tmpstmt.getSubject().toString();
-						Resource tmpsubj=model.createResource(tmpsubject);
+						Resource tmpsubj=tempmodel.createResource(tmpsubject);
+						RDFNode checkAnonSubj=tmpstmt.getSubject();
 						 if(tempsubject.equals(object.toString())){
-								if(tempsubject==tmpsubject){
-									tmpsubj=model.createResource(subject);//getting the correct subject of a blank node 
-									Property tmpproperty=model.createProperty(tmproperty);
-									Statement newstmt=ResourceFactory.createStatement(tmpsubj, tmpproperty, subj);
-									newstatments.add(newstmt);
-								}							
+							 newstatments.remove(tmpstmt);
+							 Property tmpproperty=tempmodel.createProperty(tmproperty);
+							 Statement newstmt=ResourceFactory.createStatement(tmpsubj, tmpproperty, subj);
+							newstatments.add(newstmt);
+								//}							
 						}
 					}
 			}
 		result.add(newstatments);
+		result.write(System.out,"TTL");
 		return result ;		
 	}
 	public static void loadmodify(ArrayList newstatments,String inputfile, File outrdf) throws FileNotFoundException{	
