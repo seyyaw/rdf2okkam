@@ -80,7 +80,7 @@ public class ServiceClient {
 	 * Creates a new entity in the ENS and returns the identifier. The boolean argument enable the client 
 	 * to create a new entity also in presence of entities that are considered the same by the ENS (duplicates).  
 	 */
-	public String createNewEntity(String entityType, AttributesType attributeList, boolean ignoreDuplicates) {
+	public String createNewEntity(String semanticType, AttributesType attributeList, boolean ignoreDuplicates) {
 		
 		log.info("Creating a new entity");
 		
@@ -98,9 +98,6 @@ public class ServiceClient {
 		
 		// CREATE AN EXTERNAL REFERENCE SET (IF ANY)
 		ReferencesType refs = new ReferencesType();  
-
-		// SET THE SEMANTIC TYPE OF THE ENTITY 		
-		String semantic_type = entityType; 
 		
 		
 		if (attributeList.getAttributes().size() > 0) {
@@ -111,12 +108,12 @@ public class ServiceClient {
 
 		}
 		 
+		// SET THE SEMANTIC TYPE OF THE ENTITY 	
+		if ( semanticType != null && ! "".equals(semanticType) ) {
 
-		if ( entityType != null && ! "".equals(semantic_type) ) {
+		    log.info("Adding semantic type: " + semanticType);
 
-		    log.info("Adding semantic type");
-
-		    profile.setSemanticType(semantic_type);
+		    profile.setSemanticType(semanticType);
 
 		}
 		
