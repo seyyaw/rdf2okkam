@@ -2,6 +2,8 @@ package org.okkam.application;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.controller.ApplicationController;
+
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -37,7 +39,7 @@ public class ApplicationManagerTest {
 	String baseUri = null ;
 	Model _model = null ;
 	Model _outModel = null ;
-	ApplicationManager manager = null ;
+	ApplicationController manager = null ;
 	Globalizer global = null ;
 	
 	private static Log log = LogFactory.getLog(ApplicationManagerTest.class);
@@ -70,7 +72,7 @@ public class ApplicationManagerTest {
 	public void testCreateEntity() {
 		log.info("----------testCreateEntity--------------") ;
 		
-		manager = new ApplicationManager(_model) ;
+		manager = new ApplicationController(_model) ;
 		
 		Set<RDFNode> distSubjs = global.getDistinctSubjects() ;
 		Map<String, String> bnodeOkkamId = new HashMap<String, String>() ;
