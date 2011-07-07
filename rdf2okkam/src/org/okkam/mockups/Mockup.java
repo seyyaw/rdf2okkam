@@ -1,7 +1,8 @@
 package org.okkam.mockups;
 
 
-import org.okkam.dataset.parser.GetSubjects;
+
+import it.okkam.rdf2okkam.parser.GetSubjects;
 
 import java.util.ArrayList;
 import java.util.Iterator;
