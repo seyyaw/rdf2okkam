@@ -15,6 +15,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
+import org.okkam.client.data.ProfileType;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -76,15 +77,15 @@ public class EntityBuilderTest {
 		while(idistSubj.hasNext()) {
 			RDFNode distSubj = idistSubj.next() ;
 			
-			AttributesType attrsTypes = null;
-			attrsTypes = builder.buildEntity(distSubj);
-			List<AttributeType> attrTypes = attrsTypes.getAttributes() ;
+			ProfileType profile = null;
+			profile = builder.buildEntity(distSubj);
+			List<AttributeType> attrTypes = profile.getAttributes().getAttributes() ;
 			Iterator<AttributeType> iattrType = attrTypes.iterator() ;
 			while(iattrType.hasNext()) {
 				AttributeType attrType = iattrType.next() ;
 				QName name = attrType.getName() ;
 				String value = attrType.getValue() ;
-				log.info( distSubj + ", " + name.getPrefix() + ", " + name.getNamespaceURI() + ", " + value) ;
+				log.info( distSubj + ", " + name.getPrefix() + ":" + name.getLocalPart() + ", " + value) ;
 			}
 			
 		}

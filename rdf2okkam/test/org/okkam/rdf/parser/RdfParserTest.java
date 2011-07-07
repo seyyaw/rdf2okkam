@@ -12,7 +12,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
-import org.okkam.dataset.parser.RdfParser;
+import org.okkam.dataset.parser.RdfUtil;
 import org.okkam.exception.SameNodeException;
 import org.okkam.model.ModelLoader;
 import org.okkam.service.client.EnsQuery;
@@ -34,7 +34,7 @@ public class RdfParserTest {
 	
 	String fileName = "resources/anagrafe1.ttl";
 	String fileOutName = "resources/outputmodel.ttl";
-	RdfParser parser = null;
+	RdfUtil parser = null;
 	ModelLoader loader = null ;
 	EnsQuery query = null ;
 
@@ -43,7 +43,7 @@ public class RdfParserTest {
 		loader = new ModelLoader() ;
 		loader.loadInputModel(fileName) ;
 		loader.loadOutputModel(fileOutName) ;
-		parser = new RdfParser(loader.getInputModel(), loader.getOutputModel() );
+		parser = new RdfUtil(loader.getInputModel(), loader.getOutputModel() );
 		query = new EnsQuery() ;
 	}
 	

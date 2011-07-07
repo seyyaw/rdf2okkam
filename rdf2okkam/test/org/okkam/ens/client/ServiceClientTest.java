@@ -10,7 +10,7 @@ import java.util.Set;
 import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributesType;
-import org.okkam.dataset.parser.RdfParser;
+import org.okkam.dataset.parser.RdfUtil;
 
 import org.okkam.model.ModelLoader;
 import org.okkam.service.client.EnsQuery;
@@ -33,7 +33,7 @@ public class ServiceClientTest {
 	private static final String filename = "resources/anagrafe1.ttl";
 	private static final String confpath = "conf";
 	ModelLoader loader = null ;
-	RdfParser parser = null;
+	RdfUtil parser = null;
 	OkkamClient okkam = null;
 	ServiceClient client = null;
 	AttributesType attributesType = null;
@@ -44,7 +44,7 @@ public class ServiceClientTest {
 		
 		loader = new ModelLoader() ;		
 		loader.loadInputModel(filename) ; 
-		parser = new RdfParser(loader.getInputModel(), loader.getOutputModel());
+		parser = new RdfUtil(loader.getInputModel(), loader.getOutputModel());
 		okkam = new OkkamClient(confpath) ;
 		client = new ServiceClient(okkam) ;	
 		query = new EnsQuery() ; 

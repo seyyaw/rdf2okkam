@@ -75,7 +75,7 @@ public class LocationTest {
 			RDFNode distSubj = idistSubj.next() ;
 			if(distSubj.asResource().hasProperty(rdfType, locationType)) {
 				AttributesType attrsTypes = null;
-				attrsTypes = location.getProperties(distSubj);
+				attrsTypes = location.getProperties(distSubj).getAttributes();
 				List<AttributeType> attrTypes = attrsTypes.getAttributes() ;
 				Iterator<AttributeType> iattrType = attrTypes.iterator() ;
 				while(iattrType.hasNext()) {
