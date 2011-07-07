@@ -1,5 +1,7 @@
 package it.okkam.rdf2okkam.model;
 
+import it.okkam.rdf2okkam.ens.client.ServiceClient;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -8,7 +10,6 @@ import java.io.OutputStream;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.okkam.service.client.ServiceClient;
 
 import com.hp.hpl.jena.ontology.OntDocumentManager;
 import com.hp.hpl.jena.ontology.OntModel;
