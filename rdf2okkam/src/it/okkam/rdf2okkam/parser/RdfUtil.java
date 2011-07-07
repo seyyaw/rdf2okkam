@@ -1,5 +1,7 @@
 package it.okkam.rdf2okkam.parser;
 
+import it.okkam.rdf2okkam.exception.SameNodeException;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -17,7 +19,6 @@ import org.okkam.client.data.AttributeMetadataProvenanceType;
 import org.okkam.client.data.AttributeMetadataType;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
-import org.okkam.exception.SameNodeException;
 import org.okkam.model.ModelLoader;
 import org.okkam.service.client.ServiceClient;
 
