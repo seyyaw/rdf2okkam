@@ -1,11 +1,11 @@
 package it.okkam.rdf2okkam.controller;
 
 import it.okkam.rdf2okkam.ens.EntityBuilder;
+import it.okkam.rdf2okkam.ens.client.OkkamClient;
+import it.okkam.rdf2okkam.ens.client.ServiceClient;
 
 import org.okkam.client.data.AttributesType;
 import org.okkam.client.data.ProfileType;
-import org.okkam.service.client.OkkamClient;
-import org.okkam.service.client.ServiceClient;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.RDFNode;
