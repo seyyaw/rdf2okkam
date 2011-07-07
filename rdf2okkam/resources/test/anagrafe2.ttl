@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ens: <http://models.okkam.org/ENS-core-vocabulary.owl#> .
+
+
+<http://okkam.org/ens/1234> a ens:person ;
+	ens:codice_fiscale "BLLGZN36M19D599A" ;
+	ens:last_name "ABEL" ;
+	ens:name "GRAZIA" ;
+	ens:birthdate "19/08/1936" .
+
+_:node16273n1dhx2 a ens:location ;
+	ens:location_name "FINALE TRENTINO" .
+
+<http://okkam.org/ens/1234> ens:comune_nascita _:node16273n1dhx2 .
+
+_:node16273n1dhx3 a ens:location ;
+	ens:location_name "FOLHGER" .
+
+<http://okkam.org/ens/1234> ens:city_of_residence _:node16273n1dhx3 .
