@@ -68,7 +68,7 @@ public class Globalizer {
 				updatedStmtList.add(updatedStatement) ;
 			}
 			else {
-				// read the uriref associated to the bnode
+				// read the uriref associated to the bnode from a file
 				String uriref = "http://okkam.org/ens/123" ;
 				Resource resObj = ResourceFactory.createResource(uriref) ;
 				updatedStatement = ResourceFactory.createStatement(subject, property, resObj) ;

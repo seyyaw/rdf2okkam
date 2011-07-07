@@ -6,6 +6,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
+import org.okkam.client.data.ProfileType;
+import org.okkam.core.data.api.SemanticType;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Property;
@@ -38,8 +40,8 @@ public class Location implements EntityBuildStrategy {
 	/*
 	 * Returns location's list of properties
 	 */
-	public AttributesType getProperties(RDFNode subjectNode) {
-		
+	public ProfileType getProperties(RDFNode subjectNode) {
+		ProfileType profile = new ProfileType() ;
 		AttributesType attributes =  new AttributesType();
 		Resource subject = subjectNode.asResource() ;
 		Property rdfType = ResourceFactory.createProperty(rdfNS + "type") ;
@@ -74,11 +76,14 @@ public class Location implements EntityBuildStrategy {
 			// Set to "private" to not send the attributes values.
 			// attribute.getMetadata().getAccessControl().setDisplayable("private");			
 			
-			attributes.getAttributes().add(attribute);	
+			attributes.getAttributes().add(attribute);
+			
+			profile.setAttributes(attributes) ;
+			profile.setSemanticType(SemanticType.LOCATION) ;
 			
 		}
 		
-		return attributes;		
+		return profile;		
 	}
 
 }

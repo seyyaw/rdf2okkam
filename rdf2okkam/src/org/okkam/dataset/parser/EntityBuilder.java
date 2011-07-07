@@ -3,6 +3,7 @@ package org.okkam.dataset.parser;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.okkam.client.data.AttributesType;
+import org.okkam.client.data.ProfileType;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Property;
@@ -32,9 +33,7 @@ public class EntityBuilder {
 	
 	EntityBuildContext context = null ;
 	
-	public AttributesType buildEntity(RDFNode subjectNode) {
-		
-		AttributesType result = null ;
+	public ProfileType buildEntity(RDFNode subjectNode) {
 		
 		Resource subject = subjectNode.asResource() ;
 		
