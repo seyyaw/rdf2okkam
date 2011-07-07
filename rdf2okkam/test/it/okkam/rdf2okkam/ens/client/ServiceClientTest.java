@@ -31,7 +31,7 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 
 
-public class ServiceClientTestOrig {
+public class ServiceClientTest {
 	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	private static final String filename = "resources/anagrafe1.ttl";
 	private static final String confpath = "conf";
