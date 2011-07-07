@@ -31,6 +31,9 @@ public class ModelLoader {
 	
 	public static final String rdfNamespace = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	
+	private final String inputDatasetFileName = "resources/test/anagrafe2.ttl" ;
+	
+	private final String outputDatasetFileName = "resources/test/anagrafe1_out.ttl" ;
 	
 	private Model inputModel = null ;
 	
@@ -38,23 +41,36 @@ public class ModelLoader {
 	
 	private OntModel ensModel = null;
 	
-	private String _inputModelFileName = null ;
 	
-	private String _outputModelFileName = null ;
+	private static String baseUri = null;
 	
-	private String baseUri = null;
+	
+	/** Creates a new instance of ModelLoader (singleton) */
+	private static final ModelLoader loader = new ModelLoader();
+	/** Private constructor */
+	private ModelLoader() {
+		
+		loadInputModel() ;
+		loadOutputModel() ;
+		
+	}
+	
+	 
 	
 	private static Log log = LogFactory.getLog(ModelLoader.class);
 	
-	public void loadInputModel(String fileName){
-		
-		
-		_inputModelFileName = fileName ;
+	/** Acces the static instance of wife */
+    public static ModelLoader getInstance(){
+
+    	return loader;
+    }
+	
+	private void loadInputModel(){
 		
 		// use the FileManager to find the input file
-		InputStream in = FileManager.get().open( fileName );
+		InputStream in = FileManager.get().open( inputDatasetFileName );
 		if (in == null) {		    
-			log.error("File: " + fileName + " not found");
+			log.error("File: " + inputDatasetFileName + " not found");
 			System.exit(0);
 		}
 		
@@ -69,13 +85,13 @@ public class ModelLoader {
 		
 	}
 	
-	public void loadOutputModel(String fileName){
+	private void loadOutputModel(){
 		
-		_outputModelFileName = fileName ;
+		
 		 // use the FileManager to find the input file
-		InputStream out = FileManager.get().open( fileName );
+		InputStream out = FileManager.get().open( outputDatasetFileName );
 		if (out == null) {		    
-			log.error("File: " + fileName + " not found");
+			log.error("File: " + outputDatasetFileName + " not found");
 			System.exit(0);
 		}
 		
@@ -111,10 +127,10 @@ public class ModelLoader {
 		
 		OutputStream out = null;
 		try {
-			out = new FileOutputStream(new File(_outputModelFileName));
+			out = new FileOutputStream(new File(outputDatasetFileName));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
-			log.error("File: " + _outputModelFileName + " not found");
+			log.error("File: " + outputDatasetFileName + " not found");
 			System.exit(0);
 			e.printStackTrace();
 		}

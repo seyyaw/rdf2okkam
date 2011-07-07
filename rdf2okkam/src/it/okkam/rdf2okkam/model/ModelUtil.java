@@ -39,16 +39,16 @@ public class ModelUtil {
 	static String inputFileName3="resources/test.ttl";
 	static String inputFileName4="resources/test2.ttl";
 	
-	static ModelLoader modelLoader=new ModelLoader();
+	static ModelLoader modelLoader = ModelLoader.getInstance() ;
 	
 	static String inputFileName5="resources/test3.ttl";
 	
 	public static void main(String[] args) throws Exception {
-		File outrdf = new File(inputFileName3);
-		GetSubjects.loadModel(inputFileName);
-		loadModel(inputFileName);		
-		Iterator it = GetSubjects.getSubjects(inputFileName).iterator();
-		String[][] statment = GetSubjects.getProperties(it);
+		//File outrdf = new File(inputFileName3);
+		//GetSubjects.loadModel(inputFileName);
+		//loadModel(inputFileName);		
+		//Iterator it = GetSubjects.getSubjects(inputFileName).iterator();
+		//String[][] statment = GetSubjects.getProperties(it);
 		//ArrayList modstatments=modifyRDF(it);
 		//loadmodify(modstatments,inputFileName3,outrdf);
 		
@@ -176,8 +176,6 @@ public class ModelUtil {
 	public static Model modifyRDF(Map<String,String> bnodeOkkamId) {
 		Model result = null ;
 		Model model=null;
-		modelLoader.loadOutputModel(inputFileName3);
-		modelLoader.loadInputModel(inputFileName);
 		result=modelLoader.getOutputModel();
 		model=modelLoader.getInputModel();
 		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator();
