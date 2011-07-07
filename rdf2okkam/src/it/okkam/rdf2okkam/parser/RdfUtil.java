@@ -1,5 +1,6 @@
 package it.okkam.rdf2okkam.parser;
 
+import it.okkam.rdf2okkam.ens.client.ServiceClient;
 import it.okkam.rdf2okkam.exception.SameNodeException;
 import it.okkam.rdf2okkam.model.ModelLoader;
 
@@ -20,7 +21,6 @@ import org.okkam.client.data.AttributeMetadataProvenanceType;
 import org.okkam.client.data.AttributeMetadataType;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
-import org.okkam.service.client.ServiceClient;
 
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.ontology.DatatypeProperty;

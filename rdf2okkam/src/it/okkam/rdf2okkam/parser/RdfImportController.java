@@ -1,7 +1,7 @@
 package it.okkam.rdf2okkam.parser;
 
-import org.okkam.service.client.OkkamClient;
-import org.okkam.service.client.ServiceClient;
+import it.okkam.rdf2okkam.ens.client.OkkamClient;
+import it.okkam.rdf2okkam.ens.client.ServiceClient;
 
 import com.hp.hpl.jena.rdf.model.Model;
 
