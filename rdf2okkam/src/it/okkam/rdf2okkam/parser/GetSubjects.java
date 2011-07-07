@@ -28,9 +28,12 @@ public class GetSubjects {
 	static int size=0;
 	
 	private static Log log = LogFactory.getLog(GetSubjects.class);
-
-	public static void main(String args[]) throws IOException {
-		loadModel(inputFileName);
+	static ModelLoader loader = null ;
+	public static void GetSubjects(){
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
+	}
+	public static void main(String args[]) throws IOException {	
 		Iterator it = getSubjects(inputFileName).iterator();
 		String[][] statments = getProperties(it);
 		System.out.println(getsize());
@@ -98,6 +101,8 @@ public class GetSubjects {
 //get all blank nodes from the RDF dataset
 	public static Set<Resource> getSubjects(String filePath) {
 		// select all the subjects with literal or uri value
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
 		StmtIterator iter = model.listStatements();
 		Set subjects = new HashSet();
 		Set tempSubjects = new HashSet();
