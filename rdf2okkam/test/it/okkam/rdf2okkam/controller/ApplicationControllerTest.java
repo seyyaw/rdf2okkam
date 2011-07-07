@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import it.okkam.rdf2okkam.controller.ApplicationController;
 import it.okkam.rdf2okkam.ens.EntityBuilderTest;
+import it.okkam.rdf2okkam.model.ModelLoader;
 import it.okkam.rdf2okkam.model.ModelUtil;
 import it.okkam.rdf2okkam.parser.Globalizer;
 
@@ -35,10 +36,11 @@ public class ApplicationControllerTest {
 	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	private final String RDF_TYPE = rdfNS + "type" ;
 	String modelFileName = "resources/dataset_out.ttl" ;
+	private final String inputDatasetFileName = "resources/test/anagrafe1.ttl" ;
+	private final String outputDatasetFileName = "resources/test/anagrafe1_out.ttl" ;
 	final String RDF_SYNTAX = "TURTLE" ;
 	String baseUri = null ;
-	Model _model = null ;
-	Model _outModel = null ;
+	ModelLoader loader = null ;
 	ApplicationController manager = null ;
 	Globalizer global = null ;
 	
@@ -47,24 +49,9 @@ public class ApplicationControllerTest {
 	@Before
 	public void setUp() throws Exception {
 		
-		// use the FileManager to find the input file
-		InputStream inModelStream = FileManager.get().open( modelFileName );
-		if (inModelStream == null) {		    
-			log.error("File: " + modelFileName + " not found") ;
-			System.exit(0);
-		}
-
-		// Create the input model. Models different from the default one import also the 
-		// rdf and rdf-schema axioms. 
-		_model = ModelFactory.createDefaultModel();
+		loader = ModelLoader.getInstance() ;
 		
-		// read the RDF/TURTLE file
-		_model.read(inModelStream, baseUri, "TURTLE");
-		
-		// create the output model
-		_outModel = ModelFactory.createDefaultModel() ;	
-		
-		global = new Globalizer(_model, _outModel) ;
+		global = new Globalizer(loader.getInputModel(), loader.getOutputModel()) ;
 		
 	}
 
@@ -72,7 +59,7 @@ public class ApplicationControllerTest {
 	public void testCreateEntity() {
 		log.info("----------testCreateEntity--------------") ;
 		
-		manager = new ApplicationController(_model) ;
+		manager = new ApplicationController() ;
 		
 		Set<RDFNode> distSubjs = global.getDistinctSubjects() ;
 		Map<String, String> bnodeOkkamId = new HashMap<String, String>() ;

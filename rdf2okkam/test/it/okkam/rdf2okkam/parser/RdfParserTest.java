@@ -41,9 +41,7 @@ public class RdfParserTest {
 
 	@Before
 	public void setUp() throws Exception {
-		loader = new ModelLoader() ;
-		loader.loadInputModel(fileName) ;
-		loader.loadOutputModel(fileOutName) ;
+		loader = ModelLoader.getInstance() ;
 		parser = new RdfUtil(loader.getInputModel(), loader.getOutputModel() );
 		query = new EnsQuery() ;
 	}

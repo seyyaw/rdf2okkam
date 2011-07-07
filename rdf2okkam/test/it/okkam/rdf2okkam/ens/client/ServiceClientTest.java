@@ -45,8 +45,7 @@ public class ServiceClientTest {
 	@Before
 	public void setUp() throws Exception {
 		
-		loader = new ModelLoader() ;		
-		loader.loadInputModel(filename) ; 
+		loader = ModelLoader.getInstance() ;		
 		parser = new RdfUtil(loader.getInputModel(), loader.getOutputModel());
 		okkam = new OkkamClient(confpath) ;
 		client = new ServiceClient(okkam) ;	
