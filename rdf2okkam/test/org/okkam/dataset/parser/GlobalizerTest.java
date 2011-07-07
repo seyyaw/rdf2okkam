@@ -2,6 +2,8 @@ package org.okkam.dataset.parser;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.parser.Globalizer;
+
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.PrintWriter;

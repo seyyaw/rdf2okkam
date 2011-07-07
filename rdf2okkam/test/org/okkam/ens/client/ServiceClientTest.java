@@ -2,6 +2,8 @@ package org.okkam.ens.client;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.parser.RdfUtil;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -10,7 +12,6 @@ import java.util.Set;
 import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributesType;
-import org.okkam.dataset.parser.RdfUtil;
 
 import org.okkam.model.ModelLoader;
 import org.okkam.service.client.EnsQuery;

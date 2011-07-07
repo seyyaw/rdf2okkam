@@ -2,12 +2,13 @@ package org.okkam.mockups;
 
 import static org.junit.Assert.*;
 
+import it.okkam.rdf2okkam.parser.GetSubjects;
+
 import java.io.FileNotFoundException;
 import java.util.Iterator;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.okkam.dataset.parser.GetSubjects;
 
 import com.hp.hpl.jena.rdf.model.Model;
 
