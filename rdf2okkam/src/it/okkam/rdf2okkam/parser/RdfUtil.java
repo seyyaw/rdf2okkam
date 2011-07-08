@@ -46,19 +46,7 @@ import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 public class RdfUtil {
 	
-	private final String ensOntology = "resources/ENS-core-vocabulary.owl";
-	
-	private final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#";
-	
-	private final String taxNS = "http://localhost/TaxOntology.owl#" ;
-	
-	private final String TAX_PREFIX = "tax" ;
-	
-	private final String ENS_PREFIX = "ens";
-	
-	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
-	
-	private final String RDF_PREFIX = "rdf" ;
+	private final String ensOntology = "resources/vocabulary/ENS-core-vocabulary.owl";
 	
 	private String baseUri = null;
 	
@@ -99,8 +87,8 @@ public class RdfUtil {
 			AttributeType attribute = new AttributeType();
 			Property predicate = stmt.getPredicate();
 			//System.out.println("Predicate namespace: " + predicate.getNameSpace());
-			if( ensNS.equals( predicate.getNameSpace() )){
-				prefix = ENS_PREFIX;
+			if( VocabConstants.ensNS.equals( predicate.getNameSpace() )){
+				prefix = VocabConstants.ENS_PREFIX;
 			}
 			QName name = new QName(predicate.getURI(),predicate.getLocalName(), prefix);
 			attribute.setName(name);			
@@ -135,14 +123,14 @@ public class RdfUtil {
 			AttributeType attribute = new AttributeType();
 			Property predicate = stmt.getPredicate();
 			//System.out.println("predicate: " + predicate.getURI());
-			if( ensNS.equals( predicate.getNameSpace() )){
-				prefix = ENS_PREFIX ;
+			if( VocabConstants.ensNS.equals( predicate.getNameSpace() )){
+				prefix = VocabConstants.ENS_PREFIX ;
 			}
-			if( taxNS.equals( predicate.getNameSpace() )){
-				prefix = TAX_PREFIX ;
+			if( VocabConstants.taxNS.equals( predicate.getNameSpace() )){
+				prefix = VocabConstants.TAX_PREFIX ;
 			}
-			if( rdfNS.equals( predicate.getNameSpace() )){
-				prefix = RDF_PREFIX ;
+			if( VocabConstants.rdfNS.equals( predicate.getNameSpace() )){
+				prefix = VocabConstants.RDF_PREFIX ;
 			}
 			QName name = new QName(predicate.getURI(), predicate.getLocalName() , prefix);
 			attribute.setName(name);			
@@ -191,7 +179,7 @@ public class RdfUtil {
 		ExtendedIterator<DatatypeProperty> idataprop = ensModel.listDatatypeProperties();	
 		while(idataprop.hasNext()){			
 			DatatypeProperty property = idataprop.next();
-			QName q = new QName(property.getURI(),property.getLocalName(), ENS_PREFIX);			
+			QName q = new QName(property.getURI(),property.getLocalName(), VocabConstants.ENS_PREFIX);			
 			properties.add(q);						
 		}
 		
@@ -208,8 +196,8 @@ public class RdfUtil {
 	 */
 	public List<Resource> listSubjectsByType(String type){
 		ArrayList<Resource> subjects = new ArrayList<Resource>();
-		Property rdfType = _model.getProperty(rdfNS + "type");				
-		Resource typeResource = ensModel.getResource(ensNS + type); 
+		Property rdfType = _model.getProperty(VocabConstants.rdfNS + "type");				
+		Resource typeResource = ensModel.getResource(VocabConstants.ensNS + type); 
 		StmtIterator i = _model.listStatements(new SimpleSelector(null, rdfType, typeResource));
 		while(i.hasNext()){						
 			subjects.add(i.next().getSubject());			
@@ -220,11 +208,11 @@ public class RdfUtil {
 	public List<RDFNode> listSubjects() {
 		ArrayList<RDFNode> subjects = new ArrayList<RDFNode>() ;
 		List<QName> ensTypes = listEnsClasses() ;
-		Property rdfType = _model.getProperty(rdfNS + "type");
+		Property rdfType = _model.getProperty(VocabConstants.rdfNS + "type");
 		Iterator<QName> i = ensTypes.iterator() ;
 		while(i.hasNext()) {
 			QName q = i.next() ;
-			Resource typeResource = ensModel.getResource(ensNS + q.getLocalPart());
+			Resource typeResource = ensModel.getResource(VocabConstants.ensNS + q.getLocalPart());
 			Selector selector = new SimpleSelector(null, rdfType, typeResource) ;
 			StmtIterator stmtIterator = _model.listStatements(selector) ;
 			while(stmtIterator.hasNext()) {
@@ -240,7 +228,7 @@ public class RdfUtil {
 	
 	public QName getType(String uri){
 		Resource resource = _model.getResource( uri );
-		Property rdfType = _model.getProperty(rdfNS + "type");
+		Property rdfType = _model.getProperty(VocabConstants.rdfNS + "type");
 		Statement stmt = resource.getProperty(rdfType);
 		Resource type = stmt.getObject().asResource();
 		QName qtype = new QName(type.getURI(), type.getLocalName(), "rdf");
@@ -249,7 +237,7 @@ public class RdfUtil {
 	}
 	
 	public QName getType(Resource resource){		
-		Property rdfType = _model.getProperty(rdfNS + "type");
+		Property rdfType = _model.getProperty(VocabConstants.rdfNS + "type");
 		Statement stmt = resource.getProperty(rdfType);
 		Resource type = stmt.getObject().asResource();
 		QName qtype = new QName(type.getURI(), type.getLocalName(), "rdf");
@@ -261,13 +249,13 @@ public class RdfUtil {
 	public List<QName> listEnsClasses(){
 		
 		ArrayList<QName> ensClassesList = new ArrayList<QName>();
-		OntClass thing = ensModel.getOntClass(ensNS + "Thing"); 
+		OntClass thing = ensModel.getOntClass(VocabConstants.ensNS + "Thing"); 
 		ExtendedIterator<OntClass> iclass = ensModel.listNamedClasses();
 		
 		while(iclass.hasNext()){
 			OntClass ensClass = iclass.next();
 			if( ! "Thing".equals( ensClass.getLocalName() ) ){
-				QName q = new QName(ensClass.getURI(), ensClass.getLocalName(), ENS_PREFIX);
+				QName q = new QName(ensClass.getURI(), ensClass.getLocalName(), VocabConstants.ENS_PREFIX);
 				ensClassesList.add(q);
 			}
 		}
@@ -317,7 +305,7 @@ public class RdfUtil {
 		StmtIterator stmtIter = _model.listStatements();		
 		while(stmtIter.hasNext()) {
 			RDFNode subject = stmtIter.next().getSubject() ;
-			if( ! rdfNS.equals(subject.asResource().getNameSpace()) )  
+			if( ! VocabConstants.rdfNS.equals(subject.asResource().getNameSpace()) )  
 					subjects.add(subject) ;
 		}		
 		
@@ -484,7 +472,7 @@ public class RdfUtil {
 	public boolean compareSubjects(RDFNode subj1, RDFNode subj2) {
 		boolean isSamePropertyValue = false ;
 		boolean isSameEntity = true ;
-		Property typep = _model.getProperty(rdfNS + "type") ;
+		Property typep = _model.getProperty(VocabConstants.rdfNS + "type") ;
 		
 		//Check the subjects' type
 		RDFNode type1 = subj1.asResource().getProperty(typep).getObject() ;
@@ -537,7 +525,7 @@ public class RdfUtil {
 	public boolean isEntity(RDFNode node) {
 		boolean isSamePropertyValue = false ;
 		boolean isEntity = true ;
-		Property typep = _model.getProperty(rdfNS + "type") ;
+		Property typep = _model.getProperty(VocabConstants.rdfNS + "type") ;
 		String typepUri = typep.getURI() ;
 		
 		//Check the subjects' type
@@ -620,8 +608,8 @@ public class RdfUtil {
 		ensModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RDFS_INF);
 		
 		OntDocumentManager dm = ensModel.getDocumentManager();
-		dm.addAltEntry( ensNS, "file:" + ensOntology );
-		ensModel.read( ensNS );	
+		dm.addAltEntry( VocabConstants.ensNS, "file:" + ensOntology );
+		ensModel.read( VocabConstants.ensNS );	
 		
 		ExtendedIterator<Ontology> iOntologies = ensModel.listOntologies();
 		while(iOntologies.hasNext()){

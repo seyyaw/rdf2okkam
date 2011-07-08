@@ -1,6 +1,7 @@
 package it.okkam.rdf2okkam.model;
 
 import it.okkam.rdf2okkam.ens.client.ServiceClient;
+import it.okkam.rdf2okkam.parser.VocabConstants;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,14 +23,7 @@ import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 public class ModelLoader {
-	
-	public static final String ensOntology = "resources/ENS-core-vocabulary.owl";
-	
-	public static final String ensNamespace = "http://models.okkam.org/ENS-core-vocabulary.owl#";
-	
-	public static final String ENS_PREFIX = "ens";
-	
-	public static final String rdfNamespace = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+		
 	
 	private final String inputDatasetFileName = "resources/test/anagrafe2.ttl" ;
 	
@@ -142,11 +136,11 @@ public class ModelLoader {
 	private void loadEnsOntology(){
 		
 		// create an empty model
-		ensModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RDFS_INF);
-		
-		OntDocumentManager dm = ensModel.getDocumentManager();
-		dm.addAltEntry( ensNamespace, "file:" + ensOntology );
-		ensModel.read( ensNamespace );	
+		ensModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM) ;
+		String ensOntologyFileName = "resources/vocabulary/ENS-core-vocabulary.owl" ;
+		OntDocumentManager dm = ensModel.getDocumentManager() ;
+		dm.addAltEntry( VocabConstants.ensNS, "file:" + ensOntologyFileName );
+		ensModel.read( VocabConstants.ensNS );	
 		
 		ExtendedIterator<Ontology> iOntologies = ensModel.listOntologies();
 		while(iOntologies.hasNext()){
