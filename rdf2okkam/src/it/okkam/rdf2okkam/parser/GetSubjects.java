@@ -34,7 +34,7 @@ public class GetSubjects {
 		model=loader.getInputModel();
 	}
 	public static void main(String args[]) throws IOException {	
-		Iterator it = getSubjects(inputFileName).iterator();
+		Iterator it = getSubjects().iterator();
 		String[][] statments = getProperties(it);
 		System.out.println(getsize());
 		// System.out.println(statments);
@@ -99,7 +99,7 @@ public class GetSubjects {
 		model.read(in, null, "TURTLE");
 	}
 //get all blank nodes from the RDF dataset
-	public static Set<Resource> getSubjects(String filePath) {
+	public static Set<Resource> getSubjects() {
 		// select all the subjects with literal or uri value
 		loader = ModelLoader.getInstance() ;
 		model=loader.getInputModel();
