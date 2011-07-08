@@ -257,6 +257,13 @@ public class ModelUtil {
 					}
 			}
 		result.add(newstatments);
+		StmtIterator iter = tempmodel.listStatements();
+		while(iter.hasNext()){
+			Statement tmpstmt=iter.next();
+			RDFNode object=tmpstmt.getObject();
+			if(object.isAnon())
+				result.remove(tmpstmt);
+		}
 		result.write(System.out,"TTL");
 		return result ;		
 	}
