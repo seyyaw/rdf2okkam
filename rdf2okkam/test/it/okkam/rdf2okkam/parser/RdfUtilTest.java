@@ -31,10 +31,8 @@ import com.hp.hpl.jena.rdf.model.SimpleSelector;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.rdf.model.StmtIterator;
 
-public class RdfParserTest {
+public class RdfUtilTest {
 	
-	String fileName = "resources/anagrafe1.ttl";
-	String fileOutName = "resources/outputmodel.ttl";
 	RdfUtil parser = null;
 	ModelLoader loader = null ;
 	EnsQuery query = null ;
@@ -354,9 +352,8 @@ public class RdfParserTest {
 	}
 	
 	private RDFNode getSubject() {
-		RDFNode subject = null ;		
-		final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#" ; 
-		Property subj1Predicate = loader.getInputModel().getProperty(ensNS + "location_name") ;		
+		RDFNode subject = null ;				
+		Property subj1Predicate = loader.getInputModel().getProperty(VocabConstants.ensNS + "location_name") ;		
 		Selector selector1 = new SimpleSelector(null, subj1Predicate, "FOLGARIA" ) ;
 		StmtIterator isubj1 = loader.getInputModel().listStatements(selector1) ;
 		Statement stmt = isubj1.next() ;
