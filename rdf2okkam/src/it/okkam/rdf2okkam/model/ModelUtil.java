@@ -50,7 +50,7 @@ public class ModelUtil {
 		//GetSubjects.loadModel(inputFileName);
 		//loadModel(inputFileName);	
 		 getsubjects=new GetSubjects();
-		Iterator it = getsubjects.getSubjects(inputFileName).iterator();
+		Iterator it = getsubjects.getSubjects().iterator();
 	//	String[][] statment = GetSubjects.getProperties(it);
 		Map<String,String> bnodeokkamid=bnodeOkkamId(it);
 		modifyRDF(bnodeokkamid);
@@ -112,6 +112,8 @@ public class ModelUtil {
 	 * @throws InterruptedException 
 	 */
 	public static Map<String,String> bnodeOkkamId(Iterator it) throws FileNotFoundException{
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
 		String[][] statment = getsubjects.getProperties(it);
 		String[][] stmt = getOkkamId(statment);
 		int size=getOkkamId(statment).length;
@@ -264,7 +266,7 @@ public class ModelUtil {
 			if(object.isAnon())
 				result.remove(tmpstmt);
 		}
-		result.write(System.out,"TTL");
+		//result.write(System.out,"TTL");
 		return result ;		
 	}
 	public static void loadmodify(ArrayList newstatments,String inputfile, File outrdf) throws FileNotFoundException{	
