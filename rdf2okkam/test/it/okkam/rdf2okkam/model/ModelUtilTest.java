@@ -7,11 +7,13 @@ import it.okkam.rdf2okkam.parser.GetSubjects;
 
 import java.io.FileNotFoundException;
 import java.util.Iterator;
+import java.util.Map;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 
 public class ModelUtilTest {
 	
@@ -21,14 +23,16 @@ public class ModelUtilTest {
 	String inputFileName = "resources/anagrafe1.ttl";
 	String[][] statment = null ;
 	
+	static ModelLoader loader = null ;
+	static GetSubjects getsubjects;
+	
+	ModelUtil modelUtil=null;
 	@Before
 	public void setUp() throws Exception {
-		parser = new ModelUtil() ;
-		parser.loadModel(inputFileName) ;
-		subjects = new GetSubjects() ;
-		subjects.loadModel(inputFileName) ;
-		Iterator it = subjects.getSubjects().iterator();
-		statment = subjects.getProperties(it);
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
+		
+		modelUtil=new ModelUtil();
 	}
 
 	@Test
@@ -39,8 +43,19 @@ public class ModelUtilTest {
 	}
 
 	@Test
-	public void testModifyRDF() {
-		fail("Not yet implemented");
+	public void testModifyRDF() throws FileNotFoundException {
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
+		//File outrdf = new File(inputFileName3);
+		//GetSubjects.loadModel(inputFileName);
+		//loadModel(inputFileName);	
+		 getsubjects=new GetSubjects();
+		Iterator it = getsubjects.getSubjects().iterator();
+	//	String[][] statment = GetSubjects.getProperties(it);
+		Map<String,String> bnodeokkamid=modelUtil.bnodeOkkamId(it);
+		Model result=ModelFactory.createDefaultModel();
+		result=ModelUtil.modifyRDF(bnodeokkamid);
+		result.write(System.out,"TURTLE");
 	}
 
 }
