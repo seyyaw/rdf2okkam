@@ -1,0 +1,45 @@
+<project name="test refactoring" basedir="." >
+	
+	<property name="src.dir"     value="src"/>
+	<property name="test.dir"     value="test"/>
+    <property name="build.dir"   value="build"/>
+	<property name="lib.dir"     value="lib"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+	<property name="test_classes.dir" value="${build.dir}/test"/>
+    <property name="jar.dir"     value="${build.dir}/jar"/>
+
+	<target name="clean_test">
+	    	<delete dir="${test_classes.dir}"/>
+	    </target>
+	
+	<path id="classpath">
+		    <fileset dir="${lib.dir}" includes="**/*.jar"/>
+			<fileset dir="${jar.dir}" includes="**/*.jar"/>
+		</path>
+	
+	
+	<target name="compile_test">	        
+	    	<mkdir dir="${test_classes.dir}"/>	        
+	    	<javac srcdir="${test.dir}" destdir="build/test" classpathref="classpath"/>
+	 </target>
+	
+	<target name="test">
+		<junit printsummary="yes" haltonfailure="yes">
+			<classpath>
+				<path refid="classpath"/>
+				
+				<path id="application" location="${jar.dir}/refactoring.jar"/>
+				<pathelement location="${build.dir}/test"/>
+			  </classpath>
+
+			<test name="chapter1.CustomerTest"/>
+			<test name="chapter4.FileWriterTest"/>
+			<test name="chapter4.AllTests"/>
+			<test name="chapter4.FileReaderTest"/>
+			
+		  
+		</junit>
+		</target>
+
+
+</project>
