@@ -1,4 +1,4 @@
-<project name="test refactoring" basedir="." >
+<project name="test rdf2okkam" basedir="." >
 	
 	<property name="src.dir"     value="src"/>
 	<property name="test.dir"     value="test"/>
@@ -28,15 +28,12 @@
 			<classpath>
 				<path refid="classpath"/>
 				
-				<path id="application" location="${jar.dir}/refactoring.jar"/>
+				<path id="application" location="${jar.dir}/rdf2okkam.jar"/>
 				<pathelement location="${build.dir}/test"/>
 			  </classpath>
 
-			<test name="chapter1.CustomerTest"/>
-			<test name="chapter4.FileWriterTest"/>
-			<test name="chapter4.AllTests"/>
-			<test name="chapter4.FileReaderTest"/>
-			
+			<test name="it.okkam.rdf2okkam.parser.RdfUtilTest"/>
+						
 		  
 		</junit>
 		</target>

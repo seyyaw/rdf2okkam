@@ -1,4 +1,4 @@
-<project name="refactoring" basedir="." >
+<project name="rdf2okkam" basedir="." >
 	
 	<property name="src.dir"     value="src"/>
 	<property name="test.dir"     value="test"/>
@@ -7,8 +7,10 @@
     <property name="classes.dir" value="${build.dir}/classes"/>
 	<property name="test_classes.dir" value="${build.dir}/test"/>
     <property name="jar.dir"     value="${build.dir}/jar"/>
+	
+	
+    <!--property name="main-class"  value="chapter1.VideoStore"/ -->
 
-    <property name="main-class"  value="chapter1.VideoStore"/>
 
 	<path id="classpath">
 	    <fileset dir="${lib.dir}" includes="**/*.jar"/>
