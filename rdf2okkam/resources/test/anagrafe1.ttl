@@ -1,46 +1,17 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ens: <http://models.okkam.org/ENS-core-vocabulary.owl#> .
+@prefix tax:     <http://localhost/TaxOntology.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ens:     <http://models.okkam.org/ENS-core-vocabulary.owl#> .
 
-
-<http://okkam.org/ens/1234> a ens:person ;
-	ens:codice_fiscale "BLLGZN36M19D599A" ;
-	ens:last_name "ABELLI" ;
-	ens:name "GRAZIANO" ;
-	ens:birthdate "19/08/1936" .
-
-_:node16273n1dhx2 a ens:location ;
-	ens:location_name "FINALE EMILIA" .
-
-<http://okkam.org/ens/1234> ens:comune_nascita _:node16273n1dhx2 .
-
-_:node16273n1dhx3 a ens:location ;
-	ens:location_name "FOLGARIA" .
-
-<http://okkam.org/ens/1234> ens:city_of_residence _:node16273n1dhx3 .
-
-_:node16273n1dhx4 a ens:person ;
-	ens:codice_fiscale "DDZLSS92T60L378G" ;
-	ens:last_name "ADDEZI" ;
-	ens:name "ALESSIA" ;
-	ens:birthdate "20/12/1992" .
-
-_:node16273n1dhx5 a ens:location ;
-	ens:location_name "TRENTO" .
-
-_:node16273n1dhx4 ens:comune_nascita _:node16273n1dhx5 .
-
-_:node16273n1dhx6 a ens:location ;
-	ens:location_name "FOLGARIA" .
-
-_:node16273n1dhx4 ens:city_of_residence _:node16273n1dhx6 .
-
-_:node16273n1dhx7 a ens:person ;
-	ens:codice_fiscale "DDZFNC65B18C781X" ;
-	ens:last_name "ADDEZI" ;
-	ens:name "FRANCESCO" ;
-	ens:birthdate "18/02/1965" .
-
-_:node16273n1dhx8 a ens:location ;
-	ens:location_name "CIVITELLA DEL TRONTO" .
-
-_:node16273n1dhx7 ens:comune_nascita _:node16273n1dhx8 .
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "POPKJHGUE67L781V" ;
+      tax:haCognome "ABCDE" ;
+      tax:haComuneNascita
+              [ a  tax:LuogoNascita ;
+                tax:haNome "PAPEROPOLIX" ;                
+              ] ;
+      tax:haDataNascita "27/05/1972" ;
+      tax:haLuogoResidenza
+              [ a tax:LuogoResidenza ;
+                tax:haNome "TOPOLINIAX" ;                
+              ] ;
+      tax:haNome "SAD" .

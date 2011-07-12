@@ -1,0 +1,28 @@
+@prefix ens:     <http://models.okkam.org/ENS-core-vocabulary.owl#> .
+
+<http://www.okkam.org/ens/id10080ed8-e157-4346-b888-3070102a257b>
+      a       ens:location , <http://localhost/TaxOntology.owl#LuogoResidenza> ;
+      <http://localhost/TaxOntology.owl#haNome>
+              "TOPOLINIAX" ;
+      ens:name "TOPOLINIAX" .
+
+<http://www.okkam.org/ens/idcbdd9a24-8f28-404a-94b3-fc2e7051bc93>
+      a       ens:location , <http://localhost/TaxOntology.owl#LuogoNascita> ;
+      <http://localhost/TaxOntology.owl#haNome>
+              "PAPEROPOLIX" ;
+      ens:name "PAPEROPOLIX" .
+
+<http://www.okkam.org/ens/id89154d32-528f-467f-82c5-39bd586aacb6>
+      a       <http://localhost/TaxOntology.owl#Persona_Fisica> , ens:person ;
+      <http://localhost/TaxOntology.owl#haCodiceFiscale>
+              "POPKJHGUE67L781V" ;
+      <http://localhost/TaxOntology.owl#haCognome>
+              "ABCDE" ;
+      <http://localhost/TaxOntology.owl#haComuneNascita>
+              <http://www.okkam.org/ens/idcbdd9a24-8f28-404a-94b3-fc2e7051bc93> ;
+      <http://localhost/TaxOntology.owl#haDataNascita>
+              "27/05/1972" ;
+      <http://localhost/TaxOntology.owl#haLuogoResidenza>
+              <http://www.okkam.org/ens/id10080ed8-e157-4346-b888-3070102a257b> ;
+      <http://localhost/TaxOntology.owl#haNome>
+              "SAD" .
