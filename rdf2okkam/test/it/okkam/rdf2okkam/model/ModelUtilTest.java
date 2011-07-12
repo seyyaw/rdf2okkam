@@ -31,11 +31,6 @@ public class ModelUtilTest {
 		modelUtil=new ModelUtil();
 	}
 
-	@Test
-	public void testGetOkkamId() throws FileNotFoundException {
-		
-		
-	}
 
 	@Test
 	public void testModifyRDF() throws FileNotFoundException {

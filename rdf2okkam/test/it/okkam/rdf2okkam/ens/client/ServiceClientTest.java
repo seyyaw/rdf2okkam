@@ -54,24 +54,24 @@ public class ServiceClientTest {
 	}
 
 
-	@Test
-	public void testCreateNewEntity(){
-		System.out.println("----------------Test createNewEntities()-----------------") ;
-		Set<RDFNode> subjects = parser.getSubjectsWithoutBNodes() ;
-		Iterator<RDFNode> i = subjects.iterator();
-		boolean ignoreDuplicates = true ;
-		while(i.hasNext()){
-			RDFNode subject = i.next();
-			System.out.println("subject " + subject.toString()) ;
-			Property typep = loader.getInputModel().getProperty(rdfNS + "type") ;
-			String semanticType = "location" ;
-			System.out.println("subject: " + subject.toString() + ", sem. type: " + semanticType) ;
-			attributesType = parser.listSubjectProperties(subject);
-			String okkamid = client.createNewEntity(semanticType, attributesType, ignoreDuplicates);
-			System.out.println("Identifier for " + subject.asResource().getURI() + ": " + okkamid);
-			
-		}
-	}
+//	@Test
+//	public void testCreateNewEntity(){
+//		System.out.println("----------------Test createNewEntities()-----------------") ;
+//		Set<RDFNode> subjects = parser.getSubjectsWithoutBNodes() ;
+//		Iterator<RDFNode> i = subjects.iterator();
+//		boolean ignoreDuplicates = true ;
+//		while(i.hasNext()){
+//			RDFNode subject = i.next();
+//			System.out.println("subject " + subject.toString()) ;
+//			Property typep = loader.getInputModel().getProperty(rdfNS + "type") ;
+//			String semanticType = "location" ;
+//			System.out.println("subject: " + subject.toString() + ", sem. type: " + semanticType) ;
+//			attributesType = parser.listSubjectProperties(subject);
+//			String okkamid = client.createNewEntity(semanticType, attributesType, ignoreDuplicates);
+//			System.out.println("Identifier for " + subject.asResource().getURI() + ": " + okkamid);
+//			
+//		}
+//	}
 	
 	@Test
 	public void testFindEntity() {
@@ -101,6 +101,13 @@ public class ServiceClientTest {
 			String value = entities.get(key) ;
 			System.out.println("key = " + key + ", value = " + value) ;
 		}
+		
+	}
+	
+	@Test
+	public void testDeleteEntity() {
+		String okkamid = "http://www.okkam.org/ens/id32609f1e-5dc9-44e3-8387-06e0806e2e01" ;
+		client.deleteEntity(okkamid) ;
 		
 	}
 	

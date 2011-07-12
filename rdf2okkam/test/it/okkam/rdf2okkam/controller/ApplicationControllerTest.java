@@ -6,9 +6,14 @@ import it.okkam.rdf2okkam.controller.ApplicationController;
 import it.okkam.rdf2okkam.ens.EntityBuilderTest;
 import it.okkam.rdf2okkam.model.ModelLoader;
 import it.okkam.rdf2okkam.model.ModelUtil;
+import it.okkam.rdf2okkam.model.Tax2EnsMapper;
 import it.okkam.rdf2okkam.parser.Globalizer;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -31,51 +36,89 @@ import com.hp.hpl.jena.util.FileManager;
 
 public class ApplicationControllerTest {
 	
-	private final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#";
-	private final String ENS_LOCATION = ensNS + "location" ;
-	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
-	private final String RDF_TYPE = rdfNS + "type" ;
-	String modelFileName = "resources/dataset_out.ttl" ;
-	private final String inputDatasetFileName = "resources/test/anagrafe1.ttl" ;
-	private final String outputDatasetFileName = "resources/test/anagrafe1_out.ttl" ;
+	
+	String modelFileName = "resources/test/dataset_out.ttl" ;
 	final String RDF_SYNTAX = "TURTLE" ;
-	String baseUri = null ;
-	ModelLoader loader = null ;
-	ApplicationController manager = null ;
+	
+	ApplicationController controller = null ;
 	Globalizer global = null ;
+	Tax2EnsMapper mapper = null ;
 	
 	private static Log log = LogFactory.getLog(ApplicationControllerTest.class);
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() throws Exception {		
 		
-		loader = ModelLoader.getInstance() ;
+		controller = new ApplicationController() ;
 		
-		global = new Globalizer(loader.getInputModel(), loader.getOutputModel()) ;
+		global = new Globalizer(ModelLoader.getInstance().getInputModel(), 
+									ModelLoader.getInstance().getOutputModel()) ;
+		mapper = new Tax2EnsMapper() ;
+		
+		mapper.startInference( ModelLoader.getInstance().getInputModel() ) ;
 		
 	}
 
+//	@Test
+//	public void testCreateEntity() {
+//		log.info("----------testCreateEntity--------------") ;						
+//		Set<RDFNode> distSubjs = global.getDistinctSubjects() ;
+//		RDFNode distSubj = distSubjs.iterator().next() ;
+//								
+//		String okkamid = controller.createEntity(distSubj) ;
+//		
+//		log.info("New entity's okkam id: " + okkamid) ;		
+//	
+//			
+//		//ModelUtil mockup = new ModelUtil() ;		
+//		//Model output = mockup.modifyRDF(bnodeOkkamId) ;
+//		
+//	}
+	
 	@Test
-	public void testCreateEntity() {
-		log.info("----------testCreateEntity--------------") ;
-		
-		manager = new ApplicationController() ;
-		
+	public void testCreateEntities() {
+		log.info("----------testCreateEntities--------------") ;		
 		Set<RDFNode> distSubjs = global.getDistinctSubjects() ;
 		Map<String, String> bnodeOkkamId = new HashMap<String, String>() ;
 		Iterator<RDFNode> idistSubj = distSubjs.iterator() ;
 		while(idistSubj.hasNext()) {
 			RDFNode distSubj = idistSubj.next() ;
 						
-			String okkamid = manager.createEntity(distSubj) ;
+			String okkamid = controller.createEntity(distSubj) ;
 			bnodeOkkamId.put(distSubj.toString(), okkamid) ;
 			
 			log.info("New entity's okkam id: " + okkamid) ;		
 		}
-			
-		ModelUtil mockup = new ModelUtil() ;
 		
-		Model output = mockup.modifyRDF(bnodeOkkamId) ;
+		printUris(bnodeOkkamId) ;
+		
+		ModelUtil util = new ModelUtil() ;
+		util.modifyRDF(bnodeOkkamId);		
+		
+	}
+	
+	private void printUris(Map<String, String> bnodeOkkamId) {
+		log.info("----printing bnodes - uri pairs on file ----" ) ;
+		String uriFileName = "resources/test/bnode_uri_04.txt" ;
+		PrintWriter out = null ;
+		try {
+			out = new PrintWriter(new BufferedWriter(new FileWriter( uriFileName )));
+			if(out != null ) {
+				Set<String> keys = bnodeOkkamId.keySet() ;
+				Iterator<String> ikey = keys.iterator() ;
+				while(ikey.hasNext()) {
+					String key = ikey.next() ;
+					String uri = bnodeOkkamId.get(key) ;
+					out.write(key + ", " + uri + "\n" ) ;
+				}
+			}
+					
+			out.close() ;
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
