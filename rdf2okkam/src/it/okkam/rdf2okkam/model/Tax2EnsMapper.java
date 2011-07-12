@@ -1,11 +1,16 @@
 package it.okkam.rdf2okkam.model;
 
+import it.okkam.rdf2okkam.controller.ApplicationController;
+
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.InfModel;
@@ -38,59 +43,21 @@ import com.hp.hpl.jena.util.FileManager;
  */
 public class Tax2EnsMapper {
 
-	/**
-	 * @param args
-	 * @throws FileNotFoundException 
+	private static Log log = LogFactory.getLog(Tax2EnsMapper.class);
+	
+	/*
+	 * Make inferences to map the domain ontology terms to the ENS ones. The inferred
+	 * statement are added to the input model.
 	 */
-	public static void main(String[] args) throws FileNotFoundException {
-		String onto1 = "resources/anagrafe.ttl";		
-		String baseUri = null ;
-		String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
-		String taxNS = "http://localhost/TaxOntology.owl#";
-		String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#" ;
-		Model model1 = ModelFactory.createDefaultModel() ;
-		Model model2 = ModelFactory.createDefaultModel() ;
-		
-		
-		InputStream in1 = FileManager.get().open( onto1 );
-		if (in1 == null) {
-		    throw new IllegalArgumentException(
-		                                 "File: " + onto1 + " not found");
-		}
-		
-
-		//Load the onto1 model 
-		model1.read(in1, baseUri,"TURTLE");				
-		
-		//Load the mapping rules
-		List<Rule> rules = Rule.rulesFromURL("file:resources/mapping.rules");		
+	public void startInference(Model model) {
 		
 		//Start the inferences using a rule reasoner
-		Reasoner reasoner = new GenericRuleReasoner(rules);	    
-		InfModel inf = ModelFactory.createInfModel(reasoner, model1);
-	    
-		StmtIterator i = inf.listStatements() ;
-		ArrayList<Statement> infStmts = new ArrayList<Statement>() ;
-	    while(i.hasNext()){
-	    	Statement stmt = i.nextStatement(); 
-	    	//Save the inferred statement 
-	    	infStmts.add(stmt) ;
-	        
-	    }
-	    
-	    //Save the mapped model 
-	    inf.write(new PrintWriter("resources/dataset_out.ttl"),"TURTLE");
-
-	    
-	    if(infStmts.size() > 0) {
-	    	Iterator<Statement> iter = infStmts.iterator() ; 
-	    	while(iter.hasNext()) {
-	    		Statement infStatement = iter.next() ;
-	    		System.out.println("Inf. statement: " + infStatement.toString());
-	    	}
-	    	
-	    }
-
+		Reasoner reasoner = new GenericRuleReasoner(ModelLoader.getInstance().getRules());	    
+		InfModel inf = ModelFactory.createInfModel(reasoner, model);
+		ModelLoader.getInstance().getInputModel().add(inf) ;
+		log.info( "Added inferred statements to the input model based on the rules." ) ;
+		
 	}
+	
 
 }

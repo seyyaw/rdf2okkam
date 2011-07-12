@@ -204,6 +204,8 @@ public class ModelUtil {
 	 * @throws InterruptedException 
 	 */
 	public static Model modifyRDF(Map<String,String> bnodeOkkamId) {
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
 		Model result = null ;
 		result=loader.getOutputModel();
 		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator();
@@ -267,6 +269,9 @@ public class ModelUtil {
 				result.remove(tmpstmt);
 		}
 		//result.write(System.out,"TTL");
+		
+		ModelLoader.getInstance().getOutputModel().add(result) ;
+		ModelLoader.getInstance().writeOutputModel() ;
 		return result ;		
 	}
 	public static void loadmodify(ArrayList newstatments,String inputfile, File outrdf) throws FileNotFoundException{	

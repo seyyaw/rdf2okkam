@@ -24,7 +24,6 @@ import org.okkam.client.exception.OkkamClientException;
 import org.okkam.client.util.XMLEntityConverter;
 import org.okkam.core.data.api.MatchingCandidate;
 import org.okkam.core.ws.data.EntityValidationReport;
-import org.okkam.core.ws.data.NewEntityResultClient;
 import org.okkam.core.ws.secured.OkkamCoreException;
 import org.okkam.proxyclient.ProxyManager;
 
@@ -443,6 +442,20 @@ public class OkkamClient {
 
 	public EnsConfig getConfig() {
 		return config;
+	}
+	
+	public  void deleteEntity(String oid,String ticket) {
+				
+		try {
+			entityManager.deleteEntity(oid, ticket);
+			
+		} catch (IllegalArgumentException e) {
+			log.error( e.getMessage() ) ;
+		} catch (OkkamClientException e) {
+			log.error( e.getMessage() ) ;
+		} catch (OkkamCoreException e) {
+			log.error( e.getMessage() ) ;
+		}
 	}
 
 

@@ -30,6 +30,7 @@ public class Person implements EntityBuildStrategy {
 	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	private final String RDF_PREFIX = "rdf" ;
 	
+	
 	private Model _model ;
 	
 	private static Log log = LogFactory.getLog(Person.class);

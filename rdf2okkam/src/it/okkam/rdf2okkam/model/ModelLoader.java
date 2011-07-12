@@ -3,11 +3,14 @@ package it.okkam.rdf2okkam.model;
 import it.okkam.rdf2okkam.ens.client.ServiceClient;
 import it.okkam.rdf2okkam.parser.VocabConstants;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -18,6 +21,7 @@ import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.ontology.Ontology;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.reasoner.rulesys.Rule;
 import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
@@ -25,16 +29,21 @@ import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 public class ModelLoader {
 		
 	
-	private final String inputDatasetFileName = "resources/test/anagrafe2.ttl" ;
+	private final String inputDatasetFileName = "resources/test/anagrafe1.ttl" ;
 	
 	private final String outputDatasetFileName = "resources/test/anagrafe1_out.ttl" ;
+	
+	private final String rulesFileName = "resources/rules/mapping.rules" ;
 	
 	private Model inputModel = null ;
 	
 	private Model outputModel = null ;
 	
-	private OntModel ensModel = null;
+	private List<Rule> rules = null ;
 	
+	private Tax2EnsMapper mapper = null ;
+	
+	private OntModel ensModel = null;
 	
 	private static String baseUri = null;
 	
@@ -46,6 +55,7 @@ public class ModelLoader {
 		
 		loadInputModel() ;
 		loadOutputModel() ;
+		loadRules() ;		
 		
 	}
 	
@@ -109,12 +119,39 @@ public class ModelLoader {
 		
 	}
 	
+	private void loadRules() {
+		//Load the mapping rules
+		BufferedReader in = null ;
+		try {
+			
+			in = new BufferedReader( new FileReader( rulesFileName ) );
+		}
+		catch(FileNotFoundException fnfe) {
+			log.info( fnfe.getMessage() ) ;
+		}
+		
+		if( in != null ) {
+			
+			rules = Rule.parseRules( Rule.rulesParserFromReader(in) );
+			
+		}
+		else {
+			log.warn( "No rules in " + rulesFileName );
+		}
+
+		
+	}
+	
 	public Model getInputModel() {
 		return inputModel ;
 	}
 	
 	public Model getOutputModel() {
 		return outputModel ;
+	}
+	
+	public List<Rule> getRules() {
+		return rules ;
 	}
 	
 	public void writeOutputModel() {
@@ -129,7 +166,7 @@ public class ModelLoader {
 			e.printStackTrace();
 		}
 		
-		outputModel.write(out) ;
+		outputModel.write(out, "TURTLE") ;
 		
 	}
 	

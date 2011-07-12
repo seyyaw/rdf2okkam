@@ -273,6 +273,21 @@ public class ServiceClient {
 		
 	}
 	
+	public void deleteEntity(String okkamId) {
+		
+		String ticket = null ;
+		try {
+			ticket = _okkamClient.lockEntity(okkamId);
+		} catch (Throwable t) {
+
+		}
+		
+
+		_okkamClient.deleteEntity( okkamId, ticket );
+
+		
+	}
+	
 	
 
 }
