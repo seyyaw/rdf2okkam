@@ -2,6 +2,7 @@ package it.okkam.rdf2okkam.model;
 
 
 
+import it.okkam.rdf2okkam.ens.client.ServiceClientTest;
 import it.okkam.rdf2okkam.parser.GetSubjects;
 
 import java.util.ArrayList;
@@ -14,6 +15,10 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -43,6 +48,9 @@ public class ModelUtil {
 	
 	static ModelLoader loader = null ;
 	static GetSubjects getsubjects;
+	
+	private static Log log = LogFactory.getLog(ModelUtil.class);
+	
 	public static void main(String[] args) throws Exception {
 		loader = ModelLoader.getInstance() ;
 		model=loader.getInputModel();
@@ -216,6 +224,7 @@ public class ModelUtil {
 			Resource subj=model.createResource(subject);
 			StmtIterator iter = model.listStatements();
 					while(iter.hasNext()){
+						
 						Statement tmpstmt=iter.next();
 						String tmproperty=tmpstmt.getPredicate().toString();
 						RDFNode object=tmpstmt.getObject();
@@ -228,6 +237,7 @@ public class ModelUtil {
 							Property tmpproperty=model.createProperty(tmproperty);
 							Statement newstmt=ResourceFactory.createStatement(subj, tmpproperty, object);
 							newstatments.add(newstmt);
+							log.debug(newstmt) ;
 							}
 						
 					}

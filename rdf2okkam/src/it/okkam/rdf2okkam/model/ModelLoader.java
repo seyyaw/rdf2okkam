@@ -29,9 +29,9 @@ import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 public class ModelLoader {
 		
 	
-	private final String inputDatasetFileName = "resources/test/anagrafe1.ttl" ;
+	private final String inputDatasetFileName = "resources/test/anagrafe2.ttl" ;
 	
-	private final String outputDatasetFileName = "resources/test/anagrafe1_out.ttl" ;
+	private final String outputDatasetFileName = "resources/test/anagrafe2_out.ttl" ;
 	
 	private final String rulesFileName = "resources/rules/mapping.rules" ;
 	
