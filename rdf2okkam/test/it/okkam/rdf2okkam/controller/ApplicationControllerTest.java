@@ -99,7 +99,7 @@ public class ApplicationControllerTest {
 	
 	private void printUris(Map<String, String> bnodeOkkamId) {
 		log.info("----printing bnodes - uri pairs on file ----" ) ;
-		String uriFileName = "resources/test/bnode_uri_04.txt" ;
+		String uriFileName = "resources/test/bnode_uri_00.txt" ;
 		PrintWriter out = null ;
 		try {
 			out = new PrintWriter(new BufferedWriter(new FileWriter( uriFileName )));

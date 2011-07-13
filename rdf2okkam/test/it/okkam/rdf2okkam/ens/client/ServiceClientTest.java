@@ -11,11 +11,18 @@ import it.okkam.rdf2okkam.ens.client.ServiceClient;
 import it.okkam.rdf2okkam.model.ModelLoader;
 import it.okkam.rdf2okkam.parser.RdfUtil;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributesType;
@@ -42,6 +49,8 @@ public class ServiceClientTest {
 	AttributesType attributesType = null;
 	EnsQuery query = null ;
 
+	private static Log log = LogFactory.getLog(ServiceClientTest.class);
+	
 	@Before
 	public void setUp() throws Exception {
 		
@@ -106,8 +115,13 @@ public class ServiceClientTest {
 	
 	@Test
 	public void testDeleteEntity() {
-		String okkamid = "http://www.okkam.org/ens/id32609f1e-5dc9-44e3-8387-06e0806e2e01" ;
-		client.deleteEntity(okkamid) ;
+		List<String> okkamids = getUrisFromFile() ;
+		Iterator<String> iokkamid = okkamids.iterator() ;
+		while(iokkamid.hasNext()) {
+			String okkamid = iokkamid.next() ;
+			client.deleteEntity(okkamid) ;
+		}
+		
 		
 	}
 	
@@ -120,6 +134,34 @@ public class ServiceClientTest {
 		Statement stmt = isubj1.next() ;
 		subject = stmt.getSubject() ;
 		return subject ;
+	}
+	
+	private List<String> getUrisFromFile() {
+		List<String> result = new ArrayList<String>() ;
+		String uriFileName = "resources/test/bnode_uri_00.txt" ;
+		BufferedReader in = null ;
+		try {			
+			in = new BufferedReader( new FileReader( uriFileName ) ) ;
+			String line ;
+			while( (line = in.readLine()) != null ) {
+				String [] ids = line.split(",") ;
+				String bnode = ids[0] ;
+				String uri = ids[1] ;
+				result.add(uri.trim()) ;
+			}
+			
+			in.close() ;
+		}
+		catch(FileNotFoundException fnfe) {
+			log.info( fnfe.getMessage() ) ;
+		}
+		catch(IOException ioe) {
+			log.info( ioe.getMessage() ) ;
+		}
+		
+		return result ;
+		
+		
 	}
 
 }
