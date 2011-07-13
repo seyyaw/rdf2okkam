@@ -1,0 +1,211 @@
+@prefix tax:     <http://localhost/TaxOntology.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ens:     <http://models.okkam.org/ENS-core-vocabulary.owl#> .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "NCLWLM00E08L378H" ;
+      tax:haCognome "NICOLUSSI ZOM" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "TRENTO" ;
+                ens:name "TRENTO"
+              ] ;
+      tax:haDataNascita "08/05/2000" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "WILLIAM" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "FLZNTA71R70H612G" ;
+      tax:haCognome "FILZ" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "ROVERETO" ;
+                ens:name "ROVERETO"
+              ] ;
+      tax:haDataNascita "30/10/1971" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "ANITA" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "NULL" ;
+      tax:haCognome "LONGHI" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "PEDEMONTE" ;
+                ens:name "PEDEMONTE"
+              ] ;
+      tax:haDataNascita "16/05/1902" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "MARIA" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "FBRPLA53T56H361H" ;
+      tax:haCognome "FABRIS" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "ROANA" ;
+                ens:name "ROANA"
+              ] ;
+      tax:haDataNascita "16/12/1953" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "PAOLA" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "HBRLGU37H23D651F" ;
+      tax:haCognome "HUEBER" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haDataNascita "23/06/1937" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "LUIGI" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "MRZWTR57R14D651Q" ;
+      tax:haCognome "MARZARI" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haDataNascita "14/10/1957" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "WALTER" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "CSNLEI09B09H612A" ;
+      tax:haCognome "CUSINATO" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "ROVERETO" ;
+                ens:name "ROVERETO"
+              ] ;
+      tax:haDataNascita "09/02/2009" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "ELIA" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "NULL" ;
+      tax:haCognome "VALLE" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haDataNascita "08/09/1923" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "DARIO" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "MTTDRS67S65H612F" ;
+      tax:haCognome "MITTEMPERGHER" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "ROVERETO" ;
+                ens:name "ROVERETO"
+              ] ;
+      tax:haDataNascita "25/11/1967" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "DORIS" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "NULL" ;
+      tax:haCognome "CUCCO" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "ROVERETO" ;
+                ens:name "ROVERETO"
+              ] ;
+      tax:haDataNascita "19/01/1959" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "MARISA" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "TRGMRN38C16D651I" ;
+      tax:haCognome "TARGHER" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haDataNascita "16/03/1938" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "MARIANO" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "NULL" ;
+      tax:haCognome "SCIBILIA" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "PALERMO" ;
+                ens:name "PALERMO"
+              ] ;
+      tax:haDataNascita "15/10/1939" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "LUCIA MARIA RITA" .
+
+[]    a       tax:Persona_Fisica , ens:person ;
+      tax:haCodiceFiscale "NULL" ;
+      tax:haCognome "HILLEBRAND" ;
+      tax:haComuneNascita
+              [ a       ens:location , tax:LuogoNascita ;
+                tax:haNome "MERANO" ;
+                ens:name "MERANO"
+              ] ;
+      tax:haDataNascita "22/08/1965" ;
+      tax:haLuogoResidenza
+              [ a       ens:location , tax:LuogoResidenza ;
+                tax:haNome "FOLGARIA" ;
+                ens:name "FOLGARIA"
+              ] ;
+      tax:haNome "STEPHAN" .
