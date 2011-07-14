@@ -12,6 +12,8 @@ import java.util.Set;
 
 import javax.xml.namespace.QName;
 
+import junit.framework.TestCase;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
@@ -28,7 +30,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
 import com.hp.hpl.jena.util.FileManager;
 
-public class EntityBuilderTest {
+public class EntityBuilderTest extends TestCase {
 	
 	private final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#";
 	private final String ENS_LOCATION = ensNS + "location" ;
@@ -43,6 +45,10 @@ public class EntityBuilderTest {
 	Globalizer global = null ;
 	
 	private static Log log = LogFactory.getLog(EntityBuilderTest.class);
+	
+	public EntityBuilderTest(String testName) {
+		super(testName) ;
+	}
 
 	@Before
 	public void setUp() throws Exception {

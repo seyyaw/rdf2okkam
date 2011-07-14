@@ -44,6 +44,10 @@ public class LocationTest extends TestCase {
 	
 	private static Log log = LogFactory.getLog(LocationTest.class);
 	
+	public LocationTest(String testName) {
+		super(testName) ;
+	}
+	
 	@Before
 	public void setUp() throws Exception {
 		// use the FileManager to find the input file
