@@ -22,6 +22,8 @@ import java.util.Set;
 
 import javax.xml.namespace.QName;
 
+import junit.framework.TestCase;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
@@ -34,7 +36,7 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.util.FileManager;
 
-public class ApplicationControllerTest {
+public class ApplicationControllerTest extends TestCase {
 	
 	
 	String modelFileName = "resources/test/dataset_out.ttl" ;
@@ -45,6 +47,10 @@ public class ApplicationControllerTest {
 	Tax2EnsMapper mapper = null ;
 	
 	private static Log log = LogFactory.getLog(ApplicationControllerTest.class);
+	
+	public ApplicationControllerTest(String testName) {
+		super(testName) ;
+	}
 
 	@Before
 	public void setUp() throws Exception {		
