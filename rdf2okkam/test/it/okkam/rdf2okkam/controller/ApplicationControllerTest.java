@@ -92,14 +92,20 @@ public class ApplicationControllerTest {
 		
 		printUris(bnodeOkkamId) ;
 		
+		final long startTime = System.currentTimeMillis();
+		final long endTime;
+		
 		ModelUtil util = new ModelUtil() ;
 		util.modifyRDF(bnodeOkkamId);		
 		
+		endTime = System.currentTimeMillis();
+		final long duration = endTime - startTime;
+		System.out.println("Model Creation took " + duration + " milliseconds");
 	}
 	
 	private void printUris(Map<String, String> bnodeOkkamId) {
 		log.info("----printing bnodes - uri pairs on file ----" ) ;
-		String uriFileName = "resources/test/bnode_uri_00.txt" ;
+		String uriFileName = "resources/test/bnode_uri_03.txt" ;
 		PrintWriter out = null ;
 		try {
 			out = new PrintWriter(new BufferedWriter(new FileWriter( uriFileName )));
