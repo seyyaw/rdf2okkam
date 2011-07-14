@@ -13,6 +13,9 @@ import java.util.Set;
 
 import javax.xml.namespace.QName;
 
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributeType;
@@ -31,12 +34,16 @@ import com.hp.hpl.jena.rdf.model.SimpleSelector;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.rdf.model.StmtIterator;
 
-public class RdfUtilTest {
+public class RdfUtilTest extends TestCase {
 	
 	RdfUtil parser = null;
 	ModelLoader loader = null ;
 	EnsQuery query = null ;
-
+	
+	public RdfUtilTest(String testName) {
+		super(testName) ;
+	}
+	
 	@Before
 	public void setUp() throws Exception {
 		loader = ModelLoader.getInstance() ;

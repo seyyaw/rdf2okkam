@@ -1,4 +1,4 @@
-package it.okkam.rdf2okkam.ens;
+package it.okkam.rdf2okkam.parser;
 
 import static org.junit.Assert.*;
 

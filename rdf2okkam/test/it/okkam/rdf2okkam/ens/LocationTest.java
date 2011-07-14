@@ -12,6 +12,8 @@ import java.util.Set;
 
 import javax.xml.namespace.QName;
 
+import junit.framework.TestCase;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
@@ -27,7 +29,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
 import com.hp.hpl.jena.util.FileManager;
 
-public class LocationTest {
+public class LocationTest extends TestCase {
 	private final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#";
 	private final String ENS_LOCATION = ensNS + "location" ;
 	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";

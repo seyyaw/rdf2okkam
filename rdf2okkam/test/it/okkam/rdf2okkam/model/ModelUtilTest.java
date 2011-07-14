@@ -9,13 +9,15 @@ import java.io.FileNotFoundException;
 import java.util.Iterator;
 import java.util.Map;
 
+import junit.framework.TestCase;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
-public class ModelUtilTest {
+public class ModelUtilTest extends TestCase {
 	
 	Model model = null ;
 	GetSubjects subjects = null ;

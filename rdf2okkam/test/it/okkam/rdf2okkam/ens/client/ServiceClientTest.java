@@ -21,6 +21,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import junit.framework.TestCase;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
@@ -38,7 +40,7 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 
 
-public class ServiceClientTest {
+public class ServiceClientTest extends TestCase {
 	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	private static final String filename = "resources/anagrafe1.ttl";
 	private static final String confpath = "conf";
