@@ -96,13 +96,17 @@ public class ApplicationControllerTest extends TestCase {
 			log.info("New entity's okkam id: " + okkamid) ;		
 		}
 		
+		log.info("--------------Entering printUri() method---------------") ;
 		printUris(bnodeOkkamId) ;
+		log.info("--------------End printUri() method---------------") ;
 		
 		final long startTime = System.currentTimeMillis();
 		final long endTime;
 		
 		ModelUtil util = new ModelUtil() ;
-		util.modifyRDF(bnodeOkkamId);		
+		log.info("--------------Entering modifyRDF() method---------------") ;
+		util.modifyRDF(bnodeOkkamId);
+		log.info("--------------End of modifyRDF() method---------------") ;
 		
 		endTime = System.currentTimeMillis();
 		final long duration = endTime - startTime;
