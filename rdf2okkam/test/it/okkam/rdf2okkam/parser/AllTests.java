@@ -14,6 +14,7 @@ public class AllTests {
 			"Test for it.okkam.rdf2okkam.parser");
 		//Use addTestSuite to run all the tests in the test class
 		//suite.addTestSuite(RdfUtilTest.class);
+		//suite.addTestSuite(GlobalizerTest.class);
 		
 		//Use addTest to run specific test in a test class
 		suite.addTest( new RdfUtilTest( "testListProperties" ) );
