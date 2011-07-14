@@ -50,8 +50,14 @@ public class ServiceClientTest extends TestCase {
 	ServiceClient client = null;
 	AttributesType attributesType = null;
 	EnsQuery query = null ;
+	
+	public ServiceClientTest(String testName) {
+		super(testName) ;
+	}
 
 	private static Log log = LogFactory.getLog(ServiceClientTest.class);
+	
+	
 	
 	@Before
 	public void setUp() throws Exception {
