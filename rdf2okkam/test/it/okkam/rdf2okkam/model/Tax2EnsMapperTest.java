@@ -9,6 +9,11 @@ import org.junit.Test;
 public class Tax2EnsMapperTest extends TestCase {
 
 	Tax2EnsMapper mapper = null ;
+	
+	public Tax2EnsMapperTest(String testName) {
+		super(testName) ;
+	}
+	
 	@Before
 	public void setUp() throws Exception {
 		mapper = new Tax2EnsMapper() ; 

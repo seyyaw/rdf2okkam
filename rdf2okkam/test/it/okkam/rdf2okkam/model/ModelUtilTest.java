@@ -26,6 +26,11 @@ public class ModelUtilTest extends TestCase {
 	static GetSubjects getsubjects;
 	
 	ModelUtil modelUtil=null;
+	
+	public ModelUtilTest(String testName) {
+		super(testName) ;
+	}
+	
 	@Before
 	public void setUp() throws Exception {
 		loader = ModelLoader.getInstance() ;
