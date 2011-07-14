@@ -11,6 +11,8 @@ import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.Set;
 
+import junit.framework.TestCase;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
@@ -29,7 +31,7 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.hp.hpl.jena.util.FileManager;
 
 
-public class GlobalizerTest {
+public class GlobalizerTest extends TestCase {
 	
 	String inputModelFileName = "resources/anagrafe1.ttl" ;
 	String outputModelFileName = "resources/datasetout.ttl" ;
@@ -40,6 +42,11 @@ public class GlobalizerTest {
 	Globalizer global = null ;
 
 	private static Log log = LogFactory.getLog(GlobalizerTest.class);
+	
+	public GlobalizerTest(String testName) {
+		super(testName) ;
+	}
+	
 	@Before
 	public void setUp() throws Exception {
 		

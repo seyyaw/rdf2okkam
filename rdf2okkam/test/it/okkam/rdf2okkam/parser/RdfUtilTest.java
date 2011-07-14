@@ -201,14 +201,6 @@ public class RdfUtilTest extends TestCase {
 		
 	}
 	
-	@Test
-	public void testGetFullDistinctSubjects() {
-		System.out.println("---------------Test getFullDistincSubjects()----------------") ;
-		Set<RDFNode> subjects = parser.getFullDistinctSubjects() ;
-		for(RDFNode subject : subjects) {
-			System.out.println(subject.toString()) ;
-		}
-	}
 	
 	@Test 
 	public void testGetSubjectsWithoutBNodes() {
