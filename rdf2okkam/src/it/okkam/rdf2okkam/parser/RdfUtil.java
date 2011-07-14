@@ -204,7 +204,9 @@ public class RdfUtil {
 		}
 		return subjects;
 	}
-	
+	/*
+	 * Return the list of subjects.
+	 */
 	public List<RDFNode> listSubjects() {
 		ArrayList<RDFNode> subjects = new ArrayList<RDFNode>() ;
 		List<QName> ensTypes = listEnsClasses() ;
@@ -226,6 +228,9 @@ public class RdfUtil {
 		return subjects ;
 	}
 	
+	/*
+	 * Return the list of classes as values of the rdf:type property 
+	 */
 	public QName getType(String uri){
 		Resource resource = _model.getResource( uri );
 		Property rdfType = _model.getProperty(VocabConstants.rdfNS + "type");
@@ -235,7 +240,9 @@ public class RdfUtil {
 		return qtype;
 		
 	}
-	
+	/*
+	 * Returns the rdf:type of a URI resource (not blank node)
+	 */
 	public QName getType(Resource resource){		
 		Property rdfType = _model.getProperty(VocabConstants.rdfNS + "type");
 		Statement stmt = resource.getProperty(rdfType);
@@ -364,12 +371,6 @@ public class RdfUtil {
 		
 	}
 	
-	public Set<RDFNode> getFullDistinctSubjects() {
-		Set<RDFNode> result = new HashSet<RDFNode>() ;
-		result = getDistinctSubjects() ;
-		
-		return result ;
-	}
 	
 	/*
 	 * Get all the subjects that have the same properties values of
