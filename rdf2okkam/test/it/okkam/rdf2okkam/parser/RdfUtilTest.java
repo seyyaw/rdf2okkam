@@ -16,11 +16,13 @@ import javax.xml.namespace.QName;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
 import org.junit.Test;
 import org.okkam.client.data.AttributeType;
 import org.okkam.client.data.AttributesType;
-import org.openjena.atlas.logging.Log;
+
 
 import com.hp.hpl.jena.ontology.DatatypeProperty;
 import com.hp.hpl.jena.ontology.OntClass;
@@ -40,6 +42,8 @@ public class RdfUtilTest extends TestCase {
 	ModelLoader loader = null ;
 	EnsQuery query = null ;
 	
+	private static Log log = LogFactory.getLog(RdfUtilTest.class);
+	
 	public RdfUtilTest(String testName) {
 		super(testName) ;
 	}
@@ -53,43 +57,43 @@ public class RdfUtilTest extends TestCase {
 	
 	@Test
 	public void testListEnsClasses(){
-		System.out.println("---------------Test listEnsClasses()----------------") ;
+		log.debug("---------------Test listEnsClasses()----------------") ;
 		List<QName> classList = parser.listEnsClasses();
-		System.out.println("Number of classes: " + classList.size());
+		log.debug("Number of classes: " + classList.size());
 		Iterator<QName> iclass = classList.iterator();
 		while(iclass.hasNext()){
-			System.out.println("Class: " + iclass.next().getLocalPart());
+			log.debug("Class: " + iclass.next().getLocalPart());
 		}
 		
 	}
 	
 	@Test
 	public void testListSubjectByType(){
-		System.out.println("---------------Test listSubjectByType()----------------") ; 
+		log.debug("---------------Test listSubjectByType()----------------") ; 
 		List<Resource> subjects = parser.listSubjectsByType("person");
 		Iterator<Resource> i = subjects.iterator();
 		while(i.hasNext()){
 			Resource subject = i.next();
-			System.out.println("Subject: " + subject.toString());			
+			log.debug("Subject: " + subject.toString());			
 		}
 		
 	}
 	
 	@Test
 	public void testGetType(){
-		System.out.println("---------------Test getType()----------------") ;
+		log.debug("---------------Test getType()----------------") ;
 		//SString subjectUri = "http://models.okkam.org/anagrafe.owl#2048";
 		String subjectId = "_:node16273n1dhx1" ;
 		QName q = parser.getType(subjectId);
-		System.out.println(subjectId + "'s type : " + q.getLocalPart());
+		log.debug(subjectId + "'s type : " + q.getLocalPart());
 		
 	}
 	
 	@Test
 	public void testListProperties(){
-		System.out.println("---------------Test listProperties()----------------") ;
+		log.debug("---------------Test listProperties()----------------") ;
 		String subjectUri = "http://models.okkam.org/anagrafe.owl#2048";
-		System.out.println("Attributes for : " + subjectUri);
+		log.debug("Attributes for : " + subjectUri);
 		AttributesType attributesType = parser.listProperties(subjectUri);
 		List<AttributeType> attributes = attributesType.getAttributes();
 		Iterator<AttributeType> i = attributes.iterator();
@@ -98,23 +102,23 @@ public class RdfUtilTest extends TestCase {
 			String attributeName = attribute.getName().getLocalPart();
 			String prefix = attribute.getName().getPrefix();
 			String attributeValue = attribute.getValue();
-			System.out.println("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
+			log.debug("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
 		}
 		
-		System.out.println();
+		
 		
 	}
 	
 	@Test
 	public void testListSubjectProperties(){
-		System.out.println("---------------Test listSubjectProperties()----------------") ;
+		log.debug("---------------Test listSubjectProperties()----------------") ;
 		Set<RDFNode> subjects = parser.getSubjectsWithoutBNodes() ;
 		Iterator<RDFNode> isub = subjects.iterator() ;
 		while(isub.hasNext()) {			
 			RDFNode subjectNode = isub.next() ;			
-			System.out.println("Attributes for : " + subjectNode.toString());
+			log.debug("Attributes for : " + subjectNode.toString());
 			AttributesType attributesType = parser.listSubjectProperties(subjectNode);
-			System.out.println( query.getQuery(attributesType, "semantic type") );
+			log.debug( query.getQuery(attributesType, "semantic type") );
 			List<AttributeType> attributes = attributesType.getAttributes();
 			Iterator<AttributeType> i = attributes.iterator();
 			while(i.hasNext()){
@@ -122,9 +126,9 @@ public class RdfUtilTest extends TestCase {
 				String attributeName = attribute.getName().getLocalPart();
 				String prefix = attribute.getName().getPrefix();
 				String attributeValue = attribute.getValue();
-				System.out.println("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
+				log.debug("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
 			}
-			System.out.println() ;
+			
 		}
 		
 	}
@@ -133,12 +137,12 @@ public class RdfUtilTest extends TestCase {
 	
 	@Test
 	public void testListEnsDatatypeProperties(){
-		System.out.println("---------------Test listEnsDataTypeProperties()----------------") ;
+		log.debug("---------------Test listEnsDataTypeProperties()----------------") ;
 		List<QName> ensProperties = parser.listEnsDatatypeProperties();
 		Iterator<QName> i = ensProperties.iterator();
 		while(i.hasNext()){
 			QName q = i.next();
-			System.out.println("Namespace: " + q.getNamespaceURI() + ", prefix: " + q.getPrefix() + ", local part: " + q.getLocalPart());
+			log.debug("Namespace: " + q.getNamespaceURI() + ", prefix: " + q.getPrefix() + ", local part: " + q.getLocalPart());
 		}
 	}
 	
@@ -146,18 +150,18 @@ public class RdfUtilTest extends TestCase {
 	public void testGetQName(){
 		String uri = "http://models.okkam.org/ENS-core-vocabulary.owl#first_name";
 		QName q = parser.getQName(uri);
-		System.out.println("Namespace: " + q.getNamespaceURI() + ", prefix: " + q.getPrefix() + ", local part: " + q.getLocalPart());
+		log.debug("Namespace: " + q.getNamespaceURI() + ", prefix: " + q.getPrefix() + ", local part: " + q.getLocalPart());
 	}
 	
 	@Test
 	public void testListSubjects() {
-		System.out.println("---------------Test listSubjects()----------------") ;
+		log.debug("---------------Test listSubjects()----------------") ;
 		ResIterator ires = loader.getInputModel().listSubjects() ;
 		while(ires.hasNext()) {
 			Resource res = ires.next() ;
-			System.out.println("Subject resourec: " + res.getURI()) ;
+			log.debug("Subject resourec: " + res.getURI()) ;
 		}
-		System.out.println() ;
+		
 		List<RDFNode> resources = parser.listSubjects() ;
 		Iterator<RDFNode> i = resources.iterator() ;
 		int counter = 0 ;
@@ -165,10 +169,10 @@ public class RdfUtilTest extends TestCase {
 			RDFNode subject = i.next();
 			counter++ ;
 			if(subject.isURIResource()) {
-				System.out.println(counter + ") subject: " + subject.toString() + " is URI resource") ;
+				log.debug(counter + ") subject: " + subject.toString() + " is URI resource") ;
 			}
 			if(subject.isAnon()) {
-				System.out.println(counter + ") subject: " + subject.toString() + " is blank node") ;
+				log.debug(counter + ") subject: " + subject.toString() + " is blank node") ;
 			}
 			
 		}
@@ -180,23 +184,23 @@ public class RdfUtilTest extends TestCase {
 		Iterator<RDFNode> i = resources.iterator() ;
 		while(i.hasNext()) {
 			RDFNode subject = i.next();						
-			System.out.println("Subject: " + subject.toString() + " all properties with BNodes: " + parser.allPropertiesWithoutBNodes(subject)) ;			
+			log.debug("Subject: " + subject.toString() + " all properties with BNodes: " + parser.allPropertiesWithoutBNodes(subject)) ;			
 										
 		}
 	}
 	
 	@Test
 	public void testGetDistinctSubjects() {
-		System.out.println("---------------Test getDistincSubjects()----------------") ;
+		log.debug("---------------Test getDistincSubjects()----------------") ;
 		
 		Set<RDFNode> subjects = parser.getDistinctSubjects() ;
-		System.out.println("Number of subjects: " + subjects.size()) ;		
+		log.debug("Number of subjects: " + subjects.size()) ;		
 		
 		Iterator<RDFNode> i = subjects.iterator() ;
 		while(i.hasNext()) {
 			RDFNode subject = i.next() ;
 		
-			System.out.println("subject: " + subject.toString()) ;
+			log.debug("subject: " + subject.toString()) ;
 		}
 		
 	}
@@ -204,29 +208,29 @@ public class RdfUtilTest extends TestCase {
 	
 	@Test 
 	public void testGetSubjectsWithoutBNodes() {
-		System.out.println("---------------Test getSubjectsWithoutBNodes()----------------") ;
+		log.debug("---------------Test getSubjectsWithoutBNodes()----------------") ;
 		Set<RDFNode> subjects = parser.getSubjectsWithoutBNodes() ;
-		System.out.println("Number of subjects without blank nodes: " + subjects.size()) ;
+		log.debug("Number of subjects without blank nodes: " + subjects.size()) ;
 		Iterator<RDFNode> i = subjects.iterator() ;
 		int count = 0 ;
 		while(i.hasNext()) {
 			RDFNode subject = i.next() ;
 			count++ ;
-			System.out.println(count + ") subject: " + subject.toString()) ;
+			log.debug(count + ") subject: " + subject.toString()) ;
 		}
 	}
 	
 	@Test
 	public void testGetStrictSubject() {
-		System.out.println("---------------Test getStrictSubjects()----------------") ;
+		log.debug("---------------Test getStrictSubjects()----------------") ;
 		Set<RDFNode> subjects = parser.getStrictSubjects() ;
-		System.out.println("Number of strict subject node: " + subjects.size()) ;
+		log.debug("Number of strict subject node: " + subjects.size()) ;
 		Iterator<RDFNode> i = subjects.iterator() ;
 		int count = 0 ;
 		while(i.hasNext()) {
 			RDFNode subject = i.next() ;
 			count++ ;
-			System.out.println(count + ") strict subject node: " + subject.toString()) ;
+			log.debug(count + ") strict subject node: " + subject.toString()) ;
 			AttributesType attributesType = parser.listSubjectProperties(subject);
 			List<AttributeType> attributes = attributesType.getAttributes();
 			Iterator<AttributeType> iattributes = attributes.iterator() ;						
@@ -235,7 +239,7 @@ public class RdfUtilTest extends TestCase {
 				String attributeName = attribute.getName().getLocalPart();
 				String prefix = attribute.getName().getPrefix();
 				String attributeValue = attribute.getValue();
-				System.out.println("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
+				log.debug("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
 			}
 		}
 		
@@ -243,15 +247,15 @@ public class RdfUtilTest extends TestCase {
 	
 	@Test
 	public void testGetNotStrictSubjects() {
-		System.out.println("---------------Test getNotStrictSubjects()----------------") ;
+		log.debug("---------------Test getNotStrictSubjects()----------------") ;
 		Set<RDFNode> subjects = parser.getNotStrictSubjects() ;
-		System.out.println("Number of not strict subject node: " + subjects.size()) ;
+		log.debug("Number of not strict subject node: " + subjects.size()) ;
 		Iterator<RDFNode> i = subjects.iterator() ;
 		int count = 0 ;
 		while(i.hasNext()) {
 			RDFNode subject = i.next() ;
 			count++ ;
-			System.out.println(count + ") not strict subject node: " + subject.toString()) ;
+			log.debug(count + ") not strict subject node: " + subject.toString()) ;
 			AttributesType attributesType = parser.listSubjectProperties(subject);
 			List<AttributeType> attributes = attributesType.getAttributes();
 			Iterator<AttributeType> iattributes = attributes.iterator() ;						
@@ -260,7 +264,7 @@ public class RdfUtilTest extends TestCase {
 				String attributeName = attribute.getName().getLocalPart();
 				String prefix = attribute.getName().getPrefix();
 				String attributeValue = attribute.getValue();
-				System.out.println("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
+				log.debug("Attribute: " + attributeName + ", prefix: " + prefix + ", value: " + attributeValue);
 			}
 		}
 		
@@ -268,7 +272,7 @@ public class RdfUtilTest extends TestCase {
 	
 	@Test
 	public void testCompareSubjects() {
-		System.out.println("---------------Test compareSubjects()----------------") ;
+		log.debug("---------------Test compareSubjects()----------------") ;
 		final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#" ; 
 		Property subj1Predicate = loader.getInputModel().getProperty(ensNS + "location_name") ;		
 		Selector selector1 = new SimpleSelector(null, subj1Predicate, "FOLGARIA" ) ;
@@ -283,9 +287,9 @@ public class RdfUtilTest extends TestCase {
 				RDFNode subj2 = stmt2.getSubject() ;
 				
 				if( parser.compareSubjects(subj1, subj2) ) 
-					System.out.println( stmt1.toString() + " same as " + stmt2.toString()) ; 
+					log.debug( stmt1.toString() + " same as " + stmt2.toString()) ; 
 				else
-					System.out.println( stmt1.toString() + " different from " + stmt2.toString()) ;
+					log.debug( stmt1.toString() + " different from " + stmt2.toString()) ;
 				 
 			}
 		}
@@ -294,7 +298,7 @@ public class RdfUtilTest extends TestCase {
 	
 	@Test
 	public void testGetDuplicateSubjects() {
-		System.out.println("---------------Test getDuplicateSubjects()----------------") ;
+		log.debug("---------------Test getDuplicateSubjects()----------------") ;
 		final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#" ; 
 		Property subj1Predicate = loader.getInputModel().getProperty(ensNS + "location_name") ;		
 		Selector selector1 = new SimpleSelector(null, subj1Predicate, "FOLGARIA" ) ;
@@ -306,14 +310,14 @@ public class RdfUtilTest extends TestCase {
 		Iterator<RDFNode> i = duplicates.iterator() ;
 		while(i.hasNext()) {
 			RDFNode duplicate = i.next() ;
-			System.out.println(subj1 + " has " + duplicate + " as a duplicate resource.") ;
+			log.debug(subj1 + " has " + duplicate + " as a duplicate resource.") ;
 		}
 		
 	}
 	
 //	@Test
 //	public void testRemoveDuplicates() {
-//		System.out.println("---------------Test removeDuplicateS()----------------") ;		
+//		log.debug("---------------Test removeDuplicateS()----------------") ;		
 //		RDFNode subj1 = getSubject() ;
 //		Model resultModel = parser.removeDuplicates(subj1) ;
 //		resultModel.write(System.out, "TURTLE") ;
@@ -322,18 +326,18 @@ public class RdfUtilTest extends TestCase {
 	
 	@Test
 	public void testGlobalizeIdentifier() {
-		System.out.println("---------------Test globalizeIdentifier()----------------") ;
+		log.debug("---------------Test globalizeIdentifier()----------------") ;
 		Set<RDFNode> bnodes = parser.getNotStrictSubjects() ;
 		Iterator<RDFNode> inode = bnodes.iterator() ;
 		while (inode.hasNext()) {
 			RDFNode bnode = inode.next() ;			
 			int idlength = bnode.toString().length() ;
 			String uri = "http://okkam.org/ens/" + bnode.toString().substring(idlength - 4) ;
-			System.out.println("Bnode: " + bnode.toString() + " URI: " + uri ) ;
+			log.debug("Bnode: " + bnode.toString() + " URI: " + uri ) ;
 			parser.globalizeIdentifier(bnode, uri) ;
 		}
 		
-		System.out.println("---updated model---") ;		
+		log.debug("---updated model---") ;		
 		loader.getOutputModel().write(System.out, "TURTLE") ;			
 		
 	}
@@ -343,9 +347,9 @@ public class RdfUtilTest extends TestCase {
 		RDFNode node = getSubject() ;				
 		
 //		if(parser.isEntity(node)) 
-//			System.out.println(node + " is already a recognized entity.") ;
+//			log.debug(node + " is already a recognized entity.") ;
 //		else 
-//			System.out.println(node + " is not a recognized entity.") ;
+//			log.debug(node + " is not a recognized entity.") ;
 		
 		loader.writeOutputModel() ;
 	}
