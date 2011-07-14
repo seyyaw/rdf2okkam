@@ -146,7 +146,7 @@ public class ServiceClientTest extends TestCase {
 	
 	private List<String> getUrisFromFile() {
 		List<String> result = new ArrayList<String>() ;
-		String uriFileName = "resources/test/bnode_uri_00.txt" ;
+		String uriFileName = "resources/test/bnode_uri_03.txt" ;
 		BufferedReader in = null ;
 		try {			
 			in = new BufferedReader( new FileReader( uriFileName ) ) ;
