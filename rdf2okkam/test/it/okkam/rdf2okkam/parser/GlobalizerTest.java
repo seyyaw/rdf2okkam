@@ -3,6 +3,7 @@ package it.okkam.rdf2okkam.parser;
 import static org.junit.Assert.*;
 
 import it.okkam.rdf2okkam.model.ModelLoader;
+import it.okkam.rdf2okkam.model.Tax2EnsMapper;
 import it.okkam.rdf2okkam.parser.Globalizer;
 
 import java.io.FileNotFoundException;
@@ -40,6 +41,7 @@ public class GlobalizerTest extends TestCase {
 	Model _inModel = null ;
 	Model _outModel = null ;
 	Globalizer global = null ;
+	Tax2EnsMapper mapper = null ;
 
 	private static Log log = LogFactory.getLog(GlobalizerTest.class);
 	
@@ -50,24 +52,13 @@ public class GlobalizerTest extends TestCase {
 	@Before
 	public void setUp() throws Exception {
 		
-		// use the FileManager to find the input file
-		InputStream inModelStream = FileManager.get().open( inputModelFileName );
-		if (inModelStream == null) {		    
-			log.error("File: " + inputModelFileName + " not found");
-			System.exit(0);
-		}
-
-		// Create the input model. Models different from the default one import also the 
-		// rdf and rdf-schema axioms. 
-		_inModel = ModelFactory.createDefaultModel();
+		global = new Globalizer(ModelLoader.getInstance().getInputModel(), 
+				ModelLoader.getInstance().getOutputModel()) ;
 		
-		// read the RDF/TURTLE file
-		_inModel.read(inModelStream, baseUri, "TURTLE");
+		mapper = new Tax2EnsMapper() ; //makes mapping inferences		
+		mapper.startInference( ModelLoader.getInstance().getInputModel() ) ;	
 		
-		// create the output model
-		_outModel = ModelFactory.createDefaultModel() ;				
 		
-		global = new Globalizer(_inModel, _outModel) ;
 	}
 
 	@Test

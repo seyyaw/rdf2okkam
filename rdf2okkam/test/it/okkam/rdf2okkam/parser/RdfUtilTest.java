@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import it.okkam.rdf2okkam.ens.client.EnsQuery;
 import it.okkam.rdf2okkam.exception.SameNodeException;
 import it.okkam.rdf2okkam.model.ModelLoader;
+import it.okkam.rdf2okkam.model.Tax2EnsMapper;
 import it.okkam.rdf2okkam.parser.RdfUtil;
 
 import java.util.Iterator;
@@ -40,6 +41,7 @@ public class RdfUtilTest extends TestCase {
 	
 	RdfUtil parser = null;
 	ModelLoader loader = null ;
+	Tax2EnsMapper mapper = null ;
 	EnsQuery query = null ;
 	
 	private static Log log = LogFactory.getLog(RdfUtilTest.class);
@@ -51,6 +53,8 @@ public class RdfUtilTest extends TestCase {
 	@Before
 	public void setUp() throws Exception {
 		loader = ModelLoader.getInstance() ;
+		mapper = new Tax2EnsMapper() ; //makes mapping inferences		
+		mapper.startInference( ModelLoader.getInstance().getInputModel() ) ;
 		parser = new RdfUtil(loader.getInputModel(), loader.getOutputModel() );
 		query = new EnsQuery() ;
 	}
@@ -342,17 +346,17 @@ public class RdfUtilTest extends TestCase {
 		
 	}
 	
-	@Test 
-	public void testIsEntity() {
-		RDFNode node = getSubject() ;				
-		
-//		if(parser.isEntity(node)) 
-//			log.debug(node + " is already a recognized entity.") ;
-//		else 
-//			log.debug(node + " is not a recognized entity.") ;
-		
-		loader.writeOutputModel() ;
-	}
+//	@Test 
+//	public void testIsEntity() {
+//		RDFNode node = getSubject() ;				
+//		
+////		if(parser.isEntity(node)) 
+////			log.debug(node + " is already a recognized entity.") ;
+////		else 
+////			log.debug(node + " is not a recognized entity.") ;
+//		
+//		loader.writeOutputModel() ;
+//	}
 	
 	private RDFNode getSubject() {
 		RDFNode subject = null ;				
