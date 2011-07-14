@@ -16,7 +16,7 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 /*
  * Statements of the input model that have a blank node as subject identifier
- * are updated by a URI in place of the blank node.The updated statements are 
+ * are updated with a URI in place of the blank node.The updated statements are 
  * saved in the output model. The output model cannot have blank nodes, only 
  * literals or URIs are admitted as values for predicates. 
  */
