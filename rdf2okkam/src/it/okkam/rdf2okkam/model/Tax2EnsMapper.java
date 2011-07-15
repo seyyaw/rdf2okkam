@@ -55,7 +55,7 @@ public class Tax2EnsMapper {
 		Reasoner reasoner = new GenericRuleReasoner(ModelLoader.getInstance().getRules());	    
 		InfModel inf = ModelFactory.createInfModel(reasoner, model);
 		ModelLoader.getInstance().getInputModel().add(inf) ;
-		log.info( "Added inferred statements to the input model based on the rules." ) ;
+		log.debug( "Added inferred statements to the input model based on the rules." ) ;
 		
 	}
 	
