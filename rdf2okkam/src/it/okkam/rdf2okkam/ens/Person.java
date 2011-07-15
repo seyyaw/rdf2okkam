@@ -56,7 +56,7 @@ public class Person implements EntityBuildStrategy {
 			Statement stmt = i.next();			
 			AttributeType attribute = new AttributeType();
 			Property predicate = stmt.getPredicate();
-			System.out.println("predicate: " + predicate.getURI());
+			log.debug("predicate: " + predicate.getURI());
 			if( ensNS.equals( predicate.getNameSpace() )){
 				prefix = ENS_PREFIX ;
 			}
@@ -70,32 +70,32 @@ public class Person implements EntityBuildStrategy {
 			attribute.setName(name);
 			RDFNode object = stmt.getObject() ;
 			if ( object.isAnon() ) {
-				log.info("virtual entity object is a blank node" + object.toString()) ;
+				log.debug("virtual entity object is a blank node" + object.toString()) ;
 				// look for the properties to be used to describe a person
 				// follow a list of properties to search for
-				// log.info("predicate: " + predicate.getLocalName() + ". blank node value: " + object) ;
+				// log.debug("predicate: " + predicate.getLocalName() + ". blank node value: " + object) ;
 				String comune_nascita_prop = ensNS + "comune_nascita" ;
 				String city_of_residence_prop = ensNS + "city_of_residence" ;
 				if( comune_nascita_prop.equals(predicate.getURI()) || city_of_residence_prop.equals(predicate.getURI())) {
 					Property location_name_prop = ResourceFactory.createProperty( ensNS + "location_name" ) ; 					
 					Statement stmtprop = _model.getProperty(object.asResource(), location_name_prop) ;
 					String location_name = stmtprop.getObject().toString() ;
-					log.info(predicate.getLocalName() + " = " + location_name) ;
+					log.debug(predicate.getLocalName() + " = " + location_name) ;
 					attribute.setValue( location_name ) ;
 				}
 				else
 					attribute.setValue( object.toString() ) ;
 			}
 			else if (object.isLiteral()) {
-				log.info("virtual entity object literal value = " + object.toString() ) ;
+				log.debug("virtual entity object literal value = " + object.toString() ) ;
 				attribute.setValue( object.toString() );
 			}
 			else if (object.isURIResource()) {
-				log.info("virtual entity object is URI resource = " + object.toString() ) ;
+				log.debug("virtual entity object is URI resource = " + object.toString() ) ;
 				attribute.setValue( object.toString() );
 			}
 			else {
-				log.info("virtual entity object is not literal, uri or blank node = " + object.toString() ) ;
+				log.debug("virtual entity object is not literal, uri or blank node = " + object.toString() ) ;
 				attribute.setValue( object.toString() );
 			}
 			
