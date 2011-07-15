@@ -1,5 +1,4 @@
 #summary System test (by date)
-#labels test
 
 = Tests results =
 
