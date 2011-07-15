@@ -61,7 +61,7 @@ public class ModelUtil {
 		Iterator it = getsubjects.getSubjects().iterator();
 	//	String[][] statment = GetSubjects.getProperties(it);
 		Map<String,String> bnodeokkamid=bnodeOkkamId(it);
-		modifyRDF(bnodeokkamid);
+		//modifyRDF(bnodeokkamid);
 		//ArrayList modstatments=modifyRDF(it);
 		//loadmodify(modstatments,inputFileName3,outrdf);
 		
@@ -211,7 +211,7 @@ public class ModelUtil {
 	 * @throws FileNotFoundException
 	 * @throws InterruptedException 
 	 */
-	private static ArrayList<String> replaceBnodeOkkamID(Map<String,String> bnodeOkkamId){
+	private  ArrayList<String> replaceBnodeOkkamID(Map<String,String> bnodeOkkamId){
 		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator() ;
 		ArrayList newstatments=new ArrayList() ;
 		while(okkamiIdIterator.hasNext()){
@@ -239,7 +239,7 @@ public class ModelUtil {
 		}	
 		return newstatments;
 	}
-	public static Model modifyRDF(Map<String,String> bnodeOkkamId) {
+	public Model modifyRDF(Map<String,String> bnodeOkkamId) {
 		loader = ModelLoader.getInstance() ;
 		model=loader.getInputModel();
 		Model result = null ;
