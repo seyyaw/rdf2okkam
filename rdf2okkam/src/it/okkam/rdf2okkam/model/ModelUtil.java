@@ -211,72 +211,81 @@ public class ModelUtil {
 	 * @throws FileNotFoundException
 	 * @throws InterruptedException 
 	 */
-	public static Model modifyRDF(Map<String,String> bnodeOkkamId) {
-		loader = ModelLoader.getInstance() ;
-		model=loader.getInputModel();
-		Model result = null ;
-		result=loader.getOutputModel();
-		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator();
-		ArrayList newstatments=new ArrayList();
+	private static ArrayList<String> replaceBnodeOkkamID(Map<String,String> bnodeOkkamId){
+		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator() ;
+		ArrayList newstatments=new ArrayList() ;
 		while(okkamiIdIterator.hasNext()){
-			String tempsubject=okkamiIdIterator.next().toString();
-			String subject=bnodeOkkamId.get(tempsubject);
-			Resource subj=model.createResource(subject);
-			StmtIterator iter = model.listStatements();
-					while(iter.hasNext()){
-						
-						Statement tmpstmt=iter.next();
-						String tmproperty=tmpstmt.getPredicate().toString();
-						RDFNode object=tmpstmt.getObject();
-						String tmpsubject=tmpstmt.getSubject().toString();
-						Resource tmpsubj=model.createResource(tmpsubject);
+			String tempsubject=okkamiIdIterator.next().toString() ;
+			String subject=bnodeOkkamId.get(tempsubject) ;
+			Resource subj=model.createResource(subject) ;
+			StmtIterator iter = model.listStatements() ;
+					while(iter.hasNext()){	
+						Statement tmpstmt=iter.next() ;
+						String tmproperty=tmpstmt.getPredicate().toString() ;
+						RDFNode object=tmpstmt.getObject() ;
+						String tmpsubject=tmpstmt.getSubject().toString() ;
+						Resource tmpsubj=model.createResource(tmpsubject) ;
 						/*
 						 * replace all blank node subjects with okkam id.
 						 */
 						if(tempsubject.equals(tmpsubject)){
-							Property tmpproperty=model.createProperty(tmproperty);
-							Statement newstmt=ResourceFactory.createStatement(subj, tmpproperty, object);
-							newstatments.add(newstmt);
+							Property tmpproperty=model.createProperty(tmproperty) ;
+							Statement newstmt=ResourceFactory.createStatement(subj, tmpproperty, object) ;
+							newstatments.add(newstmt) ;
 							log.debug(newstmt) ;
 							}
 						
 					}
-		}
+		}	
+		return newstatments;
+	}
+	public static Model modifyRDF(Map<String,String> bnodeOkkamId) {
+		loader = ModelLoader.getInstance() ;
+		model=loader.getInputModel();
+		Model result = null ;
+		result=loader.getOutputModel() ;
+		
 		/*
 		 * Create a temporary model that is used to navigate all blank node objects and
 		 * replace with thier corresponding okkam id
 		 */
-		Model tempmodel = ModelFactory.createDefaultModel();
-		tempmodel.add(newstatments);
-		okkamiIdIterator=bnodeOkkamId.keySet().iterator();
+		ArrayList okkamizedsubject=replaceBnodeOkkamID(bnodeOkkamId) ;
+		Model tempmodel = ModelFactory.createDefaultModel() ; 
+		
+		tempmodel.add(okkamizedsubject) ;
+		Iterator okkamiIdIterator=bnodeOkkamId.keySet().iterator() ;
+		okkamiIdIterator=bnodeOkkamId.keySet().iterator() ;
+		
 		while(okkamiIdIterator.hasNext()){
-			String tempsubject=okkamiIdIterator.next().toString();
-			String subject=bnodeOkkamId.get(tempsubject);
-			Resource subj=tempmodel.createResource(subject);
-			StmtIterator iter = tempmodel.listStatements();
+			String tempsubject=okkamiIdIterator.next().toString() ;
+			String subject=bnodeOkkamId.get(tempsubject) ;
+			Resource subj=tempmodel.createResource(subject) ;
+			StmtIterator iter = tempmodel.listStatements() ;
+			
 					while(iter.hasNext()){
-						Statement tmpstmt=iter.next();
-						String tmproperty=tmpstmt.getPredicate().toString();
-						RDFNode object=tmpstmt.getObject();
-						String tmpsubject=tmpstmt.getSubject().toString();
-						Resource tmpsubj=tempmodel.createResource(tmpsubject);
-						RDFNode checkAnonSubj=tmpstmt.getSubject();
+						Statement tmpstmt=iter.next() ;
+						String tmproperty=tmpstmt.getPredicate().toString() ;
+						RDFNode object=tmpstmt.getObject() ;
+						String tmpsubject=tmpstmt.getSubject().toString() ;
+						Resource tmpsubj=tempmodel.createResource(tmpsubject) ;
+						RDFNode checkAnonSubj=tmpstmt.getSubject() ;
+						
 						 if(tempsubject.equals(object.toString())){
-							 newstatments.remove(tmpstmt);
-							 Property tmpproperty=tempmodel.createProperty(tmproperty);
-							 Statement newstmt=ResourceFactory.createStatement(tmpsubj, tmpproperty, subj);
-							newstatments.add(newstmt);
+							 okkamizedsubject.remove(tmpstmt) ;
+							 Property tmpproperty=tempmodel.createProperty(tmproperty) ;
+							 Statement newstmt=ResourceFactory.createStatement(tmpsubj, tmpproperty, subj) ;
+							 okkamizedsubject.add(newstmt) ;
 								//}							
 						}
 					}
 			}
-		result.add(newstatments);
-		StmtIterator iter = tempmodel.listStatements();
+		result.add(okkamizedsubject);
+		StmtIterator iter = tempmodel.listStatements() ;
 		while(iter.hasNext()){
-			Statement tmpstmt=iter.next();
-			RDFNode object=tmpstmt.getObject();
+			Statement tmpstmt=iter.next() ;
+			RDFNode object=tmpstmt.getObject() ;
 			if(object.isAnon())
-				result.remove(tmpstmt);
+				result.remove(tmpstmt) ;
 		}
 		//result.write(System.out,"TTL");
 		
