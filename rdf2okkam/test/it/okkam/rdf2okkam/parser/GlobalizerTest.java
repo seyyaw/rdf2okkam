@@ -63,15 +63,15 @@ public class GlobalizerTest extends TestCase {
 
 	@Test
 	public void testIsCandidateEntity() {
-		log.info("----------testIsCandidateEntity--------------") ;
+		log.debug("----------testIsCandidateEntity--------------") ;
 		Set<RDFNode> subjects = global.getDistinctSubjects() ;
 		Iterator<RDFNode> isubject = subjects.iterator() ;
 		while(isubject.hasNext()) {
 			Resource subject = isubject.next().asResource() ;			
 			if( global.isCandidateEntity(subject) ) 
-				log.info(subject + " is a candidate entity") ;
+				log.debug(subject + " is a candidate entity") ;
 			else
-				log.info(subject + " is not a candidate entity") ;			
+				log.debug(subject + " is not a candidate entity") ;			
 		}
 	}
 	
@@ -82,7 +82,7 @@ public class GlobalizerTest extends TestCase {
 		Iterator<RDFNode> isubject = subjects.iterator() ;
 		while(isubject.hasNext()) {
 			RDFNode subject = isubject.next() ;
-			log.info(subject) ;
+			log.debug(subject) ;
 		}
 	}
 
@@ -95,12 +95,12 @@ public class GlobalizerTest extends TestCase {
 		while(idistSubj.hasNext()) {			
 			RDFNode subj = idistSubj.next() ;
 			if(global.isCandidateEntity(subj)) { 
-				log.info(subj + " is a candidate entity") ;
+				log.debug(subj + " is a candidate entity") ;
 				_outModel.add( global.globalizeId(subj, "http://okkam.org/ens/" + count) ) ;
 				count++ ;
 			}
 			else
-				log.info(subj + " is not a candidate entity") ;
+				log.debug(subj + " is not a candidate entity") ;
 			}
 			
 		_outModel.write(new PrintWriter( outputModelFileName ), RDF_SYNTAX) ;
