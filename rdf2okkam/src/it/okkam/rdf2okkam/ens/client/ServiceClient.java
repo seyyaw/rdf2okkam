@@ -83,7 +83,7 @@ public class ServiceClient {
 	 */
 	public String createNewEntity(String semanticType, AttributesType attributeList, boolean ignoreDuplicates) {
 		
-		log.info("Creating a new entity");
+		log.debug("Creating a new entity");
 		
 		//THE ENTITY OBJECT IS THE WRAPPER OF ALL THE ENTITY'S INFORMATION
 		Entity entity = new Entity();
@@ -103,7 +103,7 @@ public class ServiceClient {
 		
 		if (attributeList.getAttributes().size() > 0) {
 
-		    log.info("Adding attributes");
+		    log.debug("Adding attributes");
 
 		    profile.setAttributes(attributeList);
 
@@ -112,7 +112,7 @@ public class ServiceClient {
 		// SET THE SEMANTIC TYPE OF THE ENTITY 	
 		if ( semanticType != null && ! "".equals(semanticType) ) {
 
-		    log.info("Adding semantic type: " + semanticType);
+		    log.debug("Adding semantic type: " + semanticType);
 
 		    profile.setSemanticType(semanticType);
 
@@ -120,7 +120,7 @@ public class ServiceClient {
 		
 		if (refs.getReferences().size() > 0) {
 
-		    log.info("Adding references");
+		    log.debug("Adding references");
 
 		    profile.setReferences(refs);
 
@@ -130,7 +130,7 @@ public class ServiceClient {
 
 		if (alts.getAlternativeIds().size() > 0) {
 
-		    log.info("Adding alternatives");
+		    log.debug("Adding alternatives");
 
 		    entity.setAlternativeIds(alts);
 
@@ -140,7 +140,7 @@ public class ServiceClient {
 
 		if (eq != null && eq.getEquivalentOids().size() > 0) {
 
-		    log.info("Adding equivalents");
+		    log.debug("Adding equivalents");
 
 		    entity.setEquivalentOids(eq);
 
@@ -181,7 +181,7 @@ public class ServiceClient {
 
 		     okkamId = _okkamClient.createNewEntity(certificate);
 		     
-		     log.debug("New entity: " + okkamId);
+		     log.info("New entity: " + okkamId);
 		    
 
 		} 
