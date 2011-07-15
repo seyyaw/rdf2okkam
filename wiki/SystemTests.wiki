@@ -1,3 +1,4 @@
+#labels test
 #this page provides system performances taken during the development of the project
 
 = Tests results =
