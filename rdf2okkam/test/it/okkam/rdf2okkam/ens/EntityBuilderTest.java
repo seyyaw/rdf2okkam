@@ -87,7 +87,7 @@ public class EntityBuilderTest extends TestCase {
 			RDFNode distSubj = idistSubj.next() ;
 			
 			ProfileType profile = null;
-			profile = builder.buildEntity(distSubj);
+			profile = builder.buildEntityProfile(distSubj);
 			List<AttributeType> attrTypes = profile.getAttributes().getAttributes() ;
 			Iterator<AttributeType> iattrType = attrTypes.iterator() ;
 			while(iattrType.hasNext()) {

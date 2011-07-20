@@ -1,4 +1,4 @@
-package it.okkam.rdf2okkam.parser;
+package it.okkam.rdf2okkam.ens.client;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
@@ -17,9 +17,9 @@ public class AllTests {
 		//suite.addTestSuite(GlobalizerTest.class);
 		
 		//Use addTest to run specific test in a test class
-		//suite.addTest( new RdfUtilTest( "testListProperties" ) );
-		//suite.addTest( new RdfUtilTest( "testListSubjects" ) );
-		suite.addTest( new RdfUtilTest( "testListSubjectProperties" ) );
+		//suite.addTest( new ServiceClientTest( "testFindEntity" ) );
+		//suite.addTest( new ServiceClientTest( "testDeleteEntity" ) );
+		suite.addTest( new ServiceClientTest( "testCreateNewEntity" ) );
 		
 		return suite;
 	}

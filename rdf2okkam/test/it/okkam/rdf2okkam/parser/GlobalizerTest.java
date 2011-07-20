@@ -34,8 +34,8 @@ import com.hp.hpl.jena.util.FileManager;
 
 public class GlobalizerTest extends TestCase {
 	
-	String inputModelFileName = "resources/anagrafe1.ttl" ;
-	String outputModelFileName = "resources/datasetout.ttl" ;
+	//String inputModelFileName = "resources/test/anagrafe1.ttl" ;
+	//String outputModelFileName = "resources/test/datasetout.ttl" ;
 	final String RDF_SYNTAX = "TURTLE" ;
 	String baseUri = null ;
 	Model _inModel = null ;
@@ -103,7 +103,7 @@ public class GlobalizerTest extends TestCase {
 				log.debug(subj + " is not a candidate entity") ;
 			}
 			
-		_outModel.write(new PrintWriter( outputModelFileName ), RDF_SYNTAX) ;
+		_outModel.write(System.out, RDF_SYNTAX) ;
 		
 		
 	}

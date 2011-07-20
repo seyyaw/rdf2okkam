@@ -45,10 +45,10 @@ public class ModelUtilTest extends TestCase {
 		model=loader.getInputModel();	
 		 getsubjects=new GetSubjects();
 		Iterator it = getsubjects.getSubjects().iterator();
-		Map<String,String> bnodeokkamid=modelUtil.bnodeOkkamId(it);
-		Model result=ModelFactory.createDefaultModel();
-		result=ModelUtil.modifyRDF(bnodeokkamid);
-		result.write(System.out,"TURTLE");
+//		Map<String,String> bnodeokkamid=modelUtil.bnodeOkkamId(it);
+//		Model result=ModelFactory.createDefaultModel();
+//		result=ModelUtil.modifyRDF(bnodeokkamid);
+//		result.write(System.out,"TURTLE");
 	}
 
 }
