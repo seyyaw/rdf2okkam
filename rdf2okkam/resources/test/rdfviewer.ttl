@@ -10,9 +10,20 @@
       tax:haDataNascita "27/05/1972" ;
       tax:haLuogoResidenza <http://okkam.org/ens/1236> .
 
+<http://okkam.org/ens/1237>    a       tax:Persona_Fisica ;
+      tax:haCodiceFiscale "VRDANNG09H501Z" ;
+      tax:haNome "Anna" ;
+      tax:haCognome "Verdi" ;
+      tax:haComuneNascita <http://okkam.org/ens/1235> ;               
+      tax:haDataNascita "19/01/1977" ;
+      tax:haLuogoResidenza <http://okkam.org/ens/1239> .
+
 <http://okkam.org/ens/1235> a tax:Location ;
 	 tax:haNome "Venezia" .
           
                                 
 <http://okkam.org/ens/1236> a tax:Location ;
 	tax:haNome "Roma" .
+	
+<http://okkam.org/ens/1239> a tax:Location ;
+	tax:haNome "Verona" .
