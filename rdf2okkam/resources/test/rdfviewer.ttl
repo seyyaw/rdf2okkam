@@ -1,0 +1,18 @@
+@prefix tax:     <http://localhost/TaxOntology.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://okkam.org/ens/1234>    a       tax:Persona_Fisica ;
+      tax:haCodiceFiscale "POPKJHGUE67L781V" ;
+      tax:haNome "Mario" ;
+      tax:haCognome "Rossi" ;
+      tax:haComuneNascita <http://okkam.org/ens/1235> ;               
+      tax:haDataNascita "27/05/1972" ;
+      tax:haLuogoResidenza <http://okkam.org/ens/1236> .
+
+<http://okkam.org/ens/1235> a tax:Location ;
+	 tax:haNome "Venezia" .
+          
+                                
+<http://okkam.org/ens/1236> a tax:Location ;
+	tax:haNome "Roma" .
