@@ -14,7 +14,7 @@ public class EntityBuildContext {
 	
 	private static Log log = LogFactory.getLog(EntityBuildContext.class);
 
-	private EnsEntityFactory factory = null ;
+	private EntityBuildStrategy strategy = null ;
 	
 	private Model _model ;
 	
@@ -24,18 +24,18 @@ public class EntityBuildContext {
 	
 	public void setLocationEntityBuilding() {
 
-		this.factory = new EnsLocationFactory() ;
+		this.strategy = new Location(_model) ;
 	}
 	
 	public void setPersonEntityBuilding() {
 
-		this.factory = new EnsPersonFactory() ;
+		this.strategy = new Person(_model) ;
 	}
 	
-	public ProfileType getProperties(RDFNode subjectNode) {
+	public ProfileType getProfile(RDFNode subjectNode) {
 		ProfileType profile = null ;
-		if ( factory != null){
-			profile = factory.createEnsEntity(_model).getProperties( subjectNode );
+		if ( strategy != null){
+			profile = strategy.getProperties(subjectNode) ;
 		}
 		else {
 			log.error("Set the entity type: person, location, event, artifact_type, artifact_instance, other.");
@@ -43,4 +43,6 @@ public class EntityBuildContext {
 		
 		return profile ;
 	}
+	
+	
 }

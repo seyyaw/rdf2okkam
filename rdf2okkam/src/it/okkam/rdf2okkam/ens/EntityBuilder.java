@@ -1,5 +1,7 @@
 package it.okkam.rdf2okkam.ens;
 
+import it.okkam.rdf2okkam.parser.VocabConstants;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.okkam.client.data.AttributesType;
@@ -17,11 +19,9 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 public class EntityBuilder {
 	
-	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
-	private final String RDF_TYPE = rdfNS + "type" ;
-	private final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#";
-	private final String ENS_LOCATION = ensNS + "location" ;
-	private final String ENS_PERSON = ensNS + "person" ;
+	
+	private final String ENS_LOCATION = VocabConstants.ensNS + "location" ;
+	private final String ENS_PERSON = VocabConstants.ensNS + "person" ;
 	
 	Model _model = null ;
 	
@@ -33,7 +33,7 @@ public class EntityBuilder {
 	
 	EntityBuildContext context = null ;
 	
-	public ProfileType buildEntity(RDFNode subjectNode) {
+	public ProfileType buildEntityProfile(RDFNode subjectNode) {
 		
 		Resource subject = subjectNode.asResource() ;
 		
@@ -53,19 +53,20 @@ public class EntityBuilder {
 		
 		log.info(subject + " is a " + subjectType ) ;
 		
-		return context.getProperties(subjectNode) ;
+		return context.getProfile(subjectNode) ;
 		
 	}
+
 	
-	private String getType(RDFNode subjectNode) {
+	public String getType(RDFNode subjectNode) {
 		String result = null ;
-		Property rdfType = ResourceFactory.createProperty(RDF_TYPE) ;
+		Property rdfType = ResourceFactory.createProperty(VocabConstants.rdfNS + "type") ;
 		Selector selector = new SimpleSelector(subjectNode.asResource(), rdfType, (RDFNode) null) ;
 		StmtIterator istmt = _model.listStatements(selector) ;
 		while(istmt.hasNext()) {
 			Statement stmt = istmt.next() ;
 			RDFNode object = stmt.getObject() ;
-			if( ensNS.equals( object.asResource().getNameSpace() ) )
+			if( VocabConstants.ensNS.equals( object.asResource().getNameSpace() ) )
 				result = object.asResource().getURI() ;
 		}
 		return result ;

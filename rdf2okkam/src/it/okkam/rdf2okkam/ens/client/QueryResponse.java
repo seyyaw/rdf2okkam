@@ -4,7 +4,7 @@ import java.util.List;
 
 public class QueryResponse {
 	
-	private String id; // entity identifier
+	private String id; // entity identifier (ookamid)
 	private String name;
 	private List type;
 	private double score;

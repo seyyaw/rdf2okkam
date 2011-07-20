@@ -55,7 +55,7 @@ public class ApplicationController {
 		
 		String result = "" ; // okkamid
 		
-		ProfileType profile = builder.buildEntity( node ) ;
+		ProfileType profile = builder.buildEntityProfile( node ) ;
 		
 		boolean ignoreDuplicates = true ;
 		

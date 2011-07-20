@@ -1,5 +1,6 @@
 package it.okkam.rdf2okkam.ens;
 
+import it.okkam.rdf2okkam.ens.client.EnsQuery;
 import it.okkam.rdf2okkam.parser.VocabConstants;
 
 import javax.xml.namespace.QName;
@@ -25,27 +26,29 @@ public class EnsPerson implements EnsEntity {
 
 	private Model _model ;
 	
+	private RDFNode _subjectNode ;
+	
 	private static Log log = LogFactory.getLog(EnsPerson.class);
 	
-	public EnsPerson(Model model){
+	public EnsPerson(Model model, RDFNode node){
+		
 		_model = model ;
+		_subjectNode = node ;
 	}
 	
 	@Override
 	public String getSemanticType() {
-		// TODO Auto-generated method stub
+		
 		return SemanticType.PERSON ;
 	}
-
-
+	
 	/*
-	 * Returns person's list of properties from the model
+	 * Returns person's list of attributes from the model
 	 */
-	@Override
-	public ProfileType getProperties(RDFNode subjectNode) {
-		ProfileType profile = new ProfileType() ;
+	public AttributesType getAttributesType() {
+		
 		AttributesType attributes =  new AttributesType();
-		Resource subject = subjectNode.asResource() ;
+		Resource subject = _subjectNode.asResource() ;
 		Property rdfType = ResourceFactory.createProperty(VocabConstants.rdfNS + "type") ;
 		Statement typeStmt = subject.getProperty(rdfType) ;
 		Resource typeObj = typeStmt.getObject().asResource() ;
@@ -58,7 +61,8 @@ public class EnsPerson implements EnsEntity {
 			Statement stmt = i.next();			
 			AttributeType attribute = new AttributeType();
 			Property predicate = stmt.getPredicate();
-			System.out.println("predicate: " + predicate.getURI());
+			
+			// set the prefix
 			if( VocabConstants.ensNS.equals( predicate.getNameSpace() )){
 				prefix = VocabConstants.ENS_PREFIX ;
 			}
@@ -68,52 +72,66 @@ public class EnsPerson implements EnsEntity {
 			if( VocabConstants.rdfNS.equals( predicate.getNameSpace() )){
 				prefix = VocabConstants.RDF_PREFIX ;
 			}
-			QName name = new QName(predicate.getURI(), predicate.getLocalName() , prefix);
-			attribute.setName(name);
-			RDFNode object = stmt.getObject() ;
-			if ( object.isAnon() ) {
-				log.info("virtual entity object is a blank node" + object.toString()) ;
-				// look for the properties to be used to describe a person
-				// follow a list of properties to search for
-				// log.info("predicate: " + predicate.getLocalName() + ". blank node value: " + object) ;
-				String comune_nascita_prop = VocabConstants.ensNS + "comune_nascita" ;
-				String city_of_residence_prop = VocabConstants.ensNS + "city_of_residence" ;
-				if( comune_nascita_prop.equals(predicate.getURI()) || city_of_residence_prop.equals(predicate.getURI())) {
-					Property location_name_prop = ResourceFactory.createProperty( VocabConstants.ensNS + "location_name" ) ; 					
-					Statement stmtprop = _model.getProperty(object.asResource(), location_name_prop) ;
-					String location_name = stmtprop.getObject().toString() ;
-					log.info(predicate.getLocalName() + " = " + location_name) ;
-					attribute.setValue( location_name ) ;
-				}
-				else
-					attribute.setValue( object.toString() ) ;
-			}
-			else if (object.isLiteral()) {
-				log.info("virtual entity object literal value = " + object.toString() ) ;
-				attribute.setValue( object.toString() );
-			}
-			else if (object.isURIResource()) {
-				log.info("virtual entity object is URI resource = " + object.toString() ) ;
-				attribute.setValue( object.toString() );
-			}
-			else {
-				log.info("virtual entity object is not literal, uri or blank node = " + object.toString() ) ;
-				attribute.setValue( object.toString() );
+			
+			// select only predicates used as entity attributes
+			if(isAttribute(predicate)) {
+				QName name = new QName(predicate.getURI(), predicate.getLocalName() , prefix);					
+				attribute.setName(name);			
+				String value = stmt.getObject().toString();
+				//System.out.println("value: " + value) ;
+				attribute.setValue(value);
+				
+				// Set access control metadata to send or not attributes values to the public node
+				// Set to "private" to not send the attributes values.
+				// attribute.getMetadata().getAccessControl().setDisplayable("private");
+				
+				attributes.getAttributes().add(attribute);
 			}
 			
+						
 			
-			// Set access control metadata to send or not attributes values to the public node
-			// Set to "private" to not send the attributes values.
-			// attribute.getMetadata().getAccessControl().setDisplayable("private");			
 			
-			attributes.getAttributes().add(attribute);	
-			profile.setAttributes(attributes) ;
-			profile.setSemanticType(SemanticType.PERSON) ;
 			
 		}
+			
+			
 		
-		return profile;		
+		return attributes ;
+	}
 
+
+	/*
+	 * Returns person's profile from the model
+	 */
+	@Override
+	public ProfileType getProfile() {
+		ProfileType profile = new ProfileType() ;
+		
+		profile.setAttributes(getAttributesType()) ;
+		profile.setSemanticType(getSemanticType()) ;
+		
+		return profile;	
+	}
+	
+	public String getQuery() {
+		
+		return EnsQuery.getQuery(getAttributesType(), getSemanticType()) ; 
+	}
+	
+	/*
+	 *  Select predicates that are entity's attribute. If a predicate is not an entity
+	 *  attribute the method returns false.
+	 */
+	
+	private boolean isAttribute(Property predicate) {
+		boolean result = true ;
+		
+		Property rdfType = ResourceFactory.createProperty(VocabConstants.rdfNS + "type") ;
+		
+		if (rdfType.getLocalName().equals(predicate.getLocalName()))
+			result = false ; 
+		
+		return result ;		
 	}
 
 

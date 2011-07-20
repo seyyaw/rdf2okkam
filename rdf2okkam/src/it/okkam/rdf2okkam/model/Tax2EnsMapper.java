@@ -52,10 +52,11 @@ public class Tax2EnsMapper {
 	public void startInference(Model model) {
 		
 		//Start the inferences using a rule reasoner
+		log.info( "Started the reasoning process to map tax ontology terms to the ENS ontology terms." ) ;
 		Reasoner reasoner = new GenericRuleReasoner(ModelLoader.getInstance().getRules());	    
 		InfModel inf = ModelFactory.createInfModel(reasoner, model);
 		ModelLoader.getInstance().getInputModel().add(inf) ;
-		log.debug( "Added inferred statements to the input model based on the rules." ) ;
+		log.info( "Added inferred statements to the input model based on the rules." ) ;
 		
 	}
 	

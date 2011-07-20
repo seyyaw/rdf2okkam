@@ -122,7 +122,7 @@ public class RdfUtil {
 			Statement stmt = i.next();			
 			AttributeType attribute = new AttributeType();
 			Property predicate = stmt.getPredicate();
-			//System.out.println("predicate: " + predicate.getURI());
+			
 			if( VocabConstants.ensNS.equals( predicate.getNameSpace() )){
 				prefix = VocabConstants.ENS_PREFIX ;
 			}
@@ -275,7 +275,7 @@ public class RdfUtil {
 	 * Returns all the subjects that don't have blank nodes as properties values.
 	 */
 	public Set<RDFNode> getSubjectsWithoutBNodes() {
-		log.info("getSubjectsWithoutBlankNodes()") ;
+		log.debug("--------getSubjectsWithoutBlankNodes()-----------") ;
 		Set<RDFNode> subjects = new HashSet<RDFNode>() ;
 		if(getDistinctSubjects().size() > 0) {
 			Iterator<RDFNode> subjectIter = getDistinctSubjects().iterator() ;			

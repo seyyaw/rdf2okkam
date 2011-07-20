@@ -56,14 +56,14 @@ public class ServiceClient {
 		_okkamClient = okkamclient;
 		
 		
-		entityTypes = new ArrayList<String>();
-		entityTypes.add(SemanticType.ARTIFACT_INSTANCE);
-		entityTypes.add(SemanticType.ARTIFACT_TYPE);
-		entityTypes.add(SemanticType.EVENT);
-		entityTypes.add(SemanticType.LOCATION);
-		entityTypes.add(SemanticType.ORGANIZATION);
-		entityTypes.add(SemanticType.OTHER);
-		entityTypes.add(SemanticType.PERSON);
+//		entityTypes = new ArrayList<String>();
+//		entityTypes.add(SemanticType.ARTIFACT_INSTANCE);
+//		entityTypes.add(SemanticType.ARTIFACT_TYPE);
+//		entityTypes.add(SemanticType.EVENT);
+//		entityTypes.add(SemanticType.LOCATION);
+//		entityTypes.add(SemanticType.ORGANIZATION);
+//		entityTypes.add(SemanticType.OTHER);
+//		entityTypes.add(SemanticType.PERSON);
 		
 	}
 	
@@ -279,7 +279,7 @@ public class ServiceClient {
 		try {
 			ticket = _okkamClient.lockEntity(okkamId);
 		} catch (Throwable t) {
-
+			log.info(ticket + " not locked") ;
 		}
 		
 
