@@ -76,9 +76,9 @@ public class ServiceClientTest extends TestCase {
 	@Test
 	public void testCreateNewEntity(){
 		log.info("----------------Test createNewEntities()-----------------") ;
-		Set<RDFNode> subjects = parser.getSubjectsWithoutBNodes() ;
+		Set<RDFNode> subjects = parser.getDistinctSubjects() ;
 		Iterator<RDFNode> i = subjects.iterator();
-		boolean ignoreDuplicates = true ;
+		boolean ignoreDuplicates = false ;
 		while(i.hasNext()){
 			RDFNode subject = i.next();
 			System.out.println("subject " + subject.toString()) ;

@@ -36,7 +36,7 @@ public class EntityBuilderTest extends TestCase {
 	private final String ENS_LOCATION = ensNS + "location" ;
 	private final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	private final String RDF_TYPE = rdfNS + "type" ;
-	String modelFileName = "resources/test/dataset_out.ttl" ;
+	String modelFileName = "resources/test/anagrafe_out.ttl" ;
 	final String RDF_SYNTAX = "TURTLE" ;
 	String baseUri = null ;
 	Model _model = null ;

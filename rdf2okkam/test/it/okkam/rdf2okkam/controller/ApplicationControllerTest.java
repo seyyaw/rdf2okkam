@@ -39,7 +39,7 @@ import com.hp.hpl.jena.util.FileManager;
 public class ApplicationControllerTest extends TestCase {
 	
 	
-	String modelFileName = "resources/test/dataset_out.ttl" ;
+	String modelFileName = "resources/models/anagrafe.ttl" ;
 	final String RDF_SYNTAX = "TURTLE" ;
 	
 	ApplicationController controller = null ;
@@ -59,9 +59,10 @@ public class ApplicationControllerTest extends TestCase {
 		
 		global = new Globalizer(ModelLoader.getInstance().getInputModel(), 
 									ModelLoader.getInstance().getOutputModel()) ;
+		
 		mapper = new Tax2EnsMapper() ;
 		
-		mapper.startInference( ModelLoader.getInstance().getInputModel() ) ;
+		//mapper.startInference( ModelLoader.getInstance().getInputModel() ) ;
 		
 	}
 
@@ -85,17 +86,20 @@ public class ApplicationControllerTest extends TestCase {
 	public void testCreateEntities() {
 		log.info("----------testCreateEntities--------------") ;		
 		Set<RDFNode> distSubjs = global.getDistinctSubjects() ;
+		int numOfSubjs = distSubjs.size();
 		Map<String, String> bnodeOkkamId = new HashMap<String, String>() ;
 		Iterator<RDFNode> idistSubj = distSubjs.iterator() ;
+		int countSubjs = 0;
 		while(idistSubj.hasNext()) {
 			RDFNode distSubj = idistSubj.next() ;
 						
 			String okkamid = controller.createEntity(distSubj) ;
-			bnodeOkkamId.put(distSubj.toString(), okkamid) ;
-			
+			//bnodeOkkamId.put(distSubj.toString(), okkamid) ;
+			countSubjs++;
 			log.info("New entity's okkam id: " + okkamid) ;		
 		}
-		
+		log.info("Number of subjects: " + numOfSubjs + ", entities created: " + countSubjs) ;
+		/*
 		log.info("--------------Entering printUri() method---------------") ;
 		printUris(bnodeOkkamId) ;
 		log.info("--------------End printUri() method---------------") ;
@@ -111,6 +115,7 @@ public class ApplicationControllerTest extends TestCase {
 		endTime = System.currentTimeMillis();
 		final long duration = endTime - startTime;
 		System.out.println("Model Creation took " + duration + " milliseconds");
+		*/
 	}
 	
 	private void printUris(Map<String, String> bnodeOkkamId) {
