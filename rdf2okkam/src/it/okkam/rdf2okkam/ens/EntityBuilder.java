@@ -51,13 +51,6 @@ public class EntityBuilder {
 			context.setLocationEntityBuilding() ;
 		
 		}
-		
-		if( "http://localhost/TaxOntology.owl#LuogoResidenza".equals( subjectType ) ) {
-			//if subject is a location
-			context.setLocationEntityBuilding() ;
-		
-		}		
-		
 		if( "http://localhost/TaxOntology.owl#LuogoNascita".equals( subjectType ) ) {
 			//if subject is a location
 			context.setLocationEntityBuilding() ;

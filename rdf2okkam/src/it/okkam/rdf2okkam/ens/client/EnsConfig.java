@@ -30,13 +30,13 @@ public class EnsConfig {
 		//prop.load(reader);
 		//System.out.println(prop.get("username"));
 		//this.username =(String)prop.get("username");
-		this.username = "okkamadmin1";
+		this.username = "okkamadmin";
 		//System.out.println(prop.get("password"));
 		//this.password =(String)prop.get("password");
-		this.password = "password1";
+		this.password = "password";
 		//System.out.println(prop.get("services"));
 		//this.pointer =(String)prop.get("services");
-		this.pointer = "http://localhost:8080/okkam-core/WebServices";
+		this.pointer = "http://192.168.234.87:8080/okkam-core/WebServices";
 		//this.proxyUrl = (String)prop.get("proxyUrl");
 		//System.out.println(prop.get("proxyUrl"));
 		//this.proxyPort = (String)prop.get("proxyPort");

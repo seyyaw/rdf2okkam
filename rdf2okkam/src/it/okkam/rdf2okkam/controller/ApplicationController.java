@@ -16,6 +16,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.okkam.client.data.AttributesType;
 import org.okkam.client.data.ProfileType;
+import org.okkam.ens.client.EnsClient;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.RDFNode;
