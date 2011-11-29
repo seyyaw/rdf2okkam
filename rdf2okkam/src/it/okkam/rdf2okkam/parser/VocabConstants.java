@@ -13,5 +13,13 @@ public class VocabConstants {
 	public static final String rdfNS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	
 	public static final String RDF_PREFIX = "rdf" ;
+	
+	public static final String ENS_LOCATION = ensNS + "location" ;
+	
+	public static final String ENS_PERSON = ensNS + "person" ;
+	
+	public static final String ENS_ORGANIZATION = ensNS + "organization" ;
+	
+	public static final String ENS_EVENT = ensNS + "event" ;
 
 }
