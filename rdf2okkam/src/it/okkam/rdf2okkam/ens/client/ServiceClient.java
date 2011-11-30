@@ -6,6 +6,13 @@ import it.okkam.rdf2okkam.ens.client.CandidateEntity;
 import it.okkam.rdf2okkam.ens.client.QueryResponse;
 import it.okkam.rdf2okkam.ens.client.ResponseType;
 
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -275,17 +282,53 @@ public class ServiceClient {
 	
 	public void deleteEntity(String okkamId) {
 		
+		
 		String ticket = null ;
 		try {
-			ticket = _okkamClient.lockEntity(okkamId);
-		} catch (Throwable t) {
+			
+			ticket = _okkamClient.lockEntity(okkamId);			
+			
+			_okkamClient.deleteEntity( okkamId, ticket );
+			
+		} 
+		catch (Throwable t) {
+		
 			log.info(ticket + " not locked") ;
+			
 		}
 		
 
-		_okkamClient.deleteEntity( okkamId, ticket );
+		
 
 		
+	}
+	
+	public void deleteEntityFromFile(String filePath){
+		try {
+			FileReader fr = new FileReader(filePath);
+			BufferedReader br = new BufferedReader(fr);
+			
+			String oid;
+			while((oid = br.readLine())!=null) {
+				String ticket = _okkamClient.lockEntity(oid);
+				_okkamClient.deleteEntity(oid, ticket);
+				_okkamClient.unlockEntity(oid, ticket);
+				log.info("Deleted entity: " + oid);
+			}
+			
+			br.close();
+			fr.close();
+			
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+			
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+			
+		}
+
 	}
 	
 	
