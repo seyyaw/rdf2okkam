@@ -75,7 +75,12 @@ public class EnsPerson implements EnsEntity {
 			
 			// select only predicates used as entity attributes
 			if(isAttribute(predicate)) {
-				QName name = new QName(predicate.getURI(), predicate.getLocalName() , prefix);					
+				//QName name = new QName(predicate.getURI(), predicate.getLocalName() , prefix);
+				
+				if (prefix.equals("")){ //if the attribute was not one of the ontology term 
+					predicate=ResourceFactory.createProperty(predicate.toString().replace("+", "_"));	
+				}
+				QName name = new QName("", predicate.getLocalName() , prefix);	
 				attribute.setName(name);			
 				String value = stmt.getObject().toString();
 				//System.out.println("value: " + value) ;

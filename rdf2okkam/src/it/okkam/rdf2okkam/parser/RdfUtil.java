@@ -61,15 +61,9 @@ public class RdfUtil {
 	private static Log log = LogFactory.getLog(RdfUtil.class);
 		
 	
-	public RdfUtil(Model inmodel, Model outmodel){	
+	public RdfUtil(Model inmodel){	
 		
 		_model = inmodel ;
-		
-		outputModel = outmodel ;
-		
-		
-		
-		loadEnsOntology() ;
 
 	}
 

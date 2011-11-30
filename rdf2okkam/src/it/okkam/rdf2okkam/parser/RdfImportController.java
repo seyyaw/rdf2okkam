@@ -22,7 +22,7 @@ public class RdfImportController {
 		
 		Model modelOut = null ;
 		
-		RdfUtil parser = new RdfUtil(modelIn, modelOut);
+		RdfUtil parser = new RdfUtil(modelIn);
 		
 		ServiceClient client = new ServiceClient(new OkkamClient(confpath));
 		

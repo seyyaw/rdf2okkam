@@ -1,0 +1,200 @@
+@prefix ens: <http://models.okkam.org/ENS-core-vocabulary.owl#> .
+
+
+<http://127.0.0.1:3333/0> a ens:other ;
+	ens:city "FINALE EMILIA" ;
+	ens:founded_by "ABELLI" ;
+	<http://127.0.0.1:3333/codice+fiscale> "BLLGZN36M19D599A" ;
+	ens:first_name "GRAZIANO" .
+
+<http://127.0.0.1:3333/177> a ens:other ;
+	ens:city "ALEPPO" ;
+	ens:founded_by "SABBAGH" ;
+	<http://127.0.0.1:3333/codice+fiscale> "SBBMMD64C21Z240D" ;
+	ens:first_name "MAHMOUD" .
+
+<http://127.0.0.1:3333/310> a ens:other ;
+	ens:city "MASCARA" ;
+	ens:founded_by "CHALABI" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "HOCINE" .
+
+<http://127.0.0.1:3333/860> a ens:other ;
+	ens:city "REGGIO DI CALABRIA" ;
+	ens:founded_by "FABBRI" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "CESARE" .
+
+<http://127.0.0.1:3333/861> a ens:other ;
+	ens:city "ROVERETO" ;
+	ens:founded_by "FABBRO" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBBNNL66P62H612R" ;
+	ens:first_name "ANTONELLA" .
+
+<http://127.0.0.1:3333/862> a ens:other ;
+	ens:city "FOLGARIA" ;
+	ens:founded_by "FABBRO" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBBBRN36E01D651D" ;
+	ens:first_name "BRUNO" .
+
+<http://127.0.0.1:3333/863> a ens:other ;
+	ens:city "RIARDO" ;
+	ens:founded_by "FABOZZO" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBZNNA40C64H268G" ;
+	ens:first_name "ANNA" .
+
+<http://127.0.0.1:3333/864> a ens:other ;
+	ens:city "VELO D'ASTICO" ;
+	ens:founded_by "FABRELLO" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBRDRN57T57L723J" ;
+	ens:first_name "ADRIANA" .
+
+<http://127.0.0.1:3333/865> a ens:other ;
+	ens:city "ROANA" ;
+	ens:founded_by "FABRIS" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBRPLA53T56H361H" ;
+	ens:first_name "PAOLA" .
+
+<http://127.0.0.1:3333/913> a ens:other ;
+	ens:city "VENEZIA" ;
+	ens:founded_by "FIABANE" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBNGNN82A19L736H" ;
+	ens:first_name "GIOVANNI" .
+
+<http://127.0.0.1:3333/914> a ens:other ;
+	ens:city "VENEZIA" ;
+	ens:founded_by "FIABANE" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBNMNC93B58L736G" ;
+	ens:first_name "MONICA" .
+
+<http://127.0.0.1:3333/1184> a ens:other ;
+	ens:city "VAL D'ILLIEZ" ;
+	ens:founded_by "GILLABERT" ;
+	<http://127.0.0.1:3333/codice+fiscale> "GLLJNL45M68Z133G" ;
+	ens:first_name "JEANNE LEONIE" .
+
+<http://127.0.0.1:3333/1754> a ens:other ;
+	ens:city "BUDAPEST" ;
+	ens:founded_by "OLAH DE GARAB" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "GYORGY" .
+
+<http://127.0.0.1:3333/2109> a ens:other ;
+	ens:city "VILLANDRO" ;
+	ens:founded_by "RABENSTEINER" ;
+	<http://127.0.0.1:3333/codice+fiscale> "RBNGPP31S45L971Z" ;
+	ens:first_name "GIUSEPPINA" .
+
+<http://127.0.0.1:3333/3042> a ens:other ;
+	ens:city "PERGINE VALSUGANA" ;
+	ens:founded_by "BERNABE'" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "PIA" .
+
+<http://127.0.0.1:3333/3252> a ens:other ;
+	ens:city "ROMA" ;
+	ens:founded_by "FALABELLA" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "CLAUDIO" .
+
+<http://127.0.0.1:3333/3253> a ens:other ;
+	ens:city "ROMA" ;
+	ens:founded_by "FALABELLA" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "EMANUELE" .
+
+<http://127.0.0.1:3333/3254> a ens:other ;
+	ens:city "TRENTO" ;
+	ens:founded_by "FALABELLA" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "FLAVIO" .
+
+<http://127.0.0.1:3333/3255> a ens:other ;
+	ens:city "ROMA" ;
+	ens:founded_by "FALABELLA" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "GAETANO" .
+
+<http://127.0.0.1:3333/3256> a ens:other ;
+	ens:city "ROMA" ;
+	ens:founded_by "FALABELLA" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "VALERIO" .
+
+<http://127.0.0.1:3333/3329> a ens:other ;
+	ens:city "CASALMORO" ;
+	ens:founded_by "GABOARDI" ;
+	<http://127.0.0.1:3333/codice+fiscale> "NULL" ;
+	ens:first_name "LUCIA" .
+
+<http://127.0.0.1:3333/4357> a ens:other ;
+	ens:city "ROVERETO" ;
+	ens:founded_by "GABRIELLI" ;
+	<http://127.0.0.1:3333/codice+fiscale> "GBRPLA73E15H612K" ;
+	ens:first_name "PAOLO" .
+
+<http://127.0.0.1:3333/4694> a ens:other ;
+	ens:city "OULED MHAMED" ;
+	ens:founded_by "HAZZAB" ;
+	<http://127.0.0.1:3333/codice+fiscale> "HZZRHD77A41Z330L" ;
+	ens:first_name "RACHIDA" .
+
+<http://127.0.0.1:3333/4699> a ens:other ;
+	ens:city "LIVIVSIKA OBL" ;
+	ens:founded_by "KABLASH" ;
+	<http://127.0.0.1:3333/codice+fiscale> "KBLKSN57P59Z138I" ;
+	ens:first_name "OKSANA" .
+
+<http://127.0.0.1:3333/4759> a ens:other ;
+	ens:city "IVANO FRNKIVSKA" ;
+	ens:founded_by "HRABYK" ;
+	<http://127.0.0.1:3333/codice+fiscale> "HRBHYN61S62Z138I" ;
+	ens:first_name "HALYNA" .
+
+<http://127.0.0.1:3333/4760> a ens:other ;
+	ens:city "VENEZIA" ;
+	ens:founded_by "FIABANE" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBNSLV85E54L736O" ;
+	ens:first_name "SILVIA" .
+
+<http://127.0.0.1:3333/4906> a ens:other ;
+	ens:city "ROMA" ;
+	ens:founded_by "STABILINI" ;
+	<http://127.0.0.1:3333/codice+fiscale> "STBMRC54E09H501Q" ;
+	ens:first_name "MARCO" .
+
+<http://127.0.0.1:3333/5014> a ens:other ;
+	ens:city "ALEPPO" ;
+	ens:founded_by "SABBAGH" ;
+	<http://127.0.0.1:3333/codice+fiscale> "SBBKRM06L20Z240O" ;
+	ens:first_name "AKRAM" .
+
+<http://127.0.0.1:3333/5057> a ens:other ;
+	ens:city "ROMAN" ;
+	ens:founded_by "GABOR" ;
+	<http://127.0.0.1:3333/codice+fiscale> "GBRCST96E21Z129N" ;
+	ens:first_name "CELESTIN MIHAIL" .
+
+<http://127.0.0.1:3333/5186> a ens:other ;
+	ens:city "THIENE" ;
+	ens:founded_by "FABRELLO" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBRGTR60M11L157W" ;
+	ens:first_name "GUALTIERO" .
+
+<http://127.0.0.1:3333/5193> a ens:other ;
+	ens:city "SCHIO" ;
+	ens:founded_by "FABRELLO" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBRGDI97H70I531Q" ;
+	ens:first_name "GIADA" .
+
+<http://127.0.0.1:3333/5194> a ens:other ;
+	ens:city "SCHIO" ;
+	ens:founded_by "FABRELLO" ;
+	<http://127.0.0.1:3333/codice+fiscale> "FBRMHL97H30I531F" ;
+	ens:first_name "MICHELE" .
+
+<http://127.0.0.1:3333/5208> a ens:other ;
+	ens:city "ALEPPO" ;
+	ens:founded_by "SABBAGH" ;
+	<http://127.0.0.1:3333/codice+fiscale> "SBBYHM07P06Z240X" ;
+	ens:first_name "AYHAAM" .

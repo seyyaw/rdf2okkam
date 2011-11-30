@@ -3,7 +3,6 @@ package it.okkam.rdf2okkam.controller;
 import static org.junit.Assert.*;
 
 import it.okkam.rdf2okkam.controller.ApplicationController;
-import it.okkam.rdf2okkam.ens.EntityBuilderTest;
 import it.okkam.rdf2okkam.model.ModelLoader;
 import it.okkam.rdf2okkam.model.ModelUtil;
 import it.okkam.rdf2okkam.model.Tax2EnsMapper;
@@ -39,7 +38,6 @@ import com.hp.hpl.jena.util.FileManager;
 public class ApplicationControllerTest extends TestCase {
 	
 	
-	String modelFileName = "resources/models/anagrafe.ttl" ;
 	final String RDF_SYNTAX = "TURTLE" ;
 	
 	ApplicationController controller = null ;

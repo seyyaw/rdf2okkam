@@ -29,7 +29,7 @@ import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
-public class ModelLoader {
+public class CopyOfModelLoader {
 		
 		
 	private Model inputModel = null ;
@@ -51,9 +51,9 @@ public class ModelLoader {
 	private String rulesFileName = "" ;
 	
 	/** Creates a new instance of ModelLoader (singleton) */
-	private static final ModelLoader loader = new ModelLoader();
+	private static final CopyOfModelLoader loader = new CopyOfModelLoader();
 	/** Private constructor */
-	private ModelLoader() {
+	private CopyOfModelLoader() {
 		prop = new Properties();
     	try {
             //load a properties file
@@ -75,10 +75,10 @@ public class ModelLoader {
 	
 	 
 	
-	private static Log log = LogFactory.getLog(ModelLoader.class);
+	private static Log log = LogFactory.getLog(CopyOfModelLoader.class);
 	
 	/** Acces the static instance of wife */
-    public static ModelLoader getInstance(){
+    public static CopyOfModelLoader getInstance(){
 
     	return loader;
     }

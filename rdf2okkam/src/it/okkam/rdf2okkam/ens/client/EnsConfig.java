@@ -36,7 +36,7 @@ public class EnsConfig {
 		this.password = "password";
 		//System.out.println(prop.get("services"));
 		//this.pointer =(String)prop.get("services");
-		this.pointer = "http://192.168.234.87:8080/okkam-core/WebServices";
+		this.pointer = "http://localhost:8080/okkam-core/WebServices";
 		//this.proxyUrl = (String)prop.get("proxyUrl");
 		//System.out.println(prop.get("proxyUrl"));
 		//this.proxyPort = (String)prop.get("proxyPort");

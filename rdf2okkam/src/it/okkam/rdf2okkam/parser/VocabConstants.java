@@ -3,7 +3,7 @@ package it.okkam.rdf2okkam.parser;
 public class VocabConstants {
 	
 	public static final String ensNS = "http://models.okkam.org/ENS-core-vocabulary.owl#";
-	
+
 	public static final String taxNS = "http://localhost/TaxOntology.owl#" ;
 	
 	public static final String TAX_PREFIX = "tax" ;
@@ -21,5 +21,7 @@ public class VocabConstants {
 	public static final String ENS_ORGANIZATION = ensNS + "organization" ;
 	
 	public static final String ENS_EVENT = ensNS + "event" ;
+	
+	public static final String ENS_OTHER = ensNS + "other" ;
 
 }

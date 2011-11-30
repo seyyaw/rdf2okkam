@@ -33,12 +33,21 @@ public class EntityTypeSelector {
 		if(VocabConstants.ENS_PERSON.equals(entityType)){
 			factory = new EnsPersonFactory();
 		}
+		
 		if(VocabConstants.ENS_LOCATION.equals(entityType)){
 			factory = new EnsLocationFactory();
 		}
 		
-		return factory;
+		if(VocabConstants.ENS_EVENT.equals(entityType)){
+			factory = new EnsEventFactory();
+		}
 		
+		if(VocabConstants.ENS_OTHER.equals(entityType)){
+			factory = new EnsOtherFactory();
+		}
+		
+		return factory;
+	
 	}
 	
 	private String getEntityType(RDFNode subjectNode) {

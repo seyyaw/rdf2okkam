@@ -22,40 +22,28 @@ import com.hp.hpl.jena.rdf.model.SimpleSelector;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.rdf.model.StmtIterator;
 
-public class EnsLocation implements EnsEntity {
+public class EnsArtifact_Type implements EnsEntity {
 
 	private Model _model ;
 	
 	private RDFNode _subjectNode ;
 	
-	private static Log log = LogFactory.getLog(EnsLocation.class);
+	private static Log log = LogFactory.getLog(EnsArtifact_Type.class);
 	
-	public EnsLocation(Model model, RDFNode node){
+	public EnsArtifact_Type(Model model, RDFNode node){
+		
 		_model = model ;
 		_subjectNode = node ;
 	}
 	
-	
 	@Override
 	public String getSemanticType() {
 		
-		return SemanticType.LOCATION ;
-	}
-
-	/*
-	 * Returns location's profile from the model
-	 */
-	public ProfileType getProfile() {
-		ProfileType profile = new ProfileType() ;
-		
-		profile.setAttributes(getAttributesType()) ;
-		profile.setSemanticType(getSemanticType()) ;
-		
-		return profile;		
+		return SemanticType.ARTIFACT_TYPE ;
 	}
 	
 	/*
-	 * Returns location's list of attributes from the model
+	 * Returns person's list of attributes from the model
 	 */
 	public AttributesType getAttributesType() {
 		
@@ -73,7 +61,8 @@ public class EnsLocation implements EnsEntity {
 			Statement stmt = i.next();			
 			AttributeType attribute = new AttributeType();
 			Property predicate = stmt.getPredicate();
-			//System.out.println("predicate: " + predicate.getURI());
+			
+			// set the prefix
 			if( VocabConstants.ensNS.equals( predicate.getNameSpace() )){
 				prefix = VocabConstants.ENS_PREFIX ;
 			}
@@ -84,10 +73,8 @@ public class EnsLocation implements EnsEntity {
 				prefix = VocabConstants.RDF_PREFIX ;
 			}
 			
-			
 			// select only predicates used as entity attributes
 			if(isAttribute(predicate)) {
-		
 				if (prefix.equals("")){ //if the attribute was not one of the ontology term 
 					predicate=ResourceFactory.createProperty(predicate.toString().replace("+", "_"));	
 				}
@@ -98,30 +85,43 @@ public class EnsLocation implements EnsEntity {
 				//System.out.println("value: " + value) ;
 				attribute.setValue(value);
 				
-				
 				// Set access control metadata to send or not attributes values to the public node
 				// Set to "private" to not send the attributes values.
 				// attribute.getMetadata().getAccessControl().setDisplayable("private");
 				
 				attributes.getAttributes().add(attribute);
-				
 			}
-			
-						
-			
-			
-			
+	
 		}
 			
 			
 		
 		return attributes ;
 	}
+
+
+	/*
+	 * Returns person's profile from the model
+	 */
+	@Override
+	public ProfileType getProfile() {
+		ProfileType profile = new ProfileType() ;
+		
+		profile.setAttributes(getAttributesType()) ;
+		profile.setSemanticType(getSemanticType()) ;
+		
+		return profile;	
+	}
 	
 	public String getQuery() {
 		
 		return EnsQuery.getQuery(getAttributesType(), getSemanticType()) ; 
 	}
+	
+	/*
+	 *  Select predicates that are entity's attribute. If a predicate is not an entity
+	 *  attribute the method returns false.
+	 */
 	
 	private boolean isAttribute(Property predicate) {
 		boolean result = true ;

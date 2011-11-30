@@ -6,7 +6,6 @@ import it.okkam.rdf2okkam.ens.EnsEntity;
 import it.okkam.rdf2okkam.ens.EnsEntityFactory;
 import it.okkam.rdf2okkam.ens.EnsLocationFactory;
 import it.okkam.rdf2okkam.ens.EnsPersonFactory;
-import it.okkam.rdf2okkam.ens.EntityBuilder;
 import it.okkam.rdf2okkam.ens.client.EnsQuery;
 import it.okkam.rdf2okkam.exception.SameNodeException;
 import it.okkam.rdf2okkam.model.ModelLoader;
@@ -63,7 +62,7 @@ public class RdfUtilTest extends TestCase {
 	@Before
 	public void setUp() throws Exception {
 		
-		parser = new RdfUtil(loader.getInputModel(), loader.getOutputModel() );
+		parser = new RdfUtil(loader.getInputModel() );
 		query = new EnsQuery() ;
 	}
 	

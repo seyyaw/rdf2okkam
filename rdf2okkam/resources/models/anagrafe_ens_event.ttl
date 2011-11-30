@@ -1,0 +1,38 @@
+@prefix ens: <http://models.okkam.org/ENS-core-vocabulary.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://127.0.0.1:3333/0> a ens:event ;
+	ens:name "GRAZIANO" ;
+	ens:creation_date "01/04/1997" .
+
+<http://127.0.0.1:3333/1> a ens:event ;
+	ens:name "ALESSIA" ;
+	ens:creation_date "08/08/1995" .
+
+<http://127.0.0.1:3333/2> a ens:event ;
+	ens:name "FRANCESCO" ;
+	ens:creation_date "08/08/1995" .
+
+<http://127.0.0.1:3333/3> a ens:event ;
+	ens:name "IOLANDA" ;
+	ens:creation_date "17/09/1960" .
+
+<http://127.0.0.1:3333/4> a ens:event ;
+	ens:name "EMILIANA" ;
+	ens:creation_date "19/11/1996" .
+
+<http://127.0.0.1:3333/5> a ens:event ;
+	ens:name "CLAUDIA" ;
+	ens:creation_date "28/02/1986" .
+
+<http://127.0.0.1:3333/6> a ens:event ;
+	ens:name "GINO" ;
+	ens:creation_date "27/09/1976" .
+
+<http://127.0.0.1:3333/7> a ens:event ;
+	ens:name "TIZIANO" ;
+	ens:creation_date "27/09/1976" .
+
+<http://127.0.0.1:3333/8> a ens:event ;
+	ens:name "FILOMENA" ;
+	ens:creation_date "12/06/1995" .

@@ -65,7 +65,7 @@ public class ServiceClientTest extends TestCase {
 	public void setUp() throws Exception {
 		
 		loader = ModelLoader.getInstance() ;		
-		parser = new RdfUtil(loader.getInputModel(), loader.getOutputModel());
+		parser = new RdfUtil(loader.getInputModel());
 		okkam = new OkkamClient(confpath) ;
 		client = new ServiceClient(okkam) ;	
 		query = new EnsQuery() ; 
