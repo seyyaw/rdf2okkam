@@ -19,7 +19,7 @@ public class AllTests {
 		//Use addTest to run specific test in a test class
 		//suite.addTest( new ServiceClientTest( "testFindEntity" ) );
 		//suite.addTest( new ServiceClientTest( "testDeleteEntity" ) );
-		suite.addTest( new ServiceClientTest( "testCreateNewEntity" ) );
+		//suite.addTest( new ServiceClientTest( "testCreateNewEntity" ) );
 		
 		return suite;
 	}

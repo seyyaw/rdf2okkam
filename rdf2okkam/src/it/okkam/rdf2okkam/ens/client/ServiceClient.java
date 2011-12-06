@@ -296,9 +296,7 @@ public class ServiceClient {
 			log.info(ticket + " not locked") ;
 			
 		}
-		
-
-		
+			
 
 		
 	}

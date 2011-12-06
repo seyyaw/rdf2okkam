@@ -393,21 +393,21 @@ public class EnsClient {
 
 				return proxy.validateEntity(entityXML, ignoreDuplicates);
 			} catch (IllegalArgumentException exc) {
-				log.error(exc.getMessage());
+				log.error(e+exc.getMessage());
 				throw new IllegalArgumentException(exc.getMessage());
 			}
 
 			catch (Exception exc) {
-				log.error(exc.getMessage());
+				log.error(e+exc.getMessage());
 				throw new OkkamClientException(exc.getMessage());
 			} catch (Throwable t) {
-				log.error(t.getMessage());
+				log.error(e+t.getMessage());
 				throw new OkkamClientException(t.getMessage());
 			}
 
 		} else {
 			log
-					.error("Impossible to lock the Entity, the input okkam id is null");
+					.error(e+"Impossible to lock the Entity, the input okkam id is null");
 			throw new IllegalArgumentException(
 					"Impossible to lock the Entity, the input okkam id is null");
 		}
