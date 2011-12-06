@@ -1,0 +1,262 @@
+@prefix riv: <http://www.semanticweb.org/ontologies/2011/9/Rivela-Flussi.owl#> .
+
+
+<http://www.okkam.org/ens/iddf5f8d88-497e-461b-8255-eec22e96e636> riv:haImmobile <http://www.okkam.org/ens/idfa15e2e1-3402-4094-824d-7fdb7c9d9c98> , <http://www.okkam.org/ens/idcc68a261-ec8d-4972-bb22-0834a1be0f40> , <http://www.okkam.org/ens/id12a2e228-f8bd-4875-8f16-8c00d7f68ae5> , <http://www.okkam.org/ens/idd81f3baf-3665-4919-9b1e-09947a9dcf09> .
+
+<http://www.okkam.org/ens/id0eddc8a6-2ad8-4265-95c6-07f4b6a061c7> riv:haImmobile <http://www.okkam.org/ens/id5aed77ba-a1df-464b-8817-25c23702854b> .
+
+<http://www.okkam.org/ens/id63c1c682-8755-4632-8650-68376adf0c12> riv:haImmobile <http://www.okkam.org/ens/id17d7c2c5-edbd-41f5-9f96-e29e0deb5509> .
+
+<http://www.okkam.org/ens/idf0fa100b-63c7-497b-80c3-eb0407741588> riv:haImmobile <http://www.okkam.org/ens/id87e76896-b90b-4228-8f43-93666dc1aa0b> .
+
+<http://www.okkam.org/ens/id0d250ff0-8e6d-42ff-a311-51b0cd803ab5> riv:haImmobile <http://www.okkam.org/ens/id99c021d1-6dd0-4b5b-8ecb-e6f46b58e6c3> , <http://www.okkam.org/ens/id877d4fc7-14b2-41af-b4f3-8e656132404c> , <http://www.okkam.org/ens/id96ecbd1c-1785-4117-ab08-cddf599dcadf> , <http://www.okkam.org/ens/id435fdb7e-fa5b-4e2c-8b91-db55c7ca1393> .
+
+<http://www.okkam.org/ens/idf841e74f-e2b4-4d61-8596-e2c793564226> riv:haImmobile <http://www.okkam.org/ens/id159c51f7-59a7-462e-9d3b-173341318af5> , <http://www.okkam.org/ens/idcc4c8b09-901b-4319-85e9-65f1a79aab9b> , <http://www.okkam.org/ens/id648cb60f-0abe-4343-b6ca-a4b53392c2a9> , <http://www.okkam.org/ens/id53cf07a8-fe4b-46f6-8d86-413f5b4606ee> .
+
+<http://www.okkam.org/ens/id2afef43a-3696-466a-b9a5-d0726f94b45d> riv:haImmobile <http://www.okkam.org/ens/iddb18629e-71f6-471d-b7ff-1695bd5ff395> .
+
+<http://www.okkam.org/ens/idb84e1cc3-3bf9-4a70-a3ae-8015df7bcdc4> riv:haImmobile <http://www.okkam.org/ens/id63d0dde0-9e7d-4dff-8885-b6c00b933634> , <http://www.okkam.org/ens/id10687cd8-2919-4380-986e-cb2bb05f369d> , <http://www.okkam.org/ens/iddab89252-ab28-42db-92f6-1ce78b07749c> .
+
+<http://www.okkam.org/ens/id5454bbb1-4b47-483d-b4c5-982e4f643d58> riv:haImmobile <http://www.okkam.org/ens/id6427f0b7-3ff5-4a76-9bb6-8f9db7e47ab9> , <http://www.okkam.org/ens/id3131deac-d136-4b9c-bda4-85c112fda644> , <http://www.okkam.org/ens/id360d27f7-81e2-456c-aead-66b8b06e3a95> , <http://www.okkam.org/ens/idecd11d3e-42d0-48c4-b56b-a400dc2fae3d> , <http://www.okkam.org/ens/id9339379d-8926-4f10-90b2-a3e6d5027f61> , <http://www.okkam.org/ens/id83306b9f-b707-46dc-a5b3-ca404ffd7bcf> , <http://www.okkam.org/ens/ideda8fdc2-a61e-4a26-91f9-3f7193d5aad6> , <http://www.okkam.org/ens/idc43a0529-8c7f-4d21-ae2d-e6cf9dbeaf72> , <http://www.okkam.org/ens/id0ecdecdd-cfde-4f55-be04-992194f56673> , <http://www.okkam.org/ens/id5d57aa87-0f15-4652-98e9-53e0b5aa832e> , <http://www.okkam.org/ens/id552ed90d-457f-4d3d-802c-074bfa864bf1> .
+
+<http://www.okkam.org/ens/idb642430d-fed2-4c57-9d9f-03ab757d57cb> riv:haImmobile <http://www.okkam.org/ens/id552ed90d-457f-4d3d-802c-074bfa864bf1> , <http://www.okkam.org/ens/id0ecdecdd-cfde-4f55-be04-992194f56673> , <http://www.okkam.org/ens/idc43a0529-8c7f-4d21-ae2d-e6cf9dbeaf72> , <http://www.okkam.org/ens/id83306b9f-b707-46dc-a5b3-ca404ffd7bcf> .
+
+<http://www.okkam.org/ens/id0f563bb4-a559-4d73-93e4-181ea637f79e> riv:haImmobile <http://www.okkam.org/ens/id02170a90-138e-4a6d-b8ac-03a12f00b597> , <http://www.okkam.org/ens/id039e27b9-5117-47e7-b306-31701e00ee6a> , <http://www.okkam.org/ens/id699b100a-d9af-4f3c-8b7a-051c1a29ecc1> , <http://www.okkam.org/ens/idd219cebe-f6df-42a8-b912-ed84ade903c5> , <http://www.okkam.org/ens/id1b511143-1d8a-4bc5-a56e-4bfe5e9ae9ec> , <http://www.okkam.org/ens/id3fe89df2-b5a7-47b1-a36f-beae4bed6b02> , <http://www.okkam.org/ens/id04dc6a8d-a97d-42b3-8243-83ce90b400b8> , <http://www.okkam.org/ens/id43de4a9c-c801-4526-840e-23c577fff43b> , <http://www.okkam.org/ens/id6d9372bf-89d7-4c9c-ac79-b03825b5ebba> , <http://www.okkam.org/ens/id883322b8-1b29-4eb3-aece-1e7c8d5c61cb> , <http://www.okkam.org/ens/idef72b46d-656b-4f1f-854a-98711b52353d> , <http://www.okkam.org/ens/id0813741d-1808-4548-b586-6acf3778133b> , <http://www.okkam.org/ens/id4a92a78e-41fc-40dd-a702-4e8e77a9306b> , <http://www.okkam.org/ens/idda90e869-8f6b-4bf5-84da-a450c5c92303> , <http://www.okkam.org/ens/id74078d92-fa59-451e-ad29-6f23bd765021> , <http://www.okkam.org/ens/id2b4188c9-2ebe-41b6-8cff-8df3a6f71423> , <http://www.okkam.org/ens/ida0a947a9-aea4-49ed-9029-a5539774a7af> , <http://www.okkam.org/ens/id4b403344-81fa-4b0e-831a-cec06e2479a5> , <http://www.okkam.org/ens/id9339379d-8926-4f10-90b2-a3e6d5027f61> , <http://www.okkam.org/ens/ideda8fdc2-a61e-4a26-91f9-3f7193d5aad6> , <http://www.okkam.org/ens/id83306b9f-b707-46dc-a5b3-ca404ffd7bcf> .
+
+<http://www.okkam.org/ens/idedfddcc7-4dc6-4706-b487-92b441ac86ab> riv:haImmobile <http://www.okkam.org/ens/id552ed90d-457f-4d3d-802c-074bfa864bf1> , <http://www.okkam.org/ens/id0ecdecdd-cfde-4f55-be04-992194f56673> , <http://www.okkam.org/ens/idc43a0529-8c7f-4d21-ae2d-e6cf9dbeaf72> , <http://www.okkam.org/ens/id83306b9f-b707-46dc-a5b3-ca404ffd7bcf> .
+
+<http://www.okkam.org/ens/idb67ee842-a940-4b91-95db-d344e5cc6c07> riv:haImmobile <http://www.okkam.org/ens/id5c5e07a5-cf07-47dc-8033-05ea2045cf0b> .
+
+<http://www.okkam.org/ens/id98d3f765-365f-47ba-bc1a-4ab2b552f69a> riv:haImmobile <http://www.okkam.org/ens/ide3bdb2d3-4702-4a21-9b54-6e85fcbb20d0> , <http://www.okkam.org/ens/idca96b263-eb65-469d-922d-45a91eb24835> , <http://www.okkam.org/ens/ide88bf043-8bbb-4028-bb8d-907688d804d6> , <http://www.okkam.org/ens/id776a6142-179f-4310-9658-b0171ffd17b4> .
+
+<http://www.okkam.org/ens/idfba476a4-564a-4a6d-968f-28a67caf73ec> riv:haImmobile <http://www.okkam.org/ens/id8d3083f5-47f5-4b1c-8162-7b2a2f4b5876> , <http://www.okkam.org/ens/idb17365c5-ca2f-4a56-9c6b-bf3c618feb0d> , <http://www.okkam.org/ens/idc2fbb1d2-cb27-4955-8a9f-33c5d0d39eaf> .
+
+<http://www.okkam.org/ens/idef8c8383-23ed-405c-98d1-42d3038461bc> riv:haImmobile <http://www.okkam.org/ens/id68a26872-3f0f-40ca-9d9a-ab43037e9d55> , <http://www.okkam.org/ens/id45b4c752-df60-4661-b041-088daeae9bf7> , <http://www.okkam.org/ens/id2e376cd8-e7c4-477e-81e2-939a47e546ed> .
+
+<http://www.okkam.org/ens/id3cdabaed-586d-42a0-a5bd-8798f7394215> riv:haImmobile <http://www.okkam.org/ens/idf125bd2e-1ebf-4c71-8cf4-82cf656362a6> .
+
+<http://www.okkam.org/ens/id53b8f2c5-5f84-4cb1-a546-8daf39098af4> riv:haImmobile <http://www.okkam.org/ens/ida29e759d-69be-49dd-92a1-ba564ab0c339> , <http://www.okkam.org/ens/id1ad90dda-d3b3-4c9a-8ffa-2f6cbe5078c7> , <http://www.okkam.org/ens/idaf5d8a80-84c9-4744-8988-fd7fbf041b7b> , <http://www.okkam.org/ens/ida740363b-6db3-4fc5-9bf8-f09fb10ebcc1> , <http://www.okkam.org/ens/id6f64a890-dfe4-451b-8327-229717c4d822> , <http://www.okkam.org/ens/id13ef2711-ccba-4f40-88eb-25a5f4792130> , <http://www.okkam.org/ens/idbe671bbb-dfd1-4f5c-b966-c1dce6fa0db9> , <http://www.okkam.org/ens/id36e595ed-d3bf-48d9-8eba-4d30db883fc6> , <http://www.okkam.org/ens/id57ec7154-0900-47d6-875b-143637d93756> , <http://www.okkam.org/ens/id4d98dc6c-871b-4517-9245-6d5b0e4bf4b9> , <http://www.okkam.org/ens/id9ee918c5-cbfc-4771-9de2-fae96bd65b48> , <http://www.okkam.org/ens/id94f7c682-9746-4813-a237-4600b949ea41> , <http://www.okkam.org/ens/idc957202f-22d5-4f25-a190-c43a8f894c9c> , <http://www.okkam.org/ens/id76eee2d0-3a34-4e85-a343-30f78fe48d7b> , <http://www.okkam.org/ens/id66fc8835-464a-4d66-9d68-209adc5d75af> , <http://www.okkam.org/ens/id9099aa14-07d3-4ef5-a511-d564a7cf9094> , <http://www.okkam.org/ens/id5bbb7c42-ce62-4043-b815-2399e3ba2473> .
+
+<http://www.okkam.org/ens/id3a7e1d47-bc34-4a25-aa06-2c55f2252742> riv:haImmobile <http://www.okkam.org/ens/idf125bd2e-1ebf-4c71-8cf4-82cf656362a6> .
+
+<http://www.okkam.org/ens/idf66fcf8a-698d-4531-8109-693bf641272e> riv:haImmobile <http://www.okkam.org/ens/id552c4825-e6fd-426c-9882-65d5083afa9d> , <http://www.okkam.org/ens/id47a49c47-1605-4c57-86e3-3e30efbb269c> , <http://www.okkam.org/ens/id1ef6d4f6-e50c-4ff0-9357-768d6bfddc36> .
+
+<http://www.okkam.org/ens/ide40acbf7-dbab-4434-a5f5-79d6cd7a1f3c> riv:haImmobile <http://www.okkam.org/ens/id47a49c47-1605-4c57-86e3-3e30efbb269c> .
+
+<http://www.okkam.org/ens/id5baa8062-b0bf-4b45-97b5-ce715cc2be67> riv:haImmobile <http://www.okkam.org/ens/idc60beecf-fd05-4962-a0cf-3cf9883a1824> , <http://www.okkam.org/ens/idf5ea3135-6554-4833-9f9f-8927239c14a4> .
+
+<http://www.okkam.org/ens/idca649291-656b-4ce6-8da2-b9a8a193329e> riv:haImmobile <http://www.okkam.org/ens/idc60beecf-fd05-4962-a0cf-3cf9883a1824> , <http://www.okkam.org/ens/idf5ea3135-6554-4833-9f9f-8927239c14a4> .
+
+<http://www.okkam.org/ens/idd69c9635-6fe2-4c37-a9e6-891edbfbe265> riv:haImmobile <http://www.okkam.org/ens/id8af5d614-734e-46f7-a470-15840d46b1ad> , <http://www.okkam.org/ens/id5b9e3ba7-7162-41f9-84e5-6d04d7f5ead9> , <http://www.okkam.org/ens/id4c4ebb5b-4dd3-4df0-ae7e-b26e75e8f18d> , <http://www.okkam.org/ens/id56b15da9-bd65-4084-b594-d0dfd24295cd> , <http://www.okkam.org/ens/id31843c7e-b47f-47fa-bc28-fdbd4e35b1a2> .
+
+<http://www.okkam.org/ens/idcf5b7b9c-5054-4cd7-b9a6-55137becfdda> riv:haImmobile <http://www.okkam.org/ens/idc60beecf-fd05-4962-a0cf-3cf9883a1824> , <http://www.okkam.org/ens/idf5ea3135-6554-4833-9f9f-8927239c14a4> .
+
+<http://www.okkam.org/ens/id32a2c6e4-4a8d-4593-bc2e-2b0b167b9e6e> riv:haImmobile <http://www.okkam.org/ens/id64a32620-2b6d-47b4-a0fa-7118618699d1> , <http://www.okkam.org/ens/idc3a4d9fd-1b00-4c0a-b12e-34a5006aee85> , <http://www.okkam.org/ens/idf71feb58-e24a-45af-b2b4-735c0f29f349> , <http://www.okkam.org/ens/ide853ae2b-4f18-4572-ac41-7ea7e766b60b> .
+
+<http://www.okkam.org/ens/id1ccd751f-53ff-4e44-9b8d-fc2d93938aef> riv:haImmobile <http://www.okkam.org/ens/iddd155fb5-ac8a-4145-a943-32dd70807919> .
+
+<http://www.okkam.org/ens/ida69c7675-92fa-404f-a499-468e9c8383c6> riv:haImmobile <http://www.okkam.org/ens/id7993f5fd-f5a9-4b05-99a3-e027cab1ad90> .
+
+<http://www.okkam.org/ens/idd490cfdc-2622-4e08-9787-aef73d938899> riv:haImmobile <http://www.okkam.org/ens/id86074fc6-87bb-4e11-88b7-b605d2093f60> .
+
+<http://www.okkam.org/ens/id29578378-077e-455e-a72f-4b5d6d2ccd00> riv:haImmobile <http://www.okkam.org/ens/id187677d3-4d87-4f15-ac35-e954dc36142f> , <http://www.okkam.org/ens/id81040812-1566-4ec9-8846-b286707ae43d> .
+
+<http://www.okkam.org/ens/ide701d8b1-cc81-459f-a96f-5de61b813c19> riv:haImmobile <http://www.okkam.org/ens/id24028840-c3c8-4660-8b28-8a6f0060a19f> .
+
+<http://www.okkam.org/ens/id66f2b76b-a850-4f7d-a237-b11faf7106f3> riv:haImmobile <http://www.okkam.org/ens/id81040812-1566-4ec9-8846-b286707ae43d> , <http://www.okkam.org/ens/id187677d3-4d87-4f15-ac35-e954dc36142f> .
+
+<http://www.okkam.org/ens/idf7302cd6-27de-4366-bf9b-c55cd7cb8242> riv:haImmobile <http://www.okkam.org/ens/id55a53207-1b66-4d29-8b63-bba78eca9602> .
+
+<http://www.okkam.org/ens/idd391b744-17d7-4474-a906-2af43fe1ce64> riv:haImmobile <http://www.okkam.org/ens/id5a38f09f-70b9-438a-ac39-fc8ff1c2e99c> .
+
+<http://www.okkam.org/ens/id8f3a9823-fecd-4a90-b281-ed2e90d22338> riv:haImmobile <http://www.okkam.org/ens/id51ebe02f-b329-4686-bf6b-334ad84346f0> , <http://www.okkam.org/ens/id493e20d6-4975-47b2-981f-6121f72c88a6> , <http://www.okkam.org/ens/idcd7bb348-3d6c-429b-90dd-472a2ac0492f> , <http://www.okkam.org/ens/idd3935941-b9e0-4c3a-83f6-8ecdcc5908bd> , <http://www.okkam.org/ens/id85664f1e-417c-4705-9f8f-28ea522af2e1> , <http://www.okkam.org/ens/id396e0d81-85ab-46cd-af89-1b1b277e8bd4> , <http://www.okkam.org/ens/id7b28f0b1-a1aa-482c-ab97-e52d2196b349> .
+
+<http://www.okkam.org/ens/idfe3ecb73-9c21-40b7-9dba-3bda5e615465> riv:haImmobile <http://www.okkam.org/ens/id462dcd52-cdfa-482d-b75e-108899354327> , <http://www.okkam.org/ens/id961c323a-d874-484d-8ba7-b6f1c1e7cc29> .
+
+<http://www.okkam.org/ens/id563dfc5e-e9bd-4970-b153-75edf54ce75d> riv:haImmobile <http://www.okkam.org/ens/idf37c3929-7006-4bf1-98f4-f71ad4c288ee> .
+
+<http://www.okkam.org/ens/idbb5d67b5-e561-444b-9440-7d8a1bd5fd9f> riv:haImmobile <http://www.okkam.org/ens/idb1a1f823-e3ca-4a2d-a479-8c2e8fe73ae5> .
+
+<http://www.okkam.org/ens/id7a5f57c7-1312-4f39-b911-7f6fbd9ace6c> riv:haImmobile <http://www.okkam.org/ens/id86074fc6-87bb-4e11-88b7-b605d2093f60> , <http://www.okkam.org/ens/id187f0ae8-452d-4522-835d-212dd188e7e8> , <http://www.okkam.org/ens/id05a41c7f-d8f0-4139-9f84-dc63a95817b5> , <http://www.okkam.org/ens/idd9d07765-788a-43ae-86ad-ec3fb600cc8e> , <http://www.okkam.org/ens/id6ef54561-bd42-4627-b264-f3e63ac9b6b6> .
+
+<http://www.okkam.org/ens/id6cf2f43c-fd2d-464c-b766-37d7d79b7c15> riv:haImmobile <http://www.okkam.org/ens/id4c7af2d6-49e7-41ba-aa89-f517c241eaa0> , <http://www.okkam.org/ens/idd42daa89-af01-4b83-97f1-b24c57ec7439> , <http://www.okkam.org/ens/idd5e7233a-0941-4f2e-9c68-9e7dd422bbb5> .
+
+<http://www.okkam.org/ens/id282c7597-6f4a-4647-9706-05893f2cbf07> riv:haImmobile <http://www.okkam.org/ens/id187677d3-4d87-4f15-ac35-e954dc36142f> , <http://www.okkam.org/ens/id81040812-1566-4ec9-8846-b286707ae43d> .
+
+<http://www.okkam.org/ens/id503fb444-9074-49da-b5b5-e28a27a64e6a> riv:haImmobile <http://www.okkam.org/ens/id39c4de02-2286-4a0a-b3a2-f6df6ebdd608> , <http://www.okkam.org/ens/id17f255c1-be44-491d-a4a1-dd1cbad4a1b7> , <http://www.okkam.org/ens/ide2181fd3-e8c1-492a-861d-0a9959438cfb> , <http://www.okkam.org/ens/id3c03a76b-2dc2-472a-9d96-eef83d1c8d85> , <http://www.okkam.org/ens/id2c6b02c5-d961-425e-a1c8-4d7f0bd89ceb> .
+
+<http://www.okkam.org/ens/id5bc29ced-92e0-4a96-b18b-bb40da0a1b71> riv:haImmobile <http://www.okkam.org/ens/id8748f3d1-c3c4-4f2f-b8ed-86708525cda5> .
+
+<http://www.okkam.org/ens/id0f4d56b4-22ae-4835-aa08-6d07d1ac6f55> riv:haImmobile <http://www.okkam.org/ens/id0d401088-3a4e-4d2c-bebe-866b2ba33cf1> .
+
+<http://www.okkam.org/ens/id3fe5f516-a944-46c5-9686-e5fadc8d4360> riv:haImmobile <http://www.okkam.org/ens/idd3a261e5-ee71-4293-bd09-e172480e9cd5> .
+
+<http://www.okkam.org/ens/id0b1701d3-41db-47d1-9d18-52d0ba238238> riv:haImmobile <http://www.okkam.org/ens/idd3a261e5-ee71-4293-bd09-e172480e9cd5> , <http://www.okkam.org/ens/id73b60f5c-46ef-4741-a4c9-d834f281564e> .
+
+<http://www.okkam.org/ens/id9e1dcfae-defb-42ea-98e0-b02d6d6d1ddf> riv:haImmobile <http://www.okkam.org/ens/idbbaa9764-d968-4a2e-96de-00d121de8774> , <http://www.okkam.org/ens/id4725bedb-d2dd-497a-99ec-df67cbfec863> , <http://www.okkam.org/ens/id8786ff26-a967-49f8-9fdd-8d023a886bfa> .
+
+<http://www.okkam.org/ens/id90f4efd7-fb52-4087-a03f-be70d3212aa9> riv:haImmobile <http://www.okkam.org/ens/idbbaa9764-d968-4a2e-96de-00d121de8774> , <http://www.okkam.org/ens/id4725bedb-d2dd-497a-99ec-df67cbfec863> , <http://www.okkam.org/ens/id8786ff26-a967-49f8-9fdd-8d023a886bfa> .
+
+<http://www.okkam.org/ens/idc0204938-d861-462e-be91-2dc617a0ff30> riv:haImmobile <http://www.okkam.org/ens/id0be2dacc-866c-46f1-8326-ba870bab2653> , <http://www.okkam.org/ens/id40dfe05b-aa83-4e0a-8e09-0227839b18e0> , <http://www.okkam.org/ens/idcb348316-afd9-431f-bd27-5b4948b1c87d> .
+
+<http://www.okkam.org/ens/id214d5c86-e72d-4eda-a117-626625cdeed6> riv:haImmobile <http://www.okkam.org/ens/id8d3083f5-47f5-4b1c-8162-7b2a2f4b5876> , <http://www.okkam.org/ens/idb17365c5-ca2f-4a56-9c6b-bf3c618feb0d> , <http://www.okkam.org/ens/idc2fbb1d2-cb27-4955-8a9f-33c5d0d39eaf> .
+
+<http://www.okkam.org/ens/id025449a5-3fdf-477a-bb35-7df409db6d64> riv:haImmobile <http://www.okkam.org/ens/id45369394-2187-4306-923d-a9d3672d044e> , <http://www.okkam.org/ens/id9c3b9122-ecb1-4113-9fec-b05ef28217db> .
+
+<http://www.okkam.org/ens/idaaf75dad-0089-485b-b858-8ba93f68a9cf> riv:haImmobile <http://www.okkam.org/ens/id039e27b9-5117-47e7-b306-31701e00ee6a> , <http://www.okkam.org/ens/id02170a90-138e-4a6d-b8ac-03a12f00b597> , <http://www.okkam.org/ens/id699b100a-d9af-4f3c-8b7a-051c1a29ecc1> , <http://www.okkam.org/ens/idd219cebe-f6df-42a8-b912-ed84ade903c5> , <http://www.okkam.org/ens/id4b403344-81fa-4b0e-831a-cec06e2479a5> , <http://www.okkam.org/ens/ida0a947a9-aea4-49ed-9029-a5539774a7af> , <http://www.okkam.org/ens/id1b511143-1d8a-4bc5-a56e-4bfe5e9ae9ec> , <http://www.okkam.org/ens/id3fe89df2-b5a7-47b1-a36f-beae4bed6b02> , <http://www.okkam.org/ens/id04dc6a8d-a97d-42b3-8243-83ce90b400b8> , <http://www.okkam.org/ens/id74078d92-fa59-451e-ad29-6f23bd765021> , <http://www.okkam.org/ens/id0813741d-1808-4548-b586-6acf3778133b> , <http://www.okkam.org/ens/id883322b8-1b29-4eb3-aece-1e7c8d5c61cb> , <http://www.okkam.org/ens/idef72b46d-656b-4f1f-854a-98711b52353d> , <http://www.okkam.org/ens/id6d9372bf-89d7-4c9c-ac79-b03825b5ebba> , <http://www.okkam.org/ens/id4a92a78e-41fc-40dd-a702-4e8e77a9306b> , <http://www.okkam.org/ens/id43de4a9c-c801-4526-840e-23c577fff43b> , <http://www.okkam.org/ens/idda90e869-8f6b-4bf5-84da-a450c5c92303> , <http://www.okkam.org/ens/id2b4188c9-2ebe-41b6-8cff-8df3a6f71423> .
+
+<http://www.okkam.org/ens/ide1b43219-af09-4863-83f4-b83c154d8322> riv:haImmobile <http://www.okkam.org/ens/id385a0e3d-8844-48a3-b5a8-95111773cfd5> , <http://www.okkam.org/ens/idc4757e33-70bd-4117-85ac-c729dd470c5d> , <http://www.okkam.org/ens/id9a4214a4-3690-4f29-bb86-f62b997704a5> , <http://www.okkam.org/ens/ida891a731-3ee7-4ea2-9b9e-088b9c30d40b> .
+
+<http://www.okkam.org/ens/idef83107d-b03e-4e8f-bd6a-2ce0acd57d88> riv:haImmobile <http://www.okkam.org/ens/id961c323a-d874-484d-8ba7-b6f1c1e7cc29> , <http://www.okkam.org/ens/id462dcd52-cdfa-482d-b75e-108899354327> , <http://www.okkam.org/ens/id665e9fdc-e425-4912-aaea-501bfc52719c> .
+
+<http://www.okkam.org/ens/id74ce35ed-41ea-45af-9e95-09c7830da421> riv:haImmobile <http://www.okkam.org/ens/id9ac8ca99-97da-414a-ad54-73229e5fd208> , <http://www.okkam.org/ens/id78249552-d7c9-4a4e-8ede-934852a1a431> .
+
+<http://www.okkam.org/ens/idbee4e8a5-4864-4ec3-a5b4-dfd58db81740> riv:haImmobile <http://www.okkam.org/ens/id956b36ec-9402-43b1-b03e-2d429e1ac434> , <http://www.okkam.org/ens/id7fa6cdfb-5fe2-4245-af5c-e4f1c1c0b3c6> , <http://www.okkam.org/ens/id10bf1c7d-7aa0-4a31-97a8-75119b66e722> .
+
+<http://www.okkam.org/ens/id3ffe2742-c3c2-4e3a-9e94-73a4912e5bfe> riv:haImmobile <http://www.okkam.org/ens/id71739235-354a-4bfd-9b60-dfe7f85ab837> .
+
+<http://www.okkam.org/ens/idcecfb42b-11a5-4a03-851d-5ee6b4da5001> riv:haImmobile <http://www.okkam.org/ens/id71739235-354a-4bfd-9b60-dfe7f85ab837> .
+
+<http://www.okkam.org/ens/ide3a7475d-bfa7-4f83-91aa-fc198709fa2a> riv:haImmobile <http://www.okkam.org/ens/id5aed77ba-a1df-464b-8817-25c23702854b> .
+
+<http://www.okkam.org/ens/idde86be5d-9651-4f3e-a660-c58677570fe3> riv:haImmobile <http://www.okkam.org/ens/idd2caf822-51d4-45a5-ae08-61763db8c887> , <http://www.okkam.org/ens/ida7e655e1-7eb0-404f-a5b2-8d1a6a59c25b> , <http://www.okkam.org/ens/idc024ebd6-b027-4cd4-bec1-d3a3d2967be3> .
+
+<http://www.okkam.org/ens/idf507ab44-b80a-4137-9ba8-2a6de342fe50> riv:haImmobile <http://www.okkam.org/ens/idd2caf822-51d4-45a5-ae08-61763db8c887> , <http://www.okkam.org/ens/ida7e655e1-7eb0-404f-a5b2-8d1a6a59c25b> , <http://www.okkam.org/ens/idc024ebd6-b027-4cd4-bec1-d3a3d2967be3> .
+
+<http://www.okkam.org/ens/id738b6090-7686-4e04-959e-89ddc872c9d8> riv:haImmobile <http://www.okkam.org/ens/id92d03592-69fc-4f87-8a0c-8ba9054854f5> , <http://www.okkam.org/ens/id456888cf-007c-46fa-83d6-053636a66fb9> , <http://www.okkam.org/ens/id583a9d4c-1bff-47e0-ac9f-133856c1d56c> .
+
+<http://www.okkam.org/ens/id27bf0bdb-6181-4d42-abb2-4f133408a1da> riv:haImmobile <http://www.okkam.org/ens/id4207064f-5ad6-4be5-9699-41f5db3f7bf1> , <http://www.okkam.org/ens/id67f021ed-92ba-4475-b348-4b58ffe2eb2a> , <http://www.okkam.org/ens/id3eecc156-1157-443c-830b-efc1a9741b25> .
+
+<http://www.okkam.org/ens/ida4d3d365-52e3-4cae-8d57-34be8289122a> riv:haImmobile <http://www.okkam.org/ens/id989ae5d0-a49f-4ca5-957c-ce13ad304d4d> .
+
+<http://www.okkam.org/ens/idd32587b3-650e-4412-bad0-8467e81fd83d> riv:haImmobile <http://www.okkam.org/ens/idca96b263-eb65-469d-922d-45a91eb24835> , <http://www.okkam.org/ens/ide88bf043-8bbb-4028-bb8d-907688d804d6> , <http://www.okkam.org/ens/ide3bdb2d3-4702-4a21-9b54-6e85fcbb20d0> , <http://www.okkam.org/ens/id776a6142-179f-4310-9658-b0171ffd17b4> .
+
+<http://www.okkam.org/ens/id4d30ec61-eda0-41f0-a686-4165df7f1fc1> riv:haImmobile <http://www.okkam.org/ens/idc3a4d9fd-1b00-4c0a-b12e-34a5006aee85> , <http://www.okkam.org/ens/id64a32620-2b6d-47b4-a0fa-7118618699d1> , <http://www.okkam.org/ens/idf71feb58-e24a-45af-b2b4-735c0f29f349> , <http://www.okkam.org/ens/ide853ae2b-4f18-4572-ac41-7ea7e766b60b> .
+
+<http://www.okkam.org/ens/id49ba55b6-a91d-4027-b84a-c2b8501aaf67> riv:haImmobile <http://www.okkam.org/ens/id64a32620-2b6d-47b4-a0fa-7118618699d1> , <http://www.okkam.org/ens/idc3a4d9fd-1b00-4c0a-b12e-34a5006aee85> , <http://www.okkam.org/ens/idf71feb58-e24a-45af-b2b4-735c0f29f349> , <http://www.okkam.org/ens/ide853ae2b-4f18-4572-ac41-7ea7e766b60b> .
+
+<http://www.okkam.org/ens/id0bfcf12a-9880-4ba9-9a58-7fd782616e18> riv:haImmobile <http://www.okkam.org/ens/id63ae2dcc-5125-40e0-b75e-9a66dd635918> .
+
+<http://www.okkam.org/ens/id92045872-e6dd-4cab-9c2f-cbbca25ba190> riv:haImmobile <http://www.okkam.org/ens/idca96b263-eb65-469d-922d-45a91eb24835> , <http://www.okkam.org/ens/ide88bf043-8bbb-4028-bb8d-907688d804d6> , <http://www.okkam.org/ens/ide3bdb2d3-4702-4a21-9b54-6e85fcbb20d0> , <http://www.okkam.org/ens/id776a6142-179f-4310-9658-b0171ffd17b4> .
+
+<http://www.okkam.org/ens/id64fa622b-053c-44e3-a817-91cab5e36bc8> riv:haImmobile <http://www.okkam.org/ens/iddd155fb5-ac8a-4145-a943-32dd70807919> , <http://www.okkam.org/ens/id87e76896-b90b-4228-8f43-93666dc1aa0b> .
+
+<http://www.okkam.org/ens/ide406d7ab-12ce-4e33-8c0a-8ea16b475a83> riv:haImmobile <http://www.okkam.org/ens/iddd155fb5-ac8a-4145-a943-32dd70807919> , <http://www.okkam.org/ens/id87e76896-b90b-4228-8f43-93666dc1aa0b> .
+
+<http://www.okkam.org/ens/id6d28779c-1cad-49aa-83a7-b241ef5581be> riv:haImmobile <http://www.okkam.org/ens/id0ee86600-8b5f-488b-8508-4f561ba83bc0> .
+
+<http://www.okkam.org/ens/idb25d0901-e9f0-4753-b09c-7f879cfcc027> riv:haImmobile <http://www.okkam.org/ens/id8af5d614-734e-46f7-a470-15840d46b1ad> , <http://www.okkam.org/ens/id5b9e3ba7-7162-41f9-84e5-6d04d7f5ead9> .
+
+<http://www.okkam.org/ens/id878f7839-cf0a-41cf-b7c0-581dfa550c57> riv:haImmobile <http://www.okkam.org/ens/id5b9e3ba7-7162-41f9-84e5-6d04d7f5ead9> , <http://www.okkam.org/ens/id8af5d614-734e-46f7-a470-15840d46b1ad> , <http://www.okkam.org/ens/id56b15da9-bd65-4084-b594-d0dfd24295cd> , <http://www.okkam.org/ens/id31843c7e-b47f-47fa-bc28-fdbd4e35b1a2> .
+
+<http://www.okkam.org/ens/idbe32ddcc-7621-43c2-a051-f7c19a078aeb> riv:haImmobile <http://www.okkam.org/ens/id45369394-2187-4306-923d-a9d3672d044e> , <http://www.okkam.org/ens/id9c3b9122-ecb1-4113-9fec-b05ef28217db> .
+
+<http://www.okkam.org/ens/id5ae3e39a-14de-46c3-8c06-55be2e7ed88d> riv:haImmobile <http://www.okkam.org/ens/id7993f5fd-f5a9-4b05-99a3-e027cab1ad90> .
+
+<http://www.okkam.org/ens/idb4f94cbd-57f9-4f5b-88a7-578912d21057> riv:haImmobile <http://www.okkam.org/ens/idc0e4b33e-d0af-478d-86f8-85ab16df2183> , <http://www.okkam.org/ens/ide7dbf377-8814-481b-b449-12ff3167e353> , <http://www.okkam.org/ens/id4f5b69e7-0943-47e4-a09f-7567f755e638> , <http://www.okkam.org/ens/id902a1cf1-d891-4bf1-a7f0-247863018c61> .
+
+<http://www.okkam.org/ens/id0f4d56b4-22ae-4835-aa08-6d07d1ac6f55> riv:haImmobile <http://www.okkam.org/ens/id4f5b69e7-0943-47e4-a09f-7567f755e638> , <http://www.okkam.org/ens/id902a1cf1-d891-4bf1-a7f0-247863018c61> .
+
+<http://www.okkam.org/ens/id6c241dda-c1c6-461f-9be5-dee210585bed> riv:haImmobile <http://www.okkam.org/ens/id909ebb3f-b2b2-4251-bf99-f6ee1844c515> , <http://www.okkam.org/ens/id39a7bff2-a796-4250-bffa-c685572f7c85> .
+
+<http://www.okkam.org/ens/id54638f69-4d49-4b79-9bb4-4f9a02a34166> riv:haImmobile <http://www.okkam.org/ens/id79a24fef-ba7f-4428-952a-7c2a27465c5d> , <http://www.okkam.org/ens/id7a27cc15-0800-4720-ab51-f02b56b68a08> , <http://www.okkam.org/ens/id5b9bb463-3e6c-4d6d-971f-dbb56c6a9533> , <http://www.okkam.org/ens/id37980030-557a-4c72-b3ed-e5b06cc8cd8d> , <http://www.okkam.org/ens/id43913092-2347-4db1-a2b5-2eb43c7f0ee8> , <http://www.okkam.org/ens/id1b64f16c-bbad-407a-a84c-c0e9172b30c6> , <http://www.okkam.org/ens/idcda7158d-3790-40d8-a180-66e02ede8bfd> , <http://www.okkam.org/ens/ide5091a1b-d224-4af0-bfaa-3cef38c9d025> , <http://www.okkam.org/ens/ida39347b3-cdc6-4e8b-8f6a-964cbc6e3181> .
+
+<http://www.okkam.org/ens/id41b654a5-43a9-4373-8086-586849c8fef6> riv:haImmobile <http://www.okkam.org/ens/id79a24fef-ba7f-4428-952a-7c2a27465c5d> , <http://www.okkam.org/ens/id7a27cc15-0800-4720-ab51-f02b56b68a08> , <http://www.okkam.org/ens/id5b9bb463-3e6c-4d6d-971f-dbb56c6a9533> , <http://www.okkam.org/ens/id43913092-2347-4db1-a2b5-2eb43c7f0ee8> , <http://www.okkam.org/ens/id37980030-557a-4c72-b3ed-e5b06cc8cd8d> , <http://www.okkam.org/ens/id1b64f16c-bbad-407a-a84c-c0e9172b30c6> , <http://www.okkam.org/ens/ida39347b3-cdc6-4e8b-8f6a-964cbc6e3181> , <http://www.okkam.org/ens/idcda7158d-3790-40d8-a180-66e02ede8bfd> , <http://www.okkam.org/ens/ide5091a1b-d224-4af0-bfaa-3cef38c9d025> .
+
+<http://www.okkam.org/ens/idd78fc8e9-29da-4912-b601-f05d0993f008> riv:haImmobile <http://www.okkam.org/ens/id7a27cc15-0800-4720-ab51-f02b56b68a08> , <http://www.okkam.org/ens/id5b9bb463-3e6c-4d6d-971f-dbb56c6a9533> , <http://www.okkam.org/ens/id43913092-2347-4db1-a2b5-2eb43c7f0ee8> , <http://www.okkam.org/ens/id37980030-557a-4c72-b3ed-e5b06cc8cd8d> , <http://www.okkam.org/ens/id1b64f16c-bbad-407a-a84c-c0e9172b30c6> , <http://www.okkam.org/ens/ide5091a1b-d224-4af0-bfaa-3cef38c9d025> , <http://www.okkam.org/ens/idcda7158d-3790-40d8-a180-66e02ede8bfd> , <http://www.okkam.org/ens/ida39347b3-cdc6-4e8b-8f6a-964cbc6e3181> , <http://www.okkam.org/ens/id79a24fef-ba7f-4428-952a-7c2a27465c5d> .
+
+<http://www.okkam.org/ens/id31a5973b-92e1-47c9-b953-506a6f4fc812> riv:haImmobile <http://www.okkam.org/ens/id39c4de02-2286-4a0a-b3a2-f6df6ebdd608> , <http://www.okkam.org/ens/ide2181fd3-e8c1-492a-861d-0a9959438cfb> , <http://www.okkam.org/ens/id17f255c1-be44-491d-a4a1-dd1cbad4a1b7> , <http://www.okkam.org/ens/id3c03a76b-2dc2-472a-9d96-eef83d1c8d85> , <http://www.okkam.org/ens/id2c6b02c5-d961-425e-a1c8-4d7f0bd89ceb> .
+
+<http://www.okkam.org/ens/ide27b4dea-e52e-4707-b241-05432d4d1b78> riv:haImmobile <http://www.okkam.org/ens/id80baaca5-8010-428c-a074-154995f25515> , <http://www.okkam.org/ens/idf21a9e22-2935-4747-bbe5-e78d1d45c0fb> .
+
+<http://www.okkam.org/ens/id46bf3d8d-3333-4481-8c65-7450ca56424f> riv:haImmobile <http://www.okkam.org/ens/id74c768a8-0fe1-4151-8418-bc967e49b002> , <http://www.okkam.org/ens/idb0caf496-8d5d-4ec4-b6b7-0dc00fe46c4b> , <http://www.okkam.org/ens/id542a3608-8bed-4060-9341-f7cabeddaed8> .
+
+<http://www.okkam.org/ens/idcc2c66a8-46a6-4961-8b33-4cabba2f9fb7> riv:haImmobile <http://www.okkam.org/ens/id74c768a8-0fe1-4151-8418-bc967e49b002> , <http://www.okkam.org/ens/idb0caf496-8d5d-4ec4-b6b7-0dc00fe46c4b> , <http://www.okkam.org/ens/id542a3608-8bed-4060-9341-f7cabeddaed8> , <http://www.okkam.org/ens/id7b919d01-8def-4b08-a8f9-160c4b121271> .
+
+<http://www.okkam.org/ens/idfcc18ecf-c998-4fc8-8526-fe4a8d93dddc> riv:haImmobile <http://www.okkam.org/ens/id64e62ad2-02ac-4230-bb35-576a5d8d5df9> , <http://www.okkam.org/ens/ida5e3999a-fe5a-4c81-8ba1-abe9be934414> , <http://www.okkam.org/ens/idbc716b9d-a0fa-4b88-a528-b2d11bfafd4c> .
+
+<http://www.okkam.org/ens/idedd6f16b-9153-4eb5-b4e5-ea1c58f4187f> riv:haImmobile <http://www.okkam.org/ens/id961c323a-d874-484d-8ba7-b6f1c1e7cc29> , <http://www.okkam.org/ens/id462dcd52-cdfa-482d-b75e-108899354327> , <http://www.okkam.org/ens/id665e9fdc-e425-4912-aaea-501bfc52719c> .
+
+<http://www.okkam.org/ens/id92ae0a78-cb57-4bf6-8da4-b30621d307c3> riv:haImmobile <http://www.okkam.org/ens/id961c323a-d874-484d-8ba7-b6f1c1e7cc29> , <http://www.okkam.org/ens/id462dcd52-cdfa-482d-b75e-108899354327> , <http://www.okkam.org/ens/id665e9fdc-e425-4912-aaea-501bfc52719c> .
+
+<http://www.okkam.org/ens/idbebc9381-8761-41b6-873a-0116f6547274> riv:haImmobile <http://www.okkam.org/ens/id961c323a-d874-484d-8ba7-b6f1c1e7cc29> , <http://www.okkam.org/ens/id462dcd52-cdfa-482d-b75e-108899354327> , <http://www.okkam.org/ens/id665e9fdc-e425-4912-aaea-501bfc52719c> .
+
+<http://www.okkam.org/ens/id25196792-e670-4b0e-8a2b-42a893dd5d86> riv:haImmobile <http://www.okkam.org/ens/idcd4f4322-ab0d-4239-8bc2-f4c7cd2cd852> , <http://www.okkam.org/ens/ide55f5fa0-7cdd-44ad-8e5f-898a3550792d> , <http://www.okkam.org/ens/idc59e0be9-5ea1-4fd0-9da8-ca2806fe2918> .
+
+<http://www.okkam.org/ens/id7413a814-ee4d-4293-9c9d-6656df9462e4> riv:haImmobile <http://www.okkam.org/ens/ided027e49-99e3-4d48-8380-70283c55e3a2> , <http://www.okkam.org/ens/id154e72b3-da81-4952-a778-c9c050c9be4c> .
+
+<http://www.okkam.org/ens/id87477fff-90ad-42ad-b7e6-75cafc7a8c02> riv:haImmobile <http://www.okkam.org/ens/idc59e0be9-5ea1-4fd0-9da8-ca2806fe2918> .
+
+<http://www.okkam.org/ens/id5ba414c5-8050-4a47-bf20-f9002312d492> riv:haImmobile <http://www.okkam.org/ens/ide55f5fa0-7cdd-44ad-8e5f-898a3550792d> .
+
+<http://www.okkam.org/ens/id0653cd5b-1ebf-4c8c-b8dc-7dc3dd1bc9f6> riv:haImmobile <http://www.okkam.org/ens/idcd6bc734-b30a-42ac-a2ec-5d2c6bb7e797> .
+
+<http://www.okkam.org/ens/id46768c76-ebf5-4575-8851-31b6263e1268> riv:haImmobile <http://www.okkam.org/ens/idcd6bc734-b30a-42ac-a2ec-5d2c6bb7e797> .
+
+<http://www.okkam.org/ens/id5bef6e00-0415-4f3b-ac43-fa5aa0c67ec1> riv:haImmobile <http://www.okkam.org/ens/id71739235-354a-4bfd-9b60-dfe7f85ab837> .
+
+<http://www.okkam.org/ens/id2f9c9e0d-b432-45e0-ba55-930d0ef9f7e4> riv:haImmobile <http://www.okkam.org/ens/id5c5e07a5-cf07-47dc-8033-05ea2045cf0b> , <http://www.okkam.org/ens/idf34cb9f0-8514-46c6-add8-2f1c99d0e883> , <http://www.okkam.org/ens/id989ae5d0-a49f-4ca5-957c-ce13ad304d4d> .
+
+<http://www.okkam.org/ens/id6cf2f43c-fd2d-464c-b766-37d7d79b7c15> riv:haImmobile <http://www.okkam.org/ens/id435fdb7e-fa5b-4e2c-8b91-db55c7ca1393> .
+
+<http://www.okkam.org/ens/id4c07bf25-999c-4f92-8ada-410ce9d57576> riv:haImmobile <http://www.okkam.org/ens/idb1a1f823-e3ca-4a2d-a479-8c2e8fe73ae5> .
+
+<http://www.okkam.org/ens/id5093631f-f52c-49b8-b118-ef2c343136d2> riv:haImmobile <http://www.okkam.org/ens/ida891a731-3ee7-4ea2-9b9e-088b9c30d40b> , <http://www.okkam.org/ens/id9a4214a4-3690-4f29-bb86-f62b997704a5> .
+
+<http://www.okkam.org/ens/id1573626b-b299-4478-83d5-88e2b8d666df> riv:haImmobile <http://www.okkam.org/ens/idcd6bc734-b30a-42ac-a2ec-5d2c6bb7e797> .
+
+<http://www.okkam.org/ens/id3a7e1d47-bc34-4a25-aa06-2c55f2252742> riv:haImmobile <http://www.okkam.org/ens/idcd6bc734-b30a-42ac-a2ec-5d2c6bb7e797> .
+
+<http://www.okkam.org/ens/idf28330b9-8ca2-40c9-a59f-f9ae3f86f538> riv:haImmobile <http://www.okkam.org/ens/id4f5b69e7-0943-47e4-a09f-7567f755e638> , <http://www.okkam.org/ens/id902a1cf1-d891-4bf1-a7f0-247863018c61> .
+
+<http://www.okkam.org/ens/id053f0ea0-7158-4cba-badb-18963c2d3ab8> riv:haImmobile <http://www.okkam.org/ens/id4f5b69e7-0943-47e4-a09f-7567f755e638> , <http://www.okkam.org/ens/id902a1cf1-d891-4bf1-a7f0-247863018c61> .
+
+<http://www.okkam.org/ens/idabba87f8-f689-414f-8028-a4b940928eef> riv:haImmobile <http://www.okkam.org/ens/iddb18629e-71f6-471d-b7ff-1695bd5ff395> .
+
+<http://www.okkam.org/ens/id15966e0e-0121-4a73-bdaa-73fba6dcbe09> riv:haImmobile <http://www.okkam.org/ens/id0d401088-3a4e-4d2c-bebe-866b2ba33cf1> .
+
+<http://www.okkam.org/ens/id4ad8fd31-c92a-482a-970e-09e322bb1313> riv:haImmobile <http://www.okkam.org/ens/id0d401088-3a4e-4d2c-bebe-866b2ba33cf1> .
+
+<http://www.okkam.org/ens/ided92ebc5-d65e-4782-b925-3689cd328036> riv:haImmobile <http://www.okkam.org/ens/id24028840-c3c8-4660-8b28-8a6f0060a19f> .
+
+<http://www.okkam.org/ens/idad9df726-9a48-4237-b0ad-af41b6652427> riv:haImmobile <http://www.okkam.org/ens/id24028840-c3c8-4660-8b28-8a6f0060a19f> .
+
+<http://www.okkam.org/ens/id04de955d-76e4-4ef2-ad05-892167be18c9> riv:haImmobile <http://www.okkam.org/ens/id53cf07a8-fe4b-46f6-8d86-413f5b4606ee> .
+
+<http://www.okkam.org/ens/id0356be61-67c0-462a-bb98-e8c322d61859> riv:haImmobile <http://www.okkam.org/ens/id53cf07a8-fe4b-46f6-8d86-413f5b4606ee> .
+
+<http://www.okkam.org/ens/id6de4f9a0-5bef-4881-badf-263f100cafc6> riv:haImmobile <http://www.okkam.org/ens/idecd11d3e-42d0-48c4-b56b-a400dc2fae3d> , <http://www.okkam.org/ens/id83306b9f-b707-46dc-a5b3-ca404ffd7bcf> .
+
+<http://www.okkam.org/ens/idae029f33-976c-4dd0-9991-c9f969160337> riv:haImmobile <http://www.okkam.org/ens/id5d57aa87-0f15-4652-98e9-53e0b5aa832e> , <http://www.okkam.org/ens/id83306b9f-b707-46dc-a5b3-ca404ffd7bcf> .
+
+<http://www.okkam.org/ens/id3b503187-92e5-4052-b6b9-5fbf4565a827> riv:haImmobile <http://www.okkam.org/ens/idbc716b9d-a0fa-4b88-a528-b2d11bfafd4c> .
+
+<http://www.okkam.org/ens/id41fbc36f-cac3-4c08-b8d8-f155905253fa> riv:haImmobile <http://www.okkam.org/ens/id0ac21c7b-9112-4cb6-b209-da33f8869441> , <http://www.okkam.org/ens/idb48c4c83-9320-411a-8f1a-e7d4891cb939> .
+
+<http://www.okkam.org/ens/id2afef43a-3696-466a-b9a5-d0726f94b45d> riv:haImmobile <http://www.okkam.org/ens/id2d105a55-a08d-4b58-97d3-45889ccd50d7> , <http://www.okkam.org/ens/idc8893d82-611d-4830-bcd6-f9e3b71f0770> .
+
+<http://www.okkam.org/ens/idf0fa100b-63c7-497b-80c3-eb0407741588> riv:haImmobile <http://www.okkam.org/ens/id2d105a55-a08d-4b58-97d3-45889ccd50d7> , <http://www.okkam.org/ens/idc8893d82-611d-4830-bcd6-f9e3b71f0770> .
+
+<http://www.okkam.org/ens/ida4b83d7b-e8fc-420f-b8bf-613ca095ef00> riv:haImmobile <http://www.okkam.org/ens/ida52d921b-dab2-4238-ba82-6f73709d0ed5> , <http://www.okkam.org/ens/id2dca6c47-4d4c-4d55-b787-06f9ce8eb8bb> , <http://www.okkam.org/ens/id8eec89ed-30f4-490c-8049-871ad47a8322> .
+
+<http://www.okkam.org/ens/id7f74c4e9-9107-4d38-aa4c-56be22bea78d> riv:haImmobile <http://www.okkam.org/ens/ida52d921b-dab2-4238-ba82-6f73709d0ed5> , <http://www.okkam.org/ens/id8eec89ed-30f4-490c-8049-871ad47a8322> , <http://www.okkam.org/ens/id2dca6c47-4d4c-4d55-b787-06f9ce8eb8bb> .
+
+<http://www.okkam.org/ens/idbf2f944c-f8da-4f42-96ae-b3265fb02fe8> riv:haImmobile <http://www.okkam.org/ens/ida52d921b-dab2-4238-ba82-6f73709d0ed5> , <http://www.okkam.org/ens/id8eec89ed-30f4-490c-8049-871ad47a8322> , <http://www.okkam.org/ens/id2dca6c47-4d4c-4d55-b787-06f9ce8eb8bb> .
+
+<http://www.okkam.org/ens/id2c212a51-c4e7-4fcd-aab0-8746649f0587> riv:haImmobile <http://www.okkam.org/ens/id38798a0f-0695-4ac6-9a2d-0238a12fec71> , <http://www.okkam.org/ens/id71ec6899-f5c4-4d1e-adb5-5bbcd3ffd22f> .
+
+<http://www.okkam.org/ens/idf0fa100b-63c7-497b-80c3-eb0407741588> riv:haImmobile <http://www.okkam.org/ens/id38798a0f-0695-4ac6-9a2d-0238a12fec71> , <http://www.okkam.org/ens/id71ec6899-f5c4-4d1e-adb5-5bbcd3ffd22f> .
+
+<http://www.okkam.org/ens/ide8d0bbc4-c607-4859-8230-54c4d739d052> riv:haImmobile <http://www.okkam.org/ens/id593d0f0a-ed50-4426-84b3-c57ab66770a9> , <http://www.okkam.org/ens/id4fc96187-f69d-4b5c-a0da-6efb4ee7e8dd> .
+
+<http://www.okkam.org/ens/id8b739a14-8b39-41f2-bc5c-eb2527d123fe> riv:haImmobile <http://www.okkam.org/ens/idb25fe0e6-c59f-41ce-91a3-18bce5ee058a> , <http://www.okkam.org/ens/idced994c8-d94f-4895-a29f-d4cc176e2d65> .
+
+<http://www.okkam.org/ens/id0136b760-b239-40c7-bf8d-075bf166e500> riv:haImmobile <http://www.okkam.org/ens/id23071c57-dda1-421d-8adf-e70b7b4892c5> , <http://www.okkam.org/ens/id5e648290-bcb3-4058-b494-2773026c2cab> .
+
+<http://www.okkam.org/ens/id34a9ee28-7806-431d-9f93-245707fd7b73> riv:haImmobile <http://www.okkam.org/ens/id772dc4b2-f9fb-4b1d-861e-d20943dc6ac1> , <http://www.okkam.org/ens/id03af38a2-29a8-4a3a-b015-640af4784f32> .
+
+<http://www.okkam.org/ens/id0aed54da-ec1c-4d01-81c2-16702db67305> riv:haImmobile <http://www.okkam.org/ens/id685e544e-44e5-4516-a7a3-8294c97398e7> .
+
+<http://www.okkam.org/ens/id7ab89713-e13b-4a1c-8594-812b901d45f5> riv:haImmobile <http://www.okkam.org/ens/id685e544e-44e5-4516-a7a3-8294c97398e7> .
+
+<http://www.okkam.org/ens/idd54c8289-400a-4be0-90b3-759000e4654c> riv:haImmobile <http://www.okkam.org/ens/id1abc298d-9b76-4842-9911-3368f57c8c94> , <http://www.okkam.org/ens/id660b8b2d-885e-4efa-8056-a38bd0ef454e> , <http://www.okkam.org/ens/id717a5b9e-9ac7-4cc3-98da-e8fa4f8748c0> , <http://www.okkam.org/ens/id326bc1b7-0593-45c7-8b23-4dd5d2044bbd> .

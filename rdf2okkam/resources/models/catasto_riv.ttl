@@ -1,0 +1,5391 @@
+@prefix riv: <http://www.semanticweb.org/ontologies/2011/9/Rivela-Flussi.owl#> .
+
+
+<http://www.okkam.org/ens/ide7dbf377-8814-481b-b449-12ff3167e353> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296786" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1319" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idc0e4b33e-d0af-478d-86f8-85ab16df2183> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296787" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1319" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id4f5b69e7-0943-47e4-a09f-7567f755e638> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "739528" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1319" ;
+	riv:haIndirizzo "ONDERTOL" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id902a1cf1-d891-4bf1-a7f0-247863018c61> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "739529" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1319" ;
+	riv:haIndirizzo "ONDERTOL" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb1a1f823-e3ca-4a2d-a479-8c2e8fe73ae5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "737272" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "790" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id9e540327-4702-4cc0-82f0-4f254b3b77fc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299864" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2376" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idccafe9cb-564c-4e2c-a1b5-bc4cf0667e7a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299865" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2376" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idd4642603-48f9-47ca-9f78-b38dab126226> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299866" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2376" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idd3f07fe1-f7bf-4e94-a593-0ab2ed81418a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "739952" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "32" ;
+	riv:haNumeroFabbricati "2376" ;
+	riv:haIndirizzo "FONDO PICCOLO" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id94277310-209d-4e69-be53-56c1140792d1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "739953" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "32" ;
+	riv:haNumeroFabbricati "2376" ;
+	riv:haIndirizzo "FONDO PICCOLO" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc60beecf-fd05-4962-a0cf-3cf9883a1824> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296840" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1352" ;
+	riv:haIndirizzo "A. MANZONI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id91d73d3f-f44e-4586-ac23-dd831d3e6ac9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296841" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1352" ;
+	riv:haIndirizzo "A. MANZONI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idf5ea3135-6554-4833-9f9f-8927239c14a4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "740375" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1352" ;
+	riv:haIndirizzo "A. MANZONI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id71739235-354a-4bfd-9b60-dfe7f85ab837> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296853" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1355" ;
+	riv:haIndirizzo "A. CANOVA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/ide02d8f48-58ff-45be-8b54-b1ccb2435c22> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296854" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1355" ;
+	riv:haIndirizzo "A. CANOVA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/idb2d2a602-49c2-4538-97e7-be7dc48f5b8c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296962" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1472" ;
+	riv:haIndirizzo "BUSE" ;
+	riv:haToponimo "77" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/id909ebb3f-b2b2-4251-bf99-f6ee1844c515> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297205" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1566" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id39a7bff2-a796-4250-bffa-c685572f7c85> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "740921" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1566" ;
+	riv:haIndirizzo "F. PETRARCA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3baf656c-c797-4d29-84ee-1ecad33de249> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298144" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1875" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idcde07edb-3901-4faa-80c6-6ca633351a2e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298146" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1875" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/iddf8390a9-5a57-4448-81f1-720eccefb351> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298148" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1875" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id0496c9de-bf88-460d-a9c9-5d280a6b6bcd> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298149" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1875" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id2d105a55-a08d-4b58-97d3-45889ccd50d7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749781" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idd3945e2d-32ec-4a7f-a43b-1542681fc25d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749782" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida52d921b-dab2-4238-ba82-6f73709d0ed5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749783" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id38798a0f-0695-4ac6-9a2d-0238a12fec71> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749784" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb25fe0e6-c59f-41ce-91a3-18bce5ee058a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749785" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id593d0f0a-ed50-4426-84b3-c57ab66770a9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749786" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9d0e0e1a-928a-4975-aaac-96c3063676f1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749787" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id78347c12-9fcc-42ca-8d89-6a64d70585d1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749788" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id40119f01-f1f2-47c6-95d5-2cd368df113f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749789" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc8893d82-611d-4830-bcd6-f9e3b71f0770> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749790" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id8eec89ed-30f4-490c-8049-871ad47a8322> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749791" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idced994c8-d94f-4895-a29f-d4cc176e2d65> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749792" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4fc96187-f69d-4b5c-a0da-6efb4ee7e8dd> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749793" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id71ec6899-f5c4-4d1e-adb5-5bbcd3ffd22f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749794" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id2dca6c47-4d4c-4d55-b787-06f9ce8eb8bb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749795" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9a5098d5-87c3-4b31-91d7-219ef613155f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749796" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "16" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5679f11c-fbe2-4b41-9fcc-e058d6e31cdc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749797" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3290" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "17" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5e1ec1c9-d0ff-4e31-acaa-06006ffca12f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298976" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2122" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idf29b765f-be33-4399-9e68-fddcdd6065a1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298977" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2122" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idd7afc002-fbeb-42aa-a904-f72a496e6c06> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303485" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "533" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id276db13f-acb8-4346-aeb3-90e0d0d5752f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303653" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "533" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id21aee782-fd0f-46eb-b421-de9a9c06c28a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303654" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "533" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id3fc3968b-deb2-4f62-8eb5-18585d78fe92> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749836" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idcf01d00b-6cf7-4a6f-a9f9-e9c1deaff154> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749839" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id772dc4b2-f9fb-4b1d-861e-d20943dc6ac1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749840" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MEFFEI" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id23071c57-dda1-421d-8adf-e70b7b4892c5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749841" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id183e045b-bd43-4c39-b034-a48cde5ecc04> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749842" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idee1dc0e7-d04b-4bac-9d01-bdfb230828b9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749843" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id2d7ae9f6-6577-41b0-87c7-24a00ace7f99> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749844" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id17a7d2b9-8c1c-44b9-a617-d25880bb0767> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749845" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9d361f5f-a545-4022-b0f8-5d56ade10050> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749846" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id17f497cc-aa9e-4539-8fba-40b3a68dcc84> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749847" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id685e544e-44e5-4516-a7a3-8294c97398e7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749848" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id03af38a2-29a8-4a3a-b015-640af4784f32> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749849" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5e648290-bcb3-4058-b494-2773026c2cab> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749850" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "16" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ide1ea0e4a-d935-4171-95bc-43d13f8e70e4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749851" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "17" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id589a2247-6bc1-4fc6-82fa-38f6a25c68eb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749852" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VA MAFFEI" ;
+	riv:haSubalterno "18" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id943e2a9e-e2aa-439e-9194-6eb22a2c390a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749853" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "19" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9a30a363-29c8-449a-a4dc-44fd17eed1f3> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749854" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "20" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc17ba9b9-e2b8-4435-913e-e4b5d21880ba> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749855" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3297" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "21" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4572f8b5-6dd4-47b4-b8b1-3da3873a52ad> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295031" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "33" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id30d94b10-fc18-4cb2-9c2f-a835a132ab5c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297500" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "35" ;
+	riv:haNumeroFabbricati "1662" ;
+	riv:haIndirizzo "CADUTI DI MALGA ZONTA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id99c021d1-6dd0-4b5b-8ecb-e6f46b58e6c3> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299740" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2340" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id877d4fc7-14b2-41af-b4f3-8e656132404c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299741" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2340" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id96ecbd1c-1785-4117-ab08-cddf599dcadf> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "741177" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "2" ;
+	riv:haNumeroFabbricati "2340" ;
+	riv:haIndirizzo "VIRTI" ;
+	riv:haToponimo "77" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id435fdb7e-fa5b-4e2c-8b91-db55c7ca1393> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "741178" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "2" ;
+	riv:haNumeroFabbricati "2340" ;
+	riv:haIndirizzo "VIRTI" ;
+	riv:haToponimo "77" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9ac8ca99-97da-414a-ad54-73229e5fd208> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296389" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "17" ;
+	riv:haNumeroFabbricati "893" ;
+	riv:haIndirizzo "CARPENEDA" ;
+	riv:haToponimo "77" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id78249552-d7c9-4a4e-8ede-934852a1a431> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296390" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "17" ;
+	riv:haNumeroFabbricati "893" ;
+	riv:haIndirizzo "CARPENEDA" ;
+	riv:haToponimo "77" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idcd6bc734-b30a-42ac-a2ec-5d2c6bb7e797> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "741306" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "53" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id385a0e3d-8844-48a3-b5a8-95111773cfd5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295457" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "159" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idc4757e33-70bd-4117-85ac-c729dd470c5d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "741310" ;
+	riv:haCategoria "A04" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "159" ;
+	riv:haIndirizzo "TEZZELI" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida891a731-3ee7-4ea2-9b9e-088b9c30d40b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "741311" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "159" ;
+	riv:haIndirizzo "TEZZELI" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9a4214a4-3690-4f29-bb86-f62b997704a5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "741312" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "159" ;
+	riv:haIndirizzo "TEZZELI" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/iddb18629e-71f6-471d-b7ff-1695bd5ff395> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296684" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1181" ;
+	riv:haIndirizzo "MOLINO NUOVO" ;
+	riv:haToponimo "77" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id67f021ed-92ba-4475-b348-4b58ffe2eb2a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296345" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "829" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id4207064f-5ad6-4be5-9699-41f5db3f7bf1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296346" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "829" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id3eecc156-1157-443c-830b-efc1a9741b25> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742525" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "9" ;
+	riv:haNumeroFabbricati "829" ;
+	riv:haIndirizzo "FONTANI" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb857397c-2a30-4d8d-9396-156b47e08079> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303900" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "358" ;
+	riv:haIndirizzo "A. MANZONI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id73b60f5c-46ef-4741-a4c9-d834f281564e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742728" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "358" ;
+	riv:haIndirizzo "A. MANZONI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc06ed6f8-0a49-4ba8-a6d3-dda536838fd4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303902" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "358" ;
+	riv:haIndirizzo "A. MANZONI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idd3a261e5-ee71-4293-bd09-e172480e9cd5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303903" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "358" ;
+	riv:haIndirizzo "A. MANZONI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id039e27b9-5117-47e7-b306-31701e00ee6a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302399" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id02170a90-138e-4a6d-b8ac-03a12f00b597> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302400" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id699b100a-d9af-4f3c-8b7a-051c1a29ecc1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742953" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida0a947a9-aea4-49ed-9029-a5539774a7af> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742954" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4b403344-81fa-4b0e-831a-cec06e2479a5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742955" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idd219cebe-f6df-42a8-b912-ed84ade903c5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742956" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id1b511143-1d8a-4bc5-a56e-4bfe5e9ae9ec> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742957" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id2b4188c9-2ebe-41b6-8cff-8df3a6f71423> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742958" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3fe89df2-b5a7-47b1-a36f-beae4bed6b02> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742959" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id74078d92-fa59-451e-ad29-6f23bd765021> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742960" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id04dc6a8d-a97d-42b3-8243-83ce90b400b8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742961" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idda90e869-8f6b-4bf5-84da-a450c5c92303> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742962" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id43de4a9c-c801-4526-840e-23c577fff43b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742963" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4a92a78e-41fc-40dd-a702-4e8e77a9306b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742964" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6d9372bf-89d7-4c9c-ac79-b03825b5ebba> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742965" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idef72b46d-656b-4f1f-854a-98711b52353d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742966" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "16" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id883322b8-1b29-4eb3-aece-1e7c8d5c61cb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742967" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "17" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0813741d-1808-4548-b586-6acf3778133b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "742968" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2911" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "18" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/iddba6a09b-61da-4b04-b1e7-5d0b29c56b04> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "677197" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "491" ;
+	riv:haIndirizzo "MADONNA DELLE GRAZIE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/ided027e49-99e3-4d48-8380-70283c55e3a2> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "743306" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "491" ;
+	riv:haIndirizzo "MADONNA DELLE GRAZIE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id154e72b3-da81-4952-a778-c9c050c9be4c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "743307" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "491" ;
+	riv:haIndirizzo "MADONNA DELLE GRAZIE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id7993f5fd-f5a9-4b05-99a3-e027cab1ad90> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297099" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1537" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id0be2dacc-866c-46f1-8326-ba870bab2653> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745013" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2097" ;
+	riv:haIndirizzo "VIA MEZZASELVA" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idcb348316-afd9-431f-bd27-5b4948b1c87d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745014" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2097" ;
+	riv:haIndirizzo "VIA MEZZASELVA" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id40dfe05b-aa83-4e0a-8e09-0227839b18e0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745015" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2097" ;
+	riv:haIndirizzo "VIA MEZZASELVA" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id80baaca5-8010-428c-a074-154995f25515> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297777" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1778" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/id7fde7f47-5fef-4b53-8591-cabf533a91b5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297778" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "1778" ;
+	riv:haIndirizzo "C. BATTISTI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/id8058824a-d741-44e8-9f28-37347af1fa02> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297779" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "1778" ;
+	riv:haIndirizzo "C. BATTISTI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/idbc7e5ad6-1332-4d50-aad8-8c688e77bf2a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297780" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "1778" ;
+	riv:haIndirizzo "C. BATTISTI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/idf21a9e22-2935-4747-bbe5-e78d1d45c0fb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748162" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "1778" ;
+	riv:haIndirizzo "C. BATTISTI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idd2caf822-51d4-45a5-ae08-61763db8c887> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295008" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "464" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/ida7e655e1-7eb0-404f-a5b2-8d1a6a59c25b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748169" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "464" ;
+	riv:haIndirizzo "FRANCOLINI" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc024ebd6-b027-4cd4-bec1-d3a3d2967be3> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748170" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "464" ;
+	riv:haIndirizzo "FRANCOLINI" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id57ec7154-0900-47d6-875b-143637d93756> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748241" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9ee918c5-cbfc-4771-9de2-fae96bd65b48> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748242" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id94f7c682-9746-4813-a237-4600b949ea41> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748243" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4d98dc6c-871b-4517-9245-6d5b0e4bf4b9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748244" ;
+	riv:haCategoria "F04" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc957202f-22d5-4f25-a190-c43a8f894c9c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748245" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id66fc8835-464a-4d66-9d68-209adc5d75af> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748246" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id76eee2d0-3a34-4e85-a343-30f78fe48d7b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748247" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5bbb7c42-ce62-4043-b815-2399e3ba2473> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748248" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9099aa14-07d3-4ef5-a511-d564a7cf9094> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748249" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "3294" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id13ef2711-ccba-4f40-88eb-25a5f4792130> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304870" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id6f64a890-dfe4-451b-8327-229717c4d822> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304871" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id1ad90dda-d3b3-4c9a-8ffa-2f6cbe5078c7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304873" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/ida740363b-6db3-4fc5-9bf8-f09fb10ebcc1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304874" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/ida29e759d-69be-49dd-92a1-ba564ab0c339> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304875" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idaf5d8a80-84c9-4744-8988-fd7fbf041b7b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304876" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id36e595ed-d3bf-48d9-8eba-4d30db883fc6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304877" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idbe671bbb-dfd1-4f5c-b966-c1dce6fa0db9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304925" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "605" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id1b64f16c-bbad-407a-a84c-c0e9172b30c6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748338" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "3064" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida39347b3-cdc6-4e8b-8f6a-964cbc6e3181> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748339" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "3064" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ide5091a1b-d224-4af0-bfaa-3cef38c9d025> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748340" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "3064" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idcda7158d-3790-40d8-a180-66e02ede8bfd> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748341" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "3064" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf125bd2e-1ebf-4c71-8cf4-82cf656362a6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748467" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1529" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id799d99d7-3235-4a28-849c-088dc44799d1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297069" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1529" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id1923e760-6aa6-4d57-a0e2-3d7fd15f7f67> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297071" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1529" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id0d250d35-af39-419a-aa72-e2ed0ffe0ad3> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300763" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2542" ;
+	riv:haIndirizzo "LOC PINETA" ;
+	riv:haSubalterno "22" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id39c4de02-2286-4a0a-b3a2-f6df6ebdd608> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304618" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "667" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id17f255c1-be44-491d-a4a1-dd1cbad4a1b7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304648" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "667" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/ide2181fd3-e8c1-492a-861d-0a9959438cfb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304649" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "667" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id3c03a76b-2dc2-472a-9d96-eef83d1c8d85> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748844" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "667" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id2c6b02c5-d961-425e-a1c8-4d7f0bd89ceb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748845" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "667" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id10687cd8-2919-4380-986e-cb2bb05f369d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298844" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2079" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id63d0dde0-9e7d-4dff-8885-b6c00b933634> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298846" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2079" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/iddab89252-ab28-42db-92f6-1ce78b07749c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748846" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "2079" ;
+	riv:haIndirizzo "TRENTO" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0c928b13-1b07-497f-b3d9-b5f0b1d7a9a4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "728961" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3265" ;
+	riv:haIndirizzo "G. LEOPARDI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id5b9e3ba7-7162-41f9-84e5-6d04d7f5ead9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296363" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "869" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id8af5d614-734e-46f7-a470-15840d46b1ad> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296364" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "869" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id4c4ebb5b-4dd3-4df0-ae7e-b26e75e8f18d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748755" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "871" ;
+	riv:haIndirizzo "LOC. PENERI" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id56b15da9-bd65-4084-b594-d0dfd24295cd> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748756" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "871" ;
+	riv:haIndirizzo "LOC. PENERI" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id31843c7e-b47f-47fa-bc28-fdbd4e35b1a2> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748757" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "871" ;
+	riv:haIndirizzo "LOC. PENERI" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id55a53207-1b66-4d29-8b63-bba78eca9602> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748778" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3289" ;
+	riv:haIndirizzo "FRAZ. FONTANI" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5a38f09f-70b9-438a-ac39-fc8ff1c2e99c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748779" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3288" ;
+	riv:haIndirizzo "FRAZ. FONTANI" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf16fd41d-6454-4056-9def-230689e57579> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298869" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2090" ;
+	riv:haIndirizzo "COLPI" ;
+	riv:haToponimo "90" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/id17d7c2c5-edbd-41f5-9f96-e29e0deb5509> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299891" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2381" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idfcfa51f9-0372-47ad-ab8c-09461eea0e35> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299892" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "8" ;
+	riv:haNumeroFabbricati "2381" ;
+	riv:haIndirizzo "PRA' DI SOPRA" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id0d401088-3a4e-4d2c-bebe-866b2ba33cf1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "748605" ;
+	riv:haCategoria "A04" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "16" ;
+	riv:haNumeroFabbricati "1225" ;
+	riv:haIndirizzo "VANNETTI" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4c7af2d6-49e7-41ba-aa89-f517c241eaa0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298230" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1902" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idd42daa89-af01-4b83-97f1-b24c57ec7439> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745361" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "17" ;
+	riv:haNumeroFabbricati "1902" ;
+	riv:haIndirizzo "G. MAZZINI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idd5e7233a-0941-4f2e-9c68-9e7dd422bbb5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745362" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "17" ;
+	riv:haNumeroFabbricati "1902" ;
+	riv:haIndirizzo "G. MAZZINI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idca96b263-eb65-469d-922d-45a91eb24835> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303392" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1364" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/ide3bdb2d3-4702-4a21-9b54-6e85fcbb20d0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303394" ;
+	riv:haCategoria "A04" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1364" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/ide88bf043-8bbb-4028-bb8d-907688d804d6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303397" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1364" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id776a6142-179f-4310-9658-b0171ffd17b4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745630" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1364" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5c5e07a5-cf07-47dc-8033-05ea2045cf0b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "301955" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2764" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/idf34cb9f0-8514-46c6-add8-2f1c99d0e883> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745715" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "2764" ;
+	riv:haIndirizzo "TRENTO" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id989ae5d0-a49f-4ca5-957c-ce13ad304d4d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745716" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "2764" ;
+	riv:haIndirizzo "TRENTO" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id54e13bf4-2cbd-42f9-8136-b7cdb8cc7b76> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303769" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haSubalterno "23" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id3d1d151f-28cd-4486-8d8d-e46ab9845a78> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303772" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haSubalterno "26" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id7b5f5762-fc29-40a3-859e-d0fa7c2f2617> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303775" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haSubalterno "29" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idf6938f6c-b99e-4749-9d7b-724e47f66c38> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303777" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haSubalterno "31" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idc3233ad5-0c88-463a-8451-33b2be9c5e8d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303778" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haSubalterno "32" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id6761ceeb-a088-4be8-88c7-ff50416838d0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745756" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "34" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0d0feac4-9d98-44e4-8dff-fba2f7175c32> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745757" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "35" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id053513c9-477e-49b4-8c8b-06781887b6a0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745758" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "36" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc619ca2f-12fa-4df9-a606-93c7f5612cf7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745759" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "37" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/iddb8ed641-0b37-459f-8d5b-11c7b2fb81ba> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745760" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "38" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6d55989f-b9a8-4b9c-8870-b91720502290> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745761" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "39" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idade831a9-6caf-441f-91f6-fbd7616a2f02> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745762" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "40" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idff89a6d2-3938-4143-8cd1-fad57d44392b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745763" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "41" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc8fe3dfe-90c8-46af-8b22-044a26ebad36> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745764" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1542" ;
+	riv:haIndirizzo "L. CADORNA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "42" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id552c4825-e6fd-426c-9882-65d5083afa9d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297722" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1755" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id47a49c47-1605-4c57-86e3-3e30efbb269c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "731426" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1755" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id1ef6d4f6-e50c-4ff0-9357-768d6bfddc36> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "745767" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1755" ;
+	riv:haIndirizzo "MORGANTI" ;
+	riv:haToponimo "77" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3afd24ac-8e91-491f-911f-8d37bdfc3587> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297252" ;
+	riv:haCategoria "A10" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "1579" ;
+	riv:haIndirizzo "SERRADA" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idd2bd3f69-2bd1-4a74-ad17-e9fd35145ac6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296451" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "953" ;
+	riv:haIndirizzo "SCHIRNI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id64e62ad2-02ac-4230-bb35-576a5d8d5df9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296559" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1011" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/ida5e3999a-fe5a-4c81-8ba1-abe9be934414> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749476" ;
+	riv:haCategoria "F04" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haFoglio "24" ;
+	riv:haNumeroFabbricati "1011" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idbc716b9d-a0fa-4b88-a528-b2d11bfafd4c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "749477" ;
+	riv:haCategoria "F04" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haFoglio "24" ;
+	riv:haNumeroFabbricati "1011" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id79a24fef-ba7f-4428-952a-7c2a27465c5d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295137" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2530" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id7a27cc15-0800-4720-ab51-f02b56b68a08> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746300" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "2530" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5b9bb463-3e6c-4d6d-971f-dbb56c6a9533> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746301" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "2530" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id37980030-557a-4c72-b3ed-e5b06cc8cd8d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746302" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "2530" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id43913092-2347-4db1-a2b5-2eb43c7f0ee8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746303" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "2530" ;
+	riv:haIndirizzo "D. CHIESA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id537f7622-bc82-4856-a08b-2281284986ed> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303443" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "500" ;
+	riv:haIndirizzo "L. DA VINCI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/idf80b4a48-2e4b-4398-b035-dc458843a403> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303444" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "500" ;
+	riv:haIndirizzo "L. DA VINCI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id86074fc6-87bb-4e11-88b7-b605d2093f60> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296514" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "990" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id187f0ae8-452d-4522-835d-212dd188e7e8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "747274" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "990" ;
+	riv:haIndirizzo "F.LLI FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id05a41c7f-d8f0-4139-9f84-dc63a95817b5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "747275" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "990" ;
+	riv:haIndirizzo "F.LLI FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idd9d07765-788a-43ae-86ad-ec3fb600cc8e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "747276" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "990" ;
+	riv:haIndirizzo "F.LLI FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6ef54561-bd42-4627-b264-f3e63ac9b6b6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "747277" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "990" ;
+	riv:haIndirizzo "F.LLI FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5e061e31-ce89-4dbf-8c99-6ba53d5ba27e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "747278" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "990" ;
+	riv:haIndirizzo "F.LLI FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf748a5c0-7348-4529-9f54-2c1330327067> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746527" ;
+	riv:haCategoria "D01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "35" ;
+	riv:haNumeroFabbricati "3120" ;
+	riv:haIndirizzo "PASSO COE" ;
+	riv:haToponimo "90" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id390ae14a-b497-4e74-9424-c5a517e611de> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "301761" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id5d8a1cb4-7d74-4c5f-8dfd-4b3fca1407b1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746767" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb208b1be-2c62-4251-b896-8491d8761527> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746768" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idcc496fbb-275c-4438-a0e6-4e016b53989a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746769" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9bbf52d6-022c-424a-82e9-01737fb97524> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746770" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0a09f91c-b780-4c87-b301-387ab2736eb3> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746771" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id7202dadc-f37c-475e-9524-ba9b00abd2d8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746772" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3b8eb763-6796-4b24-9762-0374def802d5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746773" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id7f988150-285e-496c-ba0d-ef3e87bc1a85> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746774" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idfc3b3604-1e30-474e-a812-805a3f50e6fc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746775" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida3d26c33-a090-4717-be6d-ab00d9dd62bc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746776" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idbbb37b50-a098-439d-a7b3-0c5a67d848e8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746777" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc8d27b97-92fa-4958-b11d-7b8ffc63fe7f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746778" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id1ebb46f0-9f9f-45e5-8804-5ae7a5f50e39> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746779" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0e635086-16d8-44c7-b8f1-fe148af91a00> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746780" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6f27c711-68f7-42fe-baf9-09820514f216> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746781" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3f850837-d7fa-4dd0-bd65-1660ddc61cbc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746782" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "16" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id75909b3b-27b0-4d9a-8078-5ee3477fa9df> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746783" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "17" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id1095756b-c54e-4979-bf5b-5726ea2ad715> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746784" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "18" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id513f901c-082c-4efc-92de-b22d3bf85582> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746785" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "19" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6fb39578-d9c5-451c-b322-aaa4e3f34444> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746786" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "20" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id83e23ebb-affe-4ba0-94af-266db326748c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746787" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "21" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id40976e43-51ab-4edc-9a74-e6b468e91c86> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746788" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "22" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idaa8318d0-173a-4ac7-80fe-e6a32b5ededc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746789" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "23" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idced0f27c-7263-40ce-bd1c-b3de7c77c23c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746790" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "24" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id21647d7c-4da6-49c8-8d05-159306f6cb2d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746791" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "25" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9a79fabc-d9ab-46b7-9448-e215be2dfa20> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746792" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "26" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id7d6dc81a-2fae-4dde-92d1-b59daa520be5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746793" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "27" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ide586e35b-038e-4dd4-be30-e8f468ccb1bc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746794" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "28" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6c145462-47db-4c89-912c-37cf2d2479c6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746795" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "29" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id582165a2-a9f0-4262-8db2-ee814da36845> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746796" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "30" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6a8f4505-8615-4a73-8502-04f2e68bce3b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746797" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "31" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idaaab829f-98de-4bfa-965c-4bb91709b302> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746798" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "32" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb4e88fb8-3627-4433-9a8c-bf094baa665e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "746799" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2697" ;
+	riv:haIndirizzo "F. FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "33" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf37c3929-7006-4bf1-98f4-f71ad4c288ee> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750478" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "953" ;
+	riv:haIndirizzo "VIA SCHIRNI" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idebee5988-0a92-4c78-8aab-649160815f09> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750582" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9e6a4c9e-3167-4541-8d2a-3767cf829605> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750583" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id218bbc1a-416a-4a26-a1b4-9c31ce663be1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750584" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idad87d163-4cb2-489d-bff1-0a0c682f7754> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750585" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3aee1b91-9846-4e26-aac3-b54190de7834> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750586" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6e2151c9-2d02-4276-860c-b7fd4d972d4d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750587" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ide7f34da6-eb55-498b-b61c-91ffe883511a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750588" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id44dc4e04-d220-445d-9f04-fbf89ab11202> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750589" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id90f045fc-cc70-405c-96df-723b8d02044e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750590" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idecc719f3-94e5-4625-a678-3269b70143c7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750591" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id977a11cc-fc0c-4889-8628-e8b3bbfea685> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750592" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0ac21c7b-9112-4cb6-b209-da33f8869441> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750593" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb2c1964c-1d59-4a41-8766-7ce78f3b8e30> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750594" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id834e9e7a-0aa6-4c9c-badb-c24a8b3b5eec> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750595" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id6569e492-3928-4d44-9cd9-8cad5470f6f6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750596" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idcd74416c-5df2-4f0c-b617-e472ef9c53a4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750597" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "16" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id8a596707-da27-4b1a-b9c3-6ded7b569f16> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750598" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "17" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb48c4c83-9320-411a-8f1a-e7d4891cb939> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750599" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "18" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ide6a94787-3837-4149-940f-18f1fa813572> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750600" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "19" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0082202d-10c1-439a-8f0e-17d55f68db78> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750601" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "20" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb9856f20-44d1-4381-bcf6-f193950fe8ec> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750602" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "21" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id03489c1d-b655-4c98-832e-ff4218a67b7b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750603" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "22" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id44c550b8-dfbf-4547-a080-03d52342c955> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750604" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "23" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id7c53cb40-1813-4819-b1d8-d2882565899c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750605" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3295" ;
+	riv:haIndirizzo "LOC. BIONCHERI DI SERRADA" ;
+	riv:haSubalterno "24" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id956b36ec-9402-43b1-b03e-2d429e1ac434> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296722" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1254" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id7fa6cdfb-5fe2-4245-af5c-e4f1c1c0b3c6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750798" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "44" ;
+	riv:haNumeroFabbricati "1254" ;
+	riv:haIndirizzo "VIA VANNETTI" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id10bf1c7d-7aa0-4a31-97a8-75119b66e722> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750799" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "44" ;
+	riv:haNumeroFabbricati "1254" ;
+	riv:haIndirizzo "VIA VANNETTI" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5a0db430-abe5-4ba9-b0e2-55ea30cdf608> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297367" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1605" ;
+	riv:haIndirizzo "BUSE" ;
+	riv:haToponimo "77" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id159c51f7-59a7-462e-9d3b-173341318af5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297231" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1573" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idcc4c8b09-901b-4319-85e9-65f1a79aab9b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297232" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1573" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id648cb60f-0abe-4343-b6ca-a4b53392c2a9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750903" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3292" ;
+	riv:haIndirizzo "VIA F.DEPERO" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id53cf07a8-fe4b-46f6-8d86-413f5b4606ee> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "750904" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "3293" ;
+	riv:haIndirizzo "VIA DEPERO" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id8e948ccf-2755-498e-95a6-e8a70ec9e665> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296852" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "1355" ;
+	riv:haIndirizzo "A. CANOVA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/ideaba754b-171b-4abf-89d2-b2868b19dc0c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303237" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "691" ;
+	riv:haIndirizzo "SAN LORENZO" ;
+	riv:haToponimo "130" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id262fb500-b59e-4d02-b493-c1476b29196c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299981" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "17" ;
+	riv:haNumeroFabbricati "2400" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id0e033e18-e60e-4cf2-9981-78c2ddad57d4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299983" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "17" ;
+	riv:haNumeroFabbricati "2400" ;
+	riv:haIndirizzo "ROMA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id74c768a8-0fe1-4151-8418-bc967e49b002> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295377" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "34" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idb0caf496-8d5d-4ec4-b6b7-0dc00fe46c4b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295379" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "34" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id542a3608-8bed-4060-9341-f7cabeddaed8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "751851" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "34" ;
+	riv:haIndirizzo "VIA NAZIONALE" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id7b919d01-8def-4b08-a8f9-160c4b121271> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "751855" ;
+	riv:haCategoria "C03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "2975" ;
+	riv:haIndirizzo "VIA NAZIONALE" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idaeaed849-8660-42b2-af4e-76288484a15f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304090" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "9" ;
+	riv:haNumeroFabbricati "1336" ;
+	riv:haIndirizzo "LOC. MEZZOMONTE" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idfc93d830-217c-41b9-9e06-ca95bffa893c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304983" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2318" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id7c1d5582-b0f7-423e-bb02-b7daa16c3c3d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "752254" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "2318" ;
+	riv:haIndirizzo "AL PARCO" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idd5167485-cd97-444f-8f87-778d0b81b6ee> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "301781" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2699" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id1abc298d-9b76-4842-9911-3368f57c8c94> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "760821" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3301" ;
+	riv:haIndirizzo "VIA 25 APRILE" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id326bc1b7-0593-45c7-8b23-4dd5d2044bbd> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "760822" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3301" ;
+	riv:haIndirizzo "VIA 25 APRILE" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id717a5b9e-9ac7-4cc3-98da-e8fa4f8748c0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "760823" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3301" ;
+	riv:haIndirizzo "VIA 25 APRILE" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id660b8b2d-885e-4efa-8056-a38bd0ef454e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "760824" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "3301" ;
+	riv:haIndirizzo "VIA 25 APRILE" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0caf38bf-6c44-4b43-8a8c-7cbc5a1d372b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299320" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "9" ;
+	riv:haNumeroFabbricati "2238" ;
+	riv:haIndirizzo "VANNETTI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id8748f3d1-c3c4-4f2f-b8ed-86708525cda5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "761673" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "9" ;
+	riv:haNumeroFabbricati "2238" ;
+	riv:haIndirizzo "VIA VANNETTI" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ide8458418-9c7d-4fa8-a195-fd6081c8cf88> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300048" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id67333812-af2c-418d-8adc-288bdbc27009> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300049" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idcc9b5dc7-245d-45a5-bcc5-6253a1740cad> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300050" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id7f11fb35-2e02-4abd-b788-9adcb8855e54> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762084" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida4c5a6ee-7c6e-42f0-9801-6987fb4ff63d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762085" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc503b4eb-eabb-4934-b756-ae453d9a570d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762086" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb7386b02-355c-4e5f-8fd9-a013b45fc2bb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762087" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf6799825-1a6f-4a82-b055-b9eac828f62e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762088" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb311cf5f-e858-4552-be23-ab33ee8dff30> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762089" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id14e8abc9-23f6-4111-b908-f371ae9182fa> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762090" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb0c16c79-f027-4e4e-9f4f-b5b41f40aba0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762091" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id579a186b-efcb-4cf7-871d-ed81953b4107> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762092" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0429ad4c-b74b-4b2c-87ad-ae951474f984> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762093" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3b1376cf-17ab-47dd-a3bc-403dc9c2aae5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762094" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4a8796a8-d24c-4006-a2a1-2b87b62faacf> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762095" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id530add8e-6f89-4858-a9f3-15e56e8f4e81> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762096" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "16" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf40c5b26-b2db-4169-95fc-8d57f2373d18> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762097" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "17" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idcf49d6ba-8285-4d9b-8f2e-7951384e42c8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762098" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "18" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id82098105-8409-4f05-8e20-1648e7f4aa71> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762099" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "19" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4ae30f6e-6daf-4a8f-8a44-e4a8903805bc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762100" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "20" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id8f81fdb7-5d18-4d00-83a6-2dcf23fc454a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762101" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "21" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id3033aff2-5dfc-47f3-a289-82a6bbd881ec> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762102" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "22" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id56d9ce21-f527-40f8-b6b1-15764e8a0e5f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762103" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "23" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4621f909-0a34-471a-aaf1-d11c70c0b87c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762104" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "24" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id892e2093-2b4e-45f4-a5a9-53a60d73c960> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762105" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "25" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idb86a5980-aafe-4975-aa4b-8fce59457098> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762106" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "26" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id08dd4847-627d-41cc-9e2d-f95fdb0ff114> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762107" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "27" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id170d7516-8b19-4a10-b48a-7e5ae539f496> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762108" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2407" ;
+	riv:haIndirizzo "VIA DE GASPERI" ;
+	riv:haSubalterno "28" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0ee86600-8b5f-488b-8508-4f561ba83bc0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "762133" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "538" ;
+	riv:haIndirizzo "FRAZIONE COSTA DI FOLGARIA" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idbbaa9764-d968-4a2e-96de-00d121de8774> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295784" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "561" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id4725bedb-d2dd-497a-99ec-df67cbfec863> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758774" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "561" ;
+	riv:haIndirizzo "VIA EMILIO COLPI" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id8786ff26-a967-49f8-9fdd-8d023a886bfa> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758775" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "561" ;
+	riv:haIndirizzo "VIA EMILIO COLPI" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id63ae2dcc-5125-40e0-b75e-9a66dd635918> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758822" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "3300" ;
+	riv:haIndirizzo "LOC. COSTA - VIA A. MAFFEI" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id64a32620-2b6d-47b4-a0fa-7118618699d1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300480" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2506" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idc3a4d9fd-1b00-4c0a-b12e-34a5006aee85> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300481" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2506" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idf71feb58-e24a-45af-b2b4-735c0f29f349> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759074" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "26" ;
+	riv:haNumeroFabbricati "2506" ;
+	riv:haIndirizzo "FOLGARIA LOCALITA' ORTESINO" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ide853ae2b-4f18-4572-ac41-7ea7e766b60b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759075" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "26" ;
+	riv:haNumeroFabbricati "2506" ;
+	riv:haIndirizzo "FOLGARIA LOCALITA' ORTESINO" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5ec51b6f-a930-4dac-a705-6b6c39ff7a49> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300884" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/ida425916d-7509-4439-97da-a764baa90bd7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300885" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id7427f93a-b47d-4133-90d5-73709558c733> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300886" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/idbe34c0ab-453b-4802-88a1-661a6f2f5a12> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300887" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "6" .
+
+<http://www.okkam.org/ens/id6624e22c-1ff4-4edd-aeb0-e39a432bc845> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759373" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf66660f7-fa74-42ee-8cba-5897480e6951> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759374" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf01b7749-42a7-4461-8ee1-6c78f53ea9a7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759375" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id7f1f92a5-fbf0-4319-91bb-c497ff823631> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759376" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id124b6e57-780a-4c1b-beec-a84391ca4c35> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759377" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id8361ca0f-eb27-4e79-bc2e-7d2bd4602907> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759378" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idea68f9fb-03bf-4d0b-90be-f1c762b4cede> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759379" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idbc2e6db0-18e2-42e3-934b-81fa0c43d1aa> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759380" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "12" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idcec89c56-7426-497e-b29e-e01fc840a8d3> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759381" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf33ff7b4-d233-4032-b008-4c647c9df383> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759382" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id4418db26-316e-4e6a-bac3-ee7d2b92d93c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759383" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "15" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idf7e01f3d-aee7-4823-8b64-09038d8d3a9f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759384" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "16" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/iddb73b035-4f23-40dd-9b57-19159bc69f21> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759385" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "17" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idaef95d8c-061b-4fee-9b70-a34308679edc> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759386" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "18" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idda00d929-f6d6-4044-ac0c-a5fdca1bc258> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759387" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "19" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id40b22047-f967-4f24-b777-418bf29bc964> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759388" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "20" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id1a24b049-086a-40a9-81ab-37d2f96485be> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759389" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "21" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc8b75dcb-d331-4f7c-a03e-df767ec62801> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "759390" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "2560" ;
+	riv:haIndirizzo "VIA MAFFEI" ;
+	riv:haSubalterno "22" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida3d0b414-1d23-49a1-bfa9-23094b6d673e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "700543" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "966" ;
+	riv:haIndirizzo "SCHIRNI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/iddaedf606-d85f-4bb4-9367-a13f93a9958d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "728489" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1784" ;
+	riv:haSubalterno "13" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id3fd2dbc0-20db-4c0d-89c8-c9b7fcedef56> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "728490" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "45" ;
+	riv:haNumeroFabbricati "1784" ;
+	riv:haIndirizzo "D. ALIGHIERI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "14" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idcd4f4322-ab0d-4239-8bc2-f4c7cd2cd852> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296742" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "1275" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/ide55f5fa0-7cdd-44ad-8e5f-898a3550792d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "757169" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "16" ;
+	riv:haNumeroFabbricati "1275" ;
+	riv:haIndirizzo "FOALGARIA, LOCALITA' GUARDIA" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc59e0be9-5ea1-4fd0-9da8-ca2806fe2918> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "757170" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "16" ;
+	riv:haNumeroFabbricati "1275" ;
+	riv:haIndirizzo "FOALGARIA, LOCALITA' GUARDIA" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9dac2b24-874b-47d5-b178-0b83d3f2669a> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296523" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "994" ;
+	riv:haIndirizzo "C. PAVESE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idf7c0c50c-1a25-4034-a8f0-fa029148e9de> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296524" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "994" ;
+	riv:haIndirizzo "C. PAVESE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/iddd155fb5-ac8a-4145-a943-32dd70807919> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304420" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "10" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idcd7bb348-3d6c-429b-90dd-472a2ac0492f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295072" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idd3935941-b9e0-4c3a-83f6-8ecdcc5908bd> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295073" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id85664f1e-417c-4705-9f8f-28ea522af2e1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295074" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id493e20d6-4975-47b2-981f-6121f72c88a6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295079" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id396e0d81-85ab-46cd-af89-1b1b277e8bd4> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758080" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haIndirizzo "VIA A MAFFEI" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ida0c3dc7c-b8b5-49cc-b3ef-31b325dd86cd> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758081" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "3304" ;
+	riv:haIndirizzo "VIA A MAFFEI" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0cc21a0b-aaa3-4b59-b933-952b15912c9c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299835" ;
+	riv:haCategoria "A07" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "2365" ;
+	riv:haIndirizzo "G. VERGA" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/id456888cf-007c-46fa-83d6-053636a66fb9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296499" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "982" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "7" .
+
+<http://www.okkam.org/ens/id92d03592-69fc-4f87-8a0c-8ba9054854f5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296503" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "983" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id583a9d4c-1bff-47e0-ac9f-133856c1d56c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758161" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "982" ;
+	riv:haIndirizzo "VIA FILZI" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id51ebe02f-b329-4686-bf6b-334ad84346f0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298797" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id7b28f0b1-a1aa-482c-ab97-e52d2196b349> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758277" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id45369394-2187-4306-923d-a9d3672d044e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298799" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id9c3b9122-ecb1-4113-9fec-b05ef28217db> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758278" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "2065" ;
+	riv:haIndirizzo "A. MAFFEI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id961c323a-d874-484d-8ba7-b6f1c1e7cc29> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "301846" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2721" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id462dcd52-cdfa-482d-b75e-108899354327> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "301847" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2721" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id665e9fdc-e425-4912-aaea-501bfc52719c> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "758588" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "25" ;
+	riv:haNumeroFabbricati "2721" ;
+	riv:haIndirizzo "LOC. FONDO GRANDE" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id68a26872-3f0f-40ca-9d9a-ab43037e9d55> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303208" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "803" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id45b4c752-df60-4661-b041-088daeae9bf7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303209" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "803" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id2e376cd8-e7c4-477e-81e2-939a47e546ed> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "756499" ;
+	riv:haCategoria "A02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "803" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id2da2ca37-8438-4142-b944-be7c912f2911> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304822" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1468" ;
+	riv:haIndirizzo "G. CARDUCCI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/ide2a493ea-2ffa-4135-be13-c61128fafce7> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300356" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2481" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idc9c7067b-0607-43e7-b65c-392d496c6df0> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300357" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2481" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idfba44ab3-f651-4ef8-af87-6ad87336ddfe> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300358" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "2481" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id4055e964-b260-4a42-90a5-973dbde60e3f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "752586" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "2481" ;
+	riv:haIndirizzo "LOC.FRANCOLINI" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5aed77ba-a1df-464b-8817-25c23702854b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297996" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "1829" ;
+	riv:haIndirizzo "MADONNA DELLE GRAZIE" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id2da890d8-9402-4fed-bd71-5a0db238d7cf> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300220" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "11" ;
+	riv:haNumeroFabbricati "2447" ;
+	riv:haIndirizzo "MONTE CORNETTO" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/ideb320107-3f09-4911-bf0a-a383c33bdb36> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300221" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "11" ;
+	riv:haNumeroFabbricati "2447" ;
+	riv:haIndirizzo "MONTE CORNETTO" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id81ffd3d8-7787-474a-8cb9-11eb9baadc96> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300222" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "11" ;
+	riv:haNumeroFabbricati "2447" ;
+	riv:haIndirizzo "MONTE CORNETTO" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idbf574b4f-4fb5-4abb-b661-3adc16c0a26d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295685" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "18" ;
+	riv:haNumeroFabbricati "466" ;
+	riv:haIndirizzo "FRANCOLINI" ;
+	riv:haToponimo "90" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id14742e72-a39e-45e3-b131-fa80e0747c6f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298241" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "1910" ;
+	riv:haIndirizzo "PASUBIO" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/id074b6f79-237e-4efb-beb0-d4154ad92964> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "301826" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "14" ;
+	riv:haNumeroFabbricati "2715" ;
+	riv:haIndirizzo "NOSELLARI" ;
+	riv:haToponimo "90" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id1dd8822f-5952-4ed3-8d79-6e7010314d86> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302112" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "2819" ;
+	riv:haIndirizzo "CARBONARE" ;
+	riv:haToponimo "90" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id7679fe32-9014-4121-b9a7-42baa232506f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302117" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "2822" ;
+	riv:haIndirizzo "NAZIONALE" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id72aae341-3597-478d-a479-c69d57e0fc87> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302110" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "24" ;
+	riv:haNumeroFabbricati "2817" ;
+	riv:haIndirizzo "SERRADA" ;
+	riv:haToponimo "90" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idd80d753a-a6a6-4b74-acb1-1ba6e7972afa> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "707711" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "24" ;
+	riv:haNumeroFabbricati "2818" ;
+	riv:haIndirizzo "SERRADA" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id359ef195-fe55-4a84-b2f9-808de37de8a2> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302483" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "10" ;
+	riv:haNumeroFabbricati "2939" ;
+	riv:haIndirizzo "FOLGARIA" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id87af8885-5977-469c-bf10-87c2cd9ea9ef> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298220" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1899" ;
+	riv:haIndirizzo "G. CARDUCCI" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id7783ca15-1edf-41c2-9381-ece521418edb> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "300223" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "17" ;
+	riv:haNumeroFabbricati "2448" ;
+	riv:haIndirizzo "CARPENEDA" ;
+	riv:haToponimo "77" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id1ea95aa1-300b-4afa-a221-d690f8419916> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "297728" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "13" ;
+	riv:haNumeroFabbricati "1759" ;
+	riv:haIndirizzo "CARBONARE" ;
+	riv:haToponimo "90" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id661d198d-bedc-42a8-8573-8e4e08bb7281> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303524" ;
+	riv:haCategoria "C01" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1525" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/ided90a537-5897-40bb-a83f-3f4dbdd55e66> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "303525" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "1525" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/id3e10909e-705b-40bb-9c89-0aa549d505e8> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302114" ;
+	riv:haCategoria "E09" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "3" ;
+	riv:haFoglio "9" ;
+	riv:haNumeroFabbricati "2820" ;
+	riv:haIndirizzo "VANNETTI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idd62f4d49-0a40-4fbd-91e9-f59bdb46afad> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298859" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "25" ;
+	riv:haNumeroFabbricati "2083" ;
+	riv:haIndirizzo "FONDO GRANDE" ;
+	riv:haToponimo "90" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/iddc4861c7-93b0-4f90-8e6f-ca7d9f1b8a83> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "299442" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "2272" ;
+	riv:haIndirizzo "E. FERMI" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id24028840-c3c8-4660-8b28-8a6f0060a19f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "298521" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "2011" ;
+	riv:haIndirizzo "A. EINSTEIN" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id9e50d1fd-723b-4144-b831-bd7d452d8c2d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "302310" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "13" ;
+	riv:haNumeroFabbricati "2870" ;
+	riv:haIndirizzo "G. PRATI" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id360d27f7-81e2-456c-aead-66b8b06e3a95> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304125" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id6427f0b7-3ff5-4a76-9bb6-8f9db7e47ab9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304126" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id3131deac-d136-4b9c-bda4-85c112fda644> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304127" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/idecd11d3e-42d0-48c4-b56b-a400dc2fae3d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753910" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "4" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id5d57aa87-0f15-4652-98e9-53e0b5aa832e> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753911" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id552ed90d-457f-4d3d-802c-074bfa864bf1> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753912" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id0ecdecdd-cfde-4f55-be04-992194f56673> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753913" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id9339379d-8926-4f10-90b2-a3e6d5027f61> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753914" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/ideda8fdc2-a61e-4a26-91f9-3f7193d5aad6> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753915" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "9" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id83306b9f-b707-46dc-a5b3-ca404ffd7bcf> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753916" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "10" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc43a0529-8c7f-4d21-ae2d-e6cf9dbeaf72> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "753917" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "39" ;
+	riv:haNumeroFabbricati "824" ;
+	riv:haIndirizzo "VIA D. CHIESA" ;
+	riv:haSubalterno "11" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id66d7cf53-9174-49e8-aec7-06f31d5efcb9> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304821" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "1468" ;
+	riv:haIndirizzo "G. CARDUCCI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "5" .
+
+<http://www.okkam.org/ens/id86c68e7f-7218-47ef-809b-63aef32c4090> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "295771" ;
+	riv:haCategoria "D02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "40" ;
+	riv:haNumeroFabbricati "559" ;
+	riv:haIndirizzo "E. COLPI" ;
+	riv:haCodiceRiserva "4" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "3" .
+
+<http://www.okkam.org/ens/id87e76896-b90b-4228-8f43-93666dc1aa0b> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "754750" ;
+	riv:haCategoria "C02" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "42" ;
+	riv:haNumeroFabbricati "10" ;
+	riv:haIndirizzo "FRAZIONE S. SEBASTIANO" ;
+	riv:haSubalterno "3" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id187677d3-4d87-4f15-ac35-e954dc36142f> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296603" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "1049" ;
+	riv:haIndirizzo "F.LLI FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/id81040812-1566-4ec9-8846-b286707ae43d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "296604" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "38" ;
+	riv:haNumeroFabbricati "1051" ;
+	riv:haIndirizzo "F.LLI FILZI" ;
+	riv:haToponimo "236" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idfa15e2e1-3402-4094-824d-7fdb7c9d9c98> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "305087" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "543" ;
+	riv:haSubalterno "5" ;
+	riv:haProgressivoNota "2" .
+
+<http://www.okkam.org/ens/idcc68a261-ec8d-4972-bb22-0834a1be0f40> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "755588" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "543" ;
+	riv:haIndirizzo "VIA FONTANELLE" ;
+	riv:haSubalterno "6" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idd81f3baf-3665-4919-9b1e-09947a9dcf09> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "755589" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "543" ;
+	riv:haIndirizzo "VIA FONTANELLE" ;
+	riv:haSubalterno "7" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id12a2e228-f8bd-4875-8f16-8c00d7f68ae5> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "755590" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "1" ;
+	riv:haFoglio "41" ;
+	riv:haNumeroFabbricati "543" ;
+	riv:haIndirizzo "VIA FONTANELLE" ;
+	riv:haSubalterno "8" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/id8d3083f5-47f5-4b1c-8162-7b2a2f4b5876> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "304004" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haNumeroFabbricati "327" ;
+	riv:haProgressivoNota "4" .
+
+<http://www.okkam.org/ens/idb17365c5-ca2f-4a56-9c6b-bf3c618feb0d> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "752404" ;
+	riv:haCategoria "C06" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "327" ;
+	riv:haIndirizzo "LOC. BUSE" ;
+	riv:haSubalterno "1" ;
+	riv:haProgressivoNota "1" .
+
+<http://www.okkam.org/ens/idc2fbb1d2-cb27-4955-8a9f-33c5d0d39eaf> a riv:Fabbricato ;
+	riv:haCodiceAmministrativo "D651" ;
+	riv:haIdentificativoImmobile "752405" ;
+	riv:haCategoria "A03" ;
+	riv:haTipoImmobile "F" ;
+	riv:haComuneCatastale "154" ;
+	riv:haZona "2" ;
+	riv:haFoglio "7" ;
+	riv:haNumeroFabbricati "327" ;
+	riv:haIndirizzo "LOC. BUSE" ;
+	riv:haSubalterno "2" ;
+	riv:haProgressivoNota "1" .
