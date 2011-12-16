@@ -296,11 +296,38 @@ public class ServiceClient {
 			log.info(ticket + " not locked") ;
 			
 		}
-			
-
 		
 	}
 	
+	public void deleteEntityByQuery(String query) {
+
+		ArrayList<QueryResponse> candidates = new ArrayList<QueryResponse>();
+
+		ArrayList<CandidateEntity> entityList = _okkamClient
+				.inquireOkkam(query);
+		Iterator<CandidateEntity> entityIterator = entityList.iterator();
+
+		while (entityIterator.hasNext()) {
+			QueryResponse result = new QueryResponse();
+			CandidateEntity candidateEntity = entityIterator.next();
+			Entity entity = candidateEntity.getEntity();
+			boolean match = candidateEntity.isMatch();
+			String okkamId = entity.getOid();
+
+			String ticket = null;
+			try {
+
+				ticket = _okkamClient.lockEntity(okkamId);
+
+				_okkamClient.deleteEntity(okkamId, ticket);
+
+			} catch (Throwable t) {
+
+				log.info(ticket + " not locked");
+
+			}
+		}
+	}
 	public void deleteEntityFromFile(String filePath){
 		try {
 			FileReader fr = new FileReader(filePath);
