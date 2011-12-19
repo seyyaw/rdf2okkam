@@ -1,4 +1,4 @@
-#New functionalities to be implemented
+#summary New functionalities to be implemented
 
 = New Functionalities =
 
