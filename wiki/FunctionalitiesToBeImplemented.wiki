@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#New functionalities to be implemented
 
 = New Functionalities =
 
