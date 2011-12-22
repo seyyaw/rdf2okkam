@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY http "http://www.w3.org/2006/http#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://example.org/access.owl#"
+     xml:base="http://example.org/access.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:http="http://www.w3.org/2006/http#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://example.org/access.owl">
+        <rdfs:label xml:lang="en">Access Control Ontology</rdfs:label>
+        <terms:creator>Dominik Tomaszuk</terms:creator>
+        <owl:versionInfo>0.2</owl:versionInfo>
+        <rdfs:comment xml:lang="en">Access Control Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&terms;creator"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/access.owl#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/access.owl#hasAction">
+        <rdfs:label>has action</rdfs:label>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:range rdf:resource="http://example.org/access.owl#Action"/>
+        <rdfs:domain rdf:resource="http://example.org/access.owl#Permission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/access.owl#hasDefaultPolicy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/access.owl#hasDefaultPolicy">
+        <rdfs:label>has default policy</rdfs:label>
+        <rdfs:range rdf:resource="http://example.org/access.owl#DefaultPolicy"/>
+        <rdfs:domain rdf:resource="http://example.org/access.owl#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/access.owl#hasPermission -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/access.owl#hasPermission">
+        <rdfs:label>has permission</rdfs:label>
+        <rdfs:range rdf:resource="http://example.org/access.owl#Permission"/>
+        <rdfs:domain rdf:resource="http://example.org/access.owl#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/access.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/access.owl#hasRole">
+        <rdfs:label>has role</rdfs:label>
+        <rdfs:range rdf:resource="http://example.org/access.owl#Role"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/access.owl#onResource -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/access.owl#onResource">
+        <rdfs:label xml:lang="en">on resource</rdfs:label>
+        <rdfs:range rdf:resource="http://example.org/access.owl#Resource"/>
+        <rdfs:domain rdf:resource="http://example.org/access.owl#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/access.owl#priority -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/access.owl#priority">
+        <rdfs:label>priority</rdfs:label>
+        <rdfs:domain rdf:resource="http://example.org/access.owl#Permission"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/access.owl#roleName -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/access.owl#roleName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/access.owl#Role"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/access.owl#Action -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Action">
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/access.owl#DefaultPolicy -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#DefaultPolicy">
+        <rdfs:label>DefaultPolicy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/access.owl#Deny -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Deny">
+        <rdfs:label>Deny</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#DefaultPolicy"/>
+        <owl:disjointWith rdf:resource="http://example.org/access.owl#Permit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/access.owl#Permission -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Permission">
+        <rdfs:label>Permission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/access.owl#Permit -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Permit">
+        <rdfs:label>Permit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#DefaultPolicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/access.owl#Read -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Read">
+        <rdfs:label>Read</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/access.owl#Resource -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Resource"/>
+    
+
+
+    <!-- http://example.org/access.owl#Role -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Role">
+        <rdfs:label>Role</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/access.owl#hasDefaultPolicy"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/access.owl#hasPermission"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/access.owl#Write -->
+
+    <owl:Class rdf:about="http://example.org/access.owl#Write">
+        <rdfs:label>Write</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/http#DeleteRequest -->
+
+    <owl:Class rdf:about="&http;DeleteRequest">
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#Write"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/http#GetRequest -->
+
+    <owl:Class rdf:about="&http;GetRequest">
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#Read"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/http#HeadRequest -->
+
+    <owl:Class rdf:about="&http;HeadRequest">
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#Read"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/http#PostRequest -->
+
+    <owl:Class rdf:about="&http;PostRequest">
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#Write"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/http#PutRequest -->
+
+    <owl:Class rdf:about="&http;PutRequest">
+        <rdfs:subClassOf rdf:resource="http://example.org/access.owl#Write"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/access.owl#Assessor -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#Assessor">
+        <rdf:type rdf:resource="http://example.org/access.owl#Role"/>
+        <onResource rdf:resource="http://example.org/access.owl#Graph1"/>
+        <onResource rdf:resource="http://example.org/access.owl#Graph2"/>
+        <hasPermission rdf:resource="http://example.org/access.owl#ReadPermission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#Graph1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#Graph1">
+        <rdf:type rdf:resource="http://example.org/access.owl#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#Graph2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#Graph2">
+        <rdf:type rdf:resource="http://example.org/access.owl#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#ReadGraph1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#ReadGraph1">
+        <rdf:type rdf:resource="http://example.org/access.owl#Read"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#ReadGraph2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#ReadGraph2">
+        <rdf:type rdf:resource="http://example.org/access.owl#Read"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#ReadPermission -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#ReadPermission">
+        <rdf:type rdf:resource="http://example.org/access.owl#Permission"/>
+        <hasAction rdf:resource="http://example.org/access.owl#ReadGraph1"/>
+        <hasAction rdf:resource="http://example.org/access.owl#ReadGraph2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#Seid -->
+
+    <foaf:Agent rdf:about="http://example.org/access.owl#Seid">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label rdf:datatype="&xsd;string">seid m. yimam</rdfs:label>
+        <hasRole rdf:resource="http://example.org/access.owl#Assessor"/>
+    </foaf:Agent>
+    
+
+
+    <!-- http://example.org/access.owl#Technician -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#Technician">
+        <rdf:type rdf:resource="http://example.org/access.owl#Role"/>
+        <onResource rdf:resource="http://example.org/access.owl#Graph1"/>
+        <onResource rdf:resource="http://example.org/access.owl#Graph2"/>
+        <hasPermission rdf:resource="http://example.org/access.owl#WriteGraph1"/>
+        <hasPermission rdf:resource="http://example.org/access.owl#WriteGraph2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#WriteGraph1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#WriteGraph1">
+        <rdf:type rdf:resource="http://example.org/access.owl#Write"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#WriteGraph2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#WriteGraph2">
+        <rdf:type rdf:resource="http://example.org/access.owl#Write"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/access.owl#WritePermission -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/access.owl#WritePermission">
+        <rdf:type rdf:resource="http://example.org/access.owl#Permission"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
