@@ -1,0 +1,1 @@
+An importer to map records from a spreadsheet to entities in the ENS (Entity Name System) and to save their properties and relationships in a triple store as RDF.
